@@ -1,0 +1,89 @@
+.objacts-map-content-block{
+	//min-height: 1200px;
+}
+._omcb__{
+	&container{
+		position: relative;
+		padding-bottom: 3.5vw;
+	}
+	&heading-small{
+		@media @media-screen{
+			margin-bottom: 1.6vw;
+		}
+	}
+	&row{
+		flex-wrap: wrap;
+	}
+	&cols{
+		@media @media-size-xs{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		//@media @media-size-sm-l{width: 50%;}
+		@media @media-notsmart{width: 50%;}
+	}
+	&text{
+   		font-size: @b-fs - 1px; //15px;
+    	line-height: @b-lh - 3px; // 21px;
+    	@media @media-screen{max-width: 570px;}
+	}
+	&panel{
+		position: relative;
+		margin-left: auto;
+		max-width: 370px;
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(24, 31, 320, 1680);
+	}
+	&map-block{
+		position: relative;
+		z-index: 3;
+		background: @white-dark;
+	}
+	&map{
+		height: ~"calc(100vh - 94px - 126px)";
+	}
+
+
+	//line
+	
+	&line-left-vert{
+		position: absolute;
+		top: -11.5vw;
+    	left: 4vw;
+    	height: 10.5vw;
+	}
+	&line-top-right-vert{
+		position: absolute;
+		top: -11.5vw;
+		height: 10.5vw;
+		right: 3vw;
+	}
+	&line-top-right-horiz{
+		position: absolute;
+		top: -1vw;
+		width: 100%;
+	}
+	&line-bottom-right-vert{
+		position: absolute;
+		bottom: -9vw;
+		height: 8vw;
+		right: 16.5vw;
+	}
+	&line-bottom-right-horiz{
+		position: absolute;
+		bottom: -1vw;
+		width: 100%;
+	}
+	/*&line-center-horiz{
+		position: absolute;
+		top: 5vw;
+    	width: 8vw;
+    	&.left{
+    		left: ~"calc(50% - 8vw + 1px)";
+    	}
+    	&.right{
+    		left: ~"calc(50% + 0vw)";
+    	}
+
+	}*/
+}

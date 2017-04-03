@@ -1,0 +1,70 @@
+.include-custom-font(
+	@family: @circe, 
+	@src-name: @circe, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-font(
+	@family: @circe,
+	@src-name: @circe,
+	@weight: normal, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @circe,
+	@src-name: @circe-light,
+	@weight: 300, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @circe,
+	@src-name: @circe-bold,
+	@weight: 700, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @circe,
+	@src-name: @circe-ebold,
+	@weight: 800, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria,
+	@weight: normal, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-light,
+	@weight: 300, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-bold,
+	@weight: 700, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-ebold,
+	@weight: 800, 
+	@style: normal
+	);

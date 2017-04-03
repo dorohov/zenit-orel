@@ -1,0 +1,41 @@
+<footer class="{{class}}">	
+	<div class="container _fs__container">
+		<div class="row _fs__row">
+			<div class="cols _fs__copyright-cols">
+				ЗАО «Зенит»
+			</div>
+			
+			<div class="cols _fs__contacts-cols">
+				<div class="row _fs__contacts-row">
+					<div class="cols">
+						<a href="tel:{{contacts.phone_tel}}" class="_fs__phone _fs__icon">{{contacts.phone}}</a>
+					</div>
+					<div class="cols">
+						<div class="_fs__address _fs__icon">{{contacts.address}}</div>
+					</div>
+					<div class="cols">
+						<a href="mailto:{{contacts.email}}" class="_fs__mailto _fs__icon">{{contacts.email}}</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cols _fs__soc-cols">				
+				[[azbntple tpl="/src/block/site/default/social/.html" class="social-block" social-prefix="social__"]] 
+			</div>
+			<div class="cols _fs__dorohovdesign-cols">
+				<div class="row _fs__dorohovdesign-row"> 
+					<div class="cols">
+						<div>Создание сайта</div>
+					</div>
+					<div class="cols">
+						<div class="_fs__dorohovdesign__logo">
+							<a href="http://www.dorohovdesign.ru/" target="_blank">
+								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="dorohovdesign" class="{{prefix}}dd" ]]
+							</a>
+						</div>	
+					</div>
+				</div>				 
+			</div>	
+		</div>
+	</div>
+</footer>

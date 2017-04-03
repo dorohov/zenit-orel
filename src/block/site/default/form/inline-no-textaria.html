@@ -1,0 +1,25 @@
+<form action="/reviews-call-message.html" class="form-site {{class}} callbackwidget-call-form azbn-form-save" data-target-url="/formsave.php" > 
+	<input type="hidden" name="action" value="azbnajax_call" />
+	<input type="hidden" name="method" value="formsave" />
+	<input type="hidden" name="type" value="json" />
+	
+	<div class="row {{prefix-page}}row">
+		<div class="cols {{prefix-page}}col-6">
+			<div class="{{prefix-form}}input">
+				<label for="f[name]" class="{{prefix-form}}label _name">Имя</label>
+				<input type="text" class="{{prefix-form}}form-control _name form-control validate[required] callbackwidget-name" id="f[name]" name="f[Имя]" >
+			</div>	
+		</div>
+		<div class="cols {{prefix-page}}col-6">
+			<div class="{{prefix-form}}input">
+				<label for="f[tel]" class="{{prefix-form}}label _phone">Телефон</label>
+				<input type="tel" class="{{prefix-form}}form-control _phone form-control validate[required,custom[phone]]" id="f[tel]" name="f[Телефон]" > 
+			</div>	
+		</div>
+		<div class="cols {{prefix-page}}col-12">
+			<div class="{{prefix-page}}btn-block">
+				<button type="submit" class="btn-site btn-mustard btn-submit {{prefix-page}}btn">{{btn_name}}</button>
+			</div>	 
+		</div>
+	</div>
+</form> 

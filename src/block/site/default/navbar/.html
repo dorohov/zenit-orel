@@ -1,0 +1,55 @@
+<nav class="{{class}}">
+	<div class="container {{prefix_block}}container">
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}cols-logotip">
+				<div class="row {{prefix_block}}row-logotip">
+					<div class="cols {{prefix_block}}cols-brand">
+						<a class="{{prefix_block}}brand" href="/">
+							<img src="{{url-path-img}}/default/logotip.png" alt="" > 
+						</a>
+					</div>
+					<div class="cols {{prefix_block}}cols-tagline">
+						Мы строим для вас<br> и ваших детей
+					</div>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}cols-contacts">
+				<div class="{{prefix_block}}phone">
+					<a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a>
+				</div>
+				<div class="{{prefix_block}}email">
+					<a href="mailto:{{contacts.email}}">{{contacts.email}}</a>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}cols-hamburger">
+				<button type="button" class="{{prefix_block}}hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
+					<div class="{{prefix_block}}hamburger-inner"></div>
+				</button>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="modal fade {{prefix_block}}modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="{{prefix_block}}modal-dialog">
+		<button type="button" class="btn-site {{prefix_block}}hamburger is--close" data-dismiss="modal" aria-hidden="true">
+			<div class="{{prefix_block}}hamburger-inner"></div>
+		</button>
+		<div class="{{prefix_block}}modal-body" >
+			<ul class="{{prefix_block}}modal-nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/apartments.html">Квартиры</a></li>
+				<li><a href="/com-objects.html">Коммерческая недвижимость</a></li>
+				<li><a href="/buyers.html">Покупателям</a></li>
+				<li><a href="/action.html">Акции</a></li>
+				<li><a href="/blog.html">Блог компании</a></li>
+				<li><a href="/about.html">О нас</a></li>
+				<li><a href="/contacts.html">Контакты</a></li>
+			</ul>
+			[[azbntple
+				tpl="/src/block/site/default/social/.html" 
+				class_block="social-block navbar__social-block"
+				social_prefix="social__"
+			]]
+		</div>
+	</div>
+</div>

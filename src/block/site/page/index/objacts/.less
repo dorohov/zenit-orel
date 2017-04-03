@@ -1,0 +1,50 @@
+.objacts-content-block{
+	//min-height: 1200px;
+}
+._ocb__{
+	&container{
+		position: relative;
+		padding-top: 6.3vw;
+		padding-bottom: 11.5vw;
+	}
+	&heading{
+		text-align: center;
+	}
+	&heading-small{
+		text-align: center;
+	}
+	&row{
+		flex-wrap: wrap;
+	}
+	&cols{
+		@media @media-device{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		@media @media-size-sm-l{width: 50%;}
+		@media @media-screen{width: 50%;}
+	}
+	&{}
+	&{}
+
+	//line
+	
+	&line-center-vert{
+		position: absolute;
+		top: -1.5vw;
+    	left: 50%;
+    	height: 6.5vw;
+	}
+	&line-center-horiz{
+		position: absolute;
+		top: 5vw;
+    	width: 8vw;
+    	&.left{
+    		left: ~"calc(50% - 8vw + 1px)";
+    	}
+    	&.right{
+    		left: ~"calc(50% + 0vw)";
+    	}
+
+	}
+}

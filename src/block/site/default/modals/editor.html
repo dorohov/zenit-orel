@@ -1,0 +1,68 @@
+<div class="modal fade" id="modal-uploading" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{prefix}}dialog">
+		<div class="modal-content {{prefix}}content">
+			<div class="modal-body {{prefix}}body" >
+				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" class="icon-cancel"]]
+				</button>
+				<div class="modal-block {{prefix}}block">
+					<h3 class="modal-title {{prefix}}title">Добавление файла</h3>
+					<div class="modal-note {{prefix}}note">		
+						<div>Введите название файла и выберите сам файл с локального компьютера</div>
+					</div>
+					<form class="azbn-editor-create-form" data-target-url="/wp-admin/admin-ajax.php" >
+						<input type="hidden" name="action" value="azbnajax_call" />
+						<input type="hidden" name="method" value="createDoc" />
+						<input type="hidden" name="type" value="json" />
+						<input type="hidden" name="file[post_id]" class="azbn-editor-post_id-hidden" value="0" />
+						
+						<div class="azbn-editor-field-item" >
+							<label>Название файла</label>
+							<input type="text" class="form-control azbn-editor-title-input" name="file[title]" />
+						</div>
+						
+						<div class="azbn-editor-field-item" >
+							<label>Родительский файл</label>
+							<select class="form-control azbn-editor-parent-select" name="file[parent]" >
+								<option value="0" >это новый файл, а не редакция</option>
+							</select>
+						</div>
+						
+						<div class="azbn-editor-field-item" >
+							<label>URL файла <a href="#upload" class="azbn-editor-upload-btn" >загрузить с компьютера</a></label>
+							<input type="text" class="form-control azbn-editor-upload-url azbn-editor-uploadurl-input" name="file[uploadurl]" />
+						</div>
+						
+						<div class="azbn-editor-field-item" >
+							<button type="submit" class="btn-site btn-submit" >Создать запись</button>
+						</div>
+						
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modal-upload-photos" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{prefix}}dialog">
+		<div class="modal-content {{prefix}}content">
+			<div class="modal-body {{prefix}}body" >
+				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" class="icon-cancel"]]
+				</button>
+				<div class="modal-block {{prefix}}block">
+
+					<h3 class="modal-title {{prefix}}title">Загрузка изображений</h3>
+					<div class="modal-note {{prefix}}note">			
+						<div>Выберите изображения с компьютера для загрузки в раздел</div>
+					</div>
+					<div class="azbn-editor-field-item" >
+						<button class="btn-site btn-submit azbn-editor-photo-upload-btn" >Загрузить файлы</button>
+					</div>					
+					<div class="azbn-editor-photo-list" ></div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
