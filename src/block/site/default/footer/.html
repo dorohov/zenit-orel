@@ -1,34 +1,33 @@
 <footer class="{{class}}">	
-	<div class="container _fs__container">
-		<div class="row _fs__row">
-			<div class="cols _fs__copyright-cols">
-				ЗАО «Зенит»
+	<div class="container {{prefix_block}}container">
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}copyright-cols">
+				{{contacts.copyright}}
 			</div>
 			
-			<div class="cols _fs__contacts-cols">
-				<div class="row _fs__contacts-row">
+			<div class="cols {{prefix_block}}contacts-cols">
+				<div class="row {{prefix_block}}contacts__row">
 					<div class="cols">
-						<a href="tel:{{contacts.phone_tel}}" class="_fs__phone _fs__icon">{{contacts.phone}}</a>
+						<div class="{{prefix_block}}address">{{contacts.address}}</div>
 					</div>
 					<div class="cols">
-						<div class="_fs__address _fs__icon">{{contacts.address}}</div>
+						<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
 					</div>
 					<div class="cols">
-						<a href="mailto:{{contacts.email}}" class="_fs__mailto _fs__icon">{{contacts.email}}</a>
+						<a href="mailto:{{contacts.email}}" class="{{prefix_block}}mailto">{{contacts.email}}</a>
 					</div>
-
 				</div>
 			</div>
-			<div class="cols _fs__soc-cols">				
+			<div class="cols {{prefix_block}}soc-cols">				
 				[[azbntple tpl="/src/block/site/default/social/.html" class="social-block" social-prefix="social__"]] 
 			</div>
-			<div class="cols _fs__dorohovdesign-cols">
-				<div class="row _fs__dorohovdesign-row"> 
+			<div class="cols {{prefix_block}}dorohovdesign-cols">
+				<div class="row {{prefix_block}}dorohovdesign__row"> 
 					<div class="cols">
 						<div>Создание сайта</div>
 					</div>
 					<div class="cols">
-						<div class="_fs__dorohovdesign__logo">
+						<div class="{{prefix_block}}dorohovdesign__logo">
 							<a href="http://www.dorohovdesign.ru/" target="_blank">
 								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="dorohovdesign" class="{{prefix}}dd" ]]
 							</a>
@@ -36,6 +35,14 @@
 					</div>
 				</div>				 
 			</div>	
+		</div>
+		<div class="{{prefix_block}}ofert">
+			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
+			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией<br/>
+			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
+			</p>
+			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
 		</div>
 	</div>
 </footer>

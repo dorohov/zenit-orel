@@ -1,0 +1,37 @@
+.breadcrumb-block{
+	margin-bottom: 3.2vw;
+}
+@bread-color: #909090;
+@bread-color-active: @black;
+.breadcrumb__{
+	&list{
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: @b-fs - 1px;
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+	&list-item{
+		padding-left: 25px;
+		padding-right: 25px;
+		position: relative;
+		&.is--active{
+			font-weight: 700;
+			color: @bread-color-active;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				height: 1px;
+				background-color: @blue-dark;
+				width: 25px;
+				left: -12.5px;
+			}
+		}
+	}
+	&list-link{
+		color: @bread-color;
+	}
+}

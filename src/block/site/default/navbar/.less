@@ -20,9 +20,25 @@
 		width: 100%;
 		z-index: 900!important;
 		padding: 3.7vw 0;
+		padding: 70px 0;
 		color: @white;
 		a{
 			&, &:hover, &:focus{color: @white;}
+		}
+		&.second{
+			background: @b-nav-bg-screen;
+			color: @black;
+			padding: 30px 0;
+			a{
+				&, &:hover, &:focus{color: @black;}
+			}
+			.navbar__hamburger-inner{
+				@media @media-screen{
+					&, &::before, &::after{
+						background: @black;
+					}
+				}
+			}			
 		}
 		&.opacity{
 			opacity: 0;
@@ -51,7 +67,10 @@
 			}
 		}
 	}
-	@media @media-size-mdl{padding: 2vw 0}
+	@media @media-size-mdl{
+		padding: 2vw 0;
+		padding: 30px 0;
+	}
 }
 .navbar__{
 	&container{}

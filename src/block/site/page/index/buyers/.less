@@ -1,9 +1,9 @@
-.buyers-content-block{
-	min-height: 100vh;
+.buyers-content-block{	
 	background-image: url("@{url-path-img}/bg/bg-index-buyers.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
+    @media @media-screen{min-height: 100vh;}
 }
 ._bucb__{
 	&container{
@@ -13,20 +13,29 @@
 	}
 	&row-banks{
 		flex-wrap: wrap;
-		justify-content: space-between;
 		margin-bottom: 0.4vw;
+		position: relative;
+		z-index: 2;
+		@media @media-size-xs{justify-content: center;}
+		@media @media-notsmart{justify-content: space-between;}
 	}
 	&cols-banks{
-		//width: 20%;
-		margin-bottom: 3.2vw;
+		//width: 20%;		
 		img{margin: 0 auto}
+		@media @media-size-xs-p{width: 50%;}
+		@media @media-size-xs-l{width: 25%;}
+		@media @media-size-sm{width: 25%;}
+		@media @media-size-md{width: 25%;}
+		@media @media-device{margin-bottom: 35px;}
+		@media @media-screen{margin-bottom: 3.2vw;}
 	}
 	&btn-block{
+		position: relative;
 		text-align: center;
-		margin-bottom: 2.8vw;
+		@media @media-device{margin-bottom: 50px;}
+		@media @media-screen{margin-bottom: 2.8vw;}
 	}
-	&btn{    
-	}
+	&btn{}
 	&heading{
 		text-align: center;
 		text-transform: uppercase;	
@@ -37,19 +46,49 @@
 	}
 	&link-row{
 		justify-content: center;
-		margin-bottom: 11.5vw;
+		margin-bottom: 9vw;
+		flex-wrap: wrap;
 	}
-	&link-cols{}
+	&link-cols{		
+		@media @media-device{margin-bottom: 25px;}
+		@media @media-screen{margin-bottom: 2.5vw;}
+	}
 	&link-item{
 		font-weight: 800;
 		display: block;
 		letter-spacing: 1.5px;
-		border-bottom: 2px solid @b-color-a;
 		.calcFontSize(19, 23, 320, 1680);
 		.calcLineHeight(32, 36, 320, 1680); 
+		position: relative;
+		@media @media-size-xs{letter-spacing: 1px;}
+		&::after{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: @b-color-a;
+			left: 0;
+			bottom: -2px;
+			transform-origin: center;
+			transform: scale(1, 1);
+			transition: @transition-site;
+		}
+		&:hover{
+			&::after{
+				transform: scale(0, 1);
+			}
+		}
 	}
 	&form-block{
 		max-width: 1120px;
 		margin: 0 auto;
+	}
+	//line
+	&line-center-vert{
+		position: absolute;
+		left: 50%;
+		top: -30vw;
+		height: 30vw;
+		z-index: 1;
 	}
 }

@@ -4,8 +4,9 @@
 	font-family: @b-footer-ff;
 	font-size: @b-footer-fs - 2px; //14
 	line-height: @b-footer-lh - 2px; //22
-    //padding: 25px 0;
-	@media @media-size-sm{text-align: center;}	
+    font-weight: 300;
+    color: @b-footer-color;
+	//@media @media-size-sm{text-align: center;}	
 	@media @media-size-mdl{
 		font-size: @b-footer-fs - 4; //16
 		line-height: @b-footer-lh - 4; //24
@@ -18,26 +19,99 @@
 		font-size: @b-footer-fs; //16
 		line-height: @b-footer-lh; //24
 	}
-	&.index{
-		background: @white;
-		color: @black;
-		@media @media-notsmart{
-			position: absolute;
-			z-index: 100;
-			bottom: 0;
-			left: 0;
-			width: 100%;
+	a{
+		&, &:hover, &:focus{color: @black;}
+	}
+}
+.footer__{
+	&container{
+		@media @media-device{padding-top: 35px; padding-bottom: 25px;}
+		@media @media-screen{padding-top: 65px; padding-bottom: 40px;}
+	}
+	&row{
+		justify-content: space-between;
+		align-items: center;
+		@media @media-device{
+			margin-bottom: 10px;
 		}
-		a{
-			&, &:hover, &:focus{color: @black;} 
+		@media @media-size-xs{
+			flex-wrap: wrap;
+			> .cols{
+				margin-bottom: 15px;
+			}
+		}
+		@media @media-size-sm{
+			flex-wrap: wrap;
+			> .cols{
+				margin-bottom: 20px;
+			}
+		}
+		@media @media-screen{
+			margin-bottom: 1.8vw;
 		}
 	}
-	&.second{
-		color: @b-footer-color;
-		background-color: @b-footer-bg;
-		a{
-			&, &:hover, &:focus{color: @b-footer-color;} 
+	&copyright-cols{
+		@media @media-size-xs-p{width: 100%;}
+		@media @media-size-sm{width: 30%;}
+	}
+	&contacts-cols{
+		@media @media-size-xs-p{width: 100%;}
+		@media @media-size-sm{width: 70%;}
+	}
+	&contacts__row{
+		@media @media-size-sm{flex-wrap: wrap; justify-content: flex-end;}
+		.cols{
+			@media @media-size-xs-p{width: 100%;margin-bottom: 5px;}
 		}
+	}
+	&soc-cols{		
+		@media @media-size-sm{width: 30%;}
+	}
+	&dorohovdesign-cols{
+		@media @media-size-md{width: 12%;}
+	}
+	&dorohovdesign__row{
+		align-items: center;
+		margin: 0 -5px;
+		//@media @media-size-sm-p{justify-content: center; padding-top: 20px;}
+		@media @media-size-md{flex-wrap: wrap; text-align: center;}
+		> .cols{
+			padding: 0 5px;
+			@media @media-size-md{width: 100%;}
+		}
+	}
+	&dorohovdesign__logo{
+		a{
+			border: none;
+			display: block;
+			width: 110px;
+			height: 38px;
+			margin:0 auto;
+			@media @media-size-md{width: 88px;height: 29px;}
+			@media @media-size-lg{width: 95px;height: 31px;}
+			@media @media-size-xl1{width: 95px;height: 31px;}
+			svg{
+				fill: #747474;
+				transition: @transition-site;
+			}
+			&:hover{
+				svg{
+					fill: @b-color-a;
+				}
+			}
+			img{
+				@media @media-size-xs{margin: 0 auto}
+				@media @media-size-mdl{margin: 0 auto}
+			}
+		}
+	}
+	&ofert{		
+		border-top: 1px solid @blue-light;
+		font-size: @b-fs - 1px;
+		line-height: @b-lh - 6px;
+		color: #747474;
+		@media @media-device{padding-top: 25px;}
+		@media @media-screen{padding-top: 1.8vw;}
 	}
 }
 ._fs__container{
@@ -110,6 +184,11 @@
 	align-items: center;
 	font-size: @b-footer-fs - 3px; 
 	margin: 0 -5px;
+	> .cols{
+		padding: 0 5px;
+		@media @media-size-mdl{width: 100%;}
+		@media @media-size-xl1{width: 100%;}
+	}
 	@media @media-size-sm{justify-content: center;}
 	@media @media-screen{justify-content: flex-end;}
 	@media @media-size-mdl{

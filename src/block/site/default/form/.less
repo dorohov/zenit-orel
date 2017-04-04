@@ -1,13 +1,22 @@
 .form-site{
 	&.inline{
 		.form__cols{
-			width: 25%;
+			@media @media-size-xs-p{width: 100%;}
+			@media @media-size-xs-l{
+				width: 33.3333%;
+				&:last-child{
+					width: 50%;
+				}
+			}
+			@media @media-size-sm-p{width: 33.3333%;}
+			@media @media-screen{width: 25%;}
 		}
 		.form__btn{
 			height: 56px;
 			display: block;
 	    	text-align: center;
 	   		width: 100%;
+			@media @media-device{height: 46px;}	
 		}
 	}
 }
@@ -15,17 +24,21 @@
 .form__{
 	&heading{
 		text-align: center;
-		.calcFontSize(18, 22, 320, 1680);
-		.calcLineHeight(26, 32, 320, 1680);  
-		margin-bottom: 1.8vw;
+		.calcFontSize(20, 22, 320, 1680);
+		.calcLineHeight(24, 32, 320, 1680);  
+		@media @media-device{margin-bottom: 25px;}
+		@media @media-screen{margin-bottom: 1.8vw;}
 	}
 	&row{
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 	&cols{
 
 	}
-	&item{}
+	&item{
+		@media @media-device{margin-bottom: 30px;}
+	}
 	&control{
 		background:	@b-form-bg;
 		border: 2px solid @b-form-i-border;   
@@ -37,7 +50,8 @@
 		line-height: @b-form-i-lh;
 		color: @b-form-i-color;
 		transition: @transition-site;
-		width: 100%;		
+		width: 100%;	
+		@media @media-device{height: 46px;}	
 		&::-moz-placeholder{
 			transition: @transition-site;
 			font-family: @b-form-i-ff;
@@ -51,6 +65,7 @@
 		&:focus{ 	
 			border-color: @b-form-i-border-f;
 			outline: none;
+			transform: scale(1.1);
 		}
 	}
 	&btn{
