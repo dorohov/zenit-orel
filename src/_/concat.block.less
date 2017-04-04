@@ -933,81 +933,82 @@
 	}
 }
 .form-site{
-}/*
-.form-site__note{
-	color: #9c9c9c;
-	font-family: @far-italic;
-	line-height: @b-lh - 4px;
-	text-align: center;
-	margin-bottom: 15px;
-}*/
+	&.inline{
+		.form__cols{
+			width: 25%;
+		}
+		.form__btn{
+			height: 56px;
+			display: block;
+	    	text-align: center;
+	   		width: 100%;
+		}
+	}
+}
+
+.form__{
+	&heading{
+		text-align: center;
+		.calcFontSize(18, 22, 320, 1680);
+		.calcLineHeight(26, 32, 320, 1680);  
+		margin-bottom: 1.8vw;
+	}
+	&row{
+		justify-content: center;
+	}
+	&cols{
+
+	}
+	&item{}
+	&control{
+		background:	@b-form-bg;
+		border: 2px solid @b-form-i-border;   
+		height: 56px;
+		padding: 10px 20px;
+		color: @black;
+		font-family: @b-form-i-ff;
+		font-size: @b-form-i-fs;
+		line-height: @b-form-i-lh;
+		color: @b-form-i-color;
+		transition: @transition-site;
+		width: 100%;		
+		&::-moz-placeholder{
+			transition: @transition-site;
+			font-family: @b-form-i-ff;
+			color: @b-form-i-plh-color;
+		}
+		&::-webkit-input-placeholder {
+			transition: @transition-site;
+			font-family: @b-form-i-ff;
+			color: @b-form-i-plh-color;
+		}
+		&:focus{ 	
+			border-color: @b-form-i-border-f;
+			outline: none;
+		}
+	}
+	&btn{
+
+	}
+}
 ._frs__input{
 	display: block;
 	font-weight: normal;
 	font-family: @b-form-label-ff;
 	font-size: @b-form-label-fs;
 	line-height: @b-form-label-lh;
-
-	/*&.icon{
-		position: relative;
-		&:before{
-			font-family: @icon;
-			position: absolute;
-			//color: @blue;
-			top: 50%;
-			right: 15px;
-			font-size: 20px;
-			line-height: 20px;
-			transform: translateY(-50%);
-			transition: @transition-site;
-		}
-		//&.icon-user:before{content: @icon-user;}
-		//&.icon-tel:before{content: @icon-tel;}
-		._frs__form-control{
-			padding-right: 50px;
-		}
-		&.focus{
-			&:before{
-				color: @white;
-			}
-		}
-	}*/
 }
 ._frs__input,
 ._frs__textarea{margin-bottom: 25px;}
 
 ._frs__form-control{
-	background:	none;
-	border: 1px solid @b-form-i-border;   
-	height: 56px;
-	padding: 10px 20px;
-	color: @black;
-	font-family: @b-form-i-ff;
-	font-size: @b-form-i-fs;
-	line-height: @b-form-i-lh;
-	color: @b-form-i-color;
-	transition: @transition-site;
-	width: 100%; 
+	 
 	// Unstyle the caret on `<select>`s in IE10+.
 	&::-ms-expand {
 	border: 0;
 	background-color: transparent;
 	}
 	@media @media-device{height: 46px;}
-	&::-moz-placeholder{
-		transition: @transition-site;
-		font-family: @b-form-i-ff;
-		color: @b-form-i-plh-color;
-	}
-	&::-webkit-input-placeholder {
-		transition: @transition-site;
-		font-family: @b-form-i-ff;
-		color: @b-form-i-plh-color;
-	}
-	&:focus{ 	
-		border-color: @b-form-i-border-f;
-		outline: none;
-	}
 }
 textarea._frs__form-control{
 	height: 100px;
@@ -2088,19 +2089,49 @@ textarea._frs__form-control{
 	&container{
 		position: relative;
 		padding-top: 4.8vw;
+		padding-bottom: 4vw;
 	}
 	&row-banks{
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: 0.4vw;
 	}
 	&cols-banks{
 		//width: 20%;
 		margin-bottom: 3.2vw;
 		img{margin: 0 auto}
 	}
-	&{}
-	&{}
-	&{}
+	&btn-block{
+		text-align: center;
+		margin-bottom: 2.8vw;
+	}
+	&btn{    
+	}
+	&heading{
+		text-align: center;
+		text-transform: uppercase;	
+		letter-spacing: 5px;	
+		.calcFontSize(28, 100, 320, 1680);
+		.calcLineHeight(38, 110, 320, 1680); 
+		margin-bottom: 15px;
+	}
+	&link-row{
+		justify-content: center;
+		margin-bottom: 11.5vw;
+	}
+	&link-cols{}
+	&link-item{
+		font-weight: 800;
+		display: block;
+		letter-spacing: 1.5px;
+		border-bottom: 2px solid @b-color-a;
+		.calcFontSize(19, 23, 320, 1680);
+		.calcLineHeight(32, 36, 320, 1680); 
+	}
+	&form-block{
+		max-width: 1120px;
+		margin: 0 auto;
+	}
 }
 .header-content-block{	
 	background-image: url("@{url-path-img}/bg/bg-index-header.jpg");

@@ -9,17 +9,47 @@
 	&container{
 		position: relative;
 		padding-top: 4.8vw;
+		padding-bottom: 4vw;
 	}
 	&row-banks{
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: 0.4vw;
 	}
 	&cols-banks{
 		//width: 20%;
 		margin-bottom: 3.2vw;
 		img{margin: 0 auto}
 	}
-	&{}
-	&{}
-	&{}
+	&btn-block{
+		text-align: center;
+		margin-bottom: 2.8vw;
+	}
+	&btn{    
+	}
+	&heading{
+		text-align: center;
+		text-transform: uppercase;	
+		letter-spacing: 5px;	
+		.calcFontSize(28, 100, 320, 1680);
+		.calcLineHeight(38, 110, 320, 1680); 
+		margin-bottom: 15px;
+	}
+	&link-row{
+		justify-content: center;
+		margin-bottom: 11.5vw;
+	}
+	&link-cols{}
+	&link-item{
+		font-weight: 800;
+		display: block;
+		letter-spacing: 1.5px;
+		border-bottom: 2px solid @b-color-a;
+		.calcFontSize(19, 23, 320, 1680);
+		.calcLineHeight(32, 36, 320, 1680); 
+	}
+	&form-block{
+		max-width: 1120px;
+		margin: 0 auto;
+	}
 }

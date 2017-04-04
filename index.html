@@ -669,13 +669,48 @@
 				<img src="/img/bank/item-vtb.png" alt="">
 			</div>
 		</div>
-		<div class="row _bucb__row">
-			<div class="cols _bucb__cols-left">
+		<div class="_bucb__btn-block"><a href="#" class="btn-site btn-blue btn-buyers"><span>Подробнее</span></a></div>
+		<h2 class="_bucb__heading heading-index-block">Покупателям</h2>	
+		<div class="row _bucb__link-row">
+			<div class="cols _bucb__link-cols">
+				<a href="#" class="_bucb__link-item">Способы приобретения жилья</a>
 			</div>
-			<div class="cols _bucb__cols-right">
-				<h2 class="_bucb__heading heading-index-block">Покупателям</h2>
-				
+			<div class="cols _bucb__link-cols">
+				<a href="#" class="_bucb__link-item">Ипотечное кредитование</a>
 			</div>
+			<div class="cols _bucb__link-cols">
+				<a href="#" class="_bucb__link-item">Военная ипотека</a>
+			</div>
+			<div class="cols _bucb__link-cols">
+				<a href="#" class="_bucb__link-item">Материнский капитал</a>
+			</div>
+		</div>
+		<div class="_bucb__form-block">			
+			<form action="" class="form-site inline"  > 
+	<h4 class="form__heading">Мы готовы ответить на все ваши вопросы</h4>	
+	<div class="row form__row">
+		<div class="cols form__cols">
+			<div class="form__item">
+				<input type="text" class="form__control form-control validate[required]" id="f[name]" name="f[Имя]" placeholder="Имя">
+			</div>	
+		</div>
+		<div class="cols form__cols">
+			<div class="form__item">
+				<input type="tel" class="form__control form-control validate[required,custom[phone]]" id="f[tel]" name="f[Телефон]" placeholder="Телефон"> 
+			</div>	
+		</div>
+		<div class="cols form__cols">
+			<div class="form__item">
+				<input type="tel" class="form__control form-control validate[required,custom[email]]" id="f[email]" name="f[Email]" placeholder="E-mail"> 
+			</div>	
+		</div>
+		<div class="cols form__cols">
+			<div class="form__btn-block">
+				<button type="submit" class="btn-site btn-blue btn-submit form__btn"><span>Отправить заявку</span></button>
+			</div>	 
+		</div>
+	</div>
+</form> 
 		</div>
 	</div>
 </div>	
@@ -720,5 +755,17 @@
 		<script src="/js/google-map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5mvq0SP3WCozmHWsYmfdLq_Y3vlaosik&callback=initMap"
     async defer></script> 
+		<link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
+<script src="/js/jquery.validationEngine-ru.js" ></script>
+<script src="/js/jquery.validationEngine.js" ></script>
+<script>			
+	$(document).ready(function () {
+		$("form.form-site").validationEngine(
+			'attach', {
+				promptPosition : "bottomLeft"
+			}
+		);
+	});			
+</script> 
 	</body>
-</html> 
+</html>
