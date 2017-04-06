@@ -49,15 +49,27 @@ h4{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media @media-device{flex-wrap: wrap; margin-bottom: 40px;}
+	@media @media-screen{margin-bottom: 3vw;}
 	.heading-page{
+		@media @media-size-xs{margin-bottom: 15px; width: 100%;}
 		margin-bottom: 0;
 	}
+}
+.heading-page__hgroup{
+	margin-bottom: 2.8vw;
+	.heading-page{margin-bottom: 5px;}
 }
 .heading-page{
 	text-transform: uppercase;
 	.calcFontSize(22, 42, 320, 1680);
-	.calcLineHeight(38, 58, 320, 1680);
+	.calcLineHeight(32, 52, 320, 1680);
 	letter-spacing: 2px;	
+}
+.heading-page-small{
+	.calcFontSize(18, 20, 320, 1680);
+	.calcLineHeight(24, 26, 320, 1680);
+	letter-spacing: 0.5px;	
 }
 
 .text-block{

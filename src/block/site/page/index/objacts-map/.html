@@ -46,23 +46,11 @@
 	</div>
 	<div class="{{prefix_block}}map-block">
 		<div class="container">
-			<ul class="{{objacts_block}}filter">
-				<li>
-					<a href="#" class="{{objacts_block}}filter-item noicon is--active">Все<br> объекты</a>
-				</li>
-				<li>
-					<a href="#" class="{{objacts_block}}filter-item">
-						<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-build"]]</span>
-						Строящиеся<br> объекты
-					</a>
-				</li>
-				<li>
-					<a href="#" class="{{objacts_block}}filter-item">
-						<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-ready"]]</span>
-						Объекты, сданные<br> в эксплуатацию
-					</a>
-				</li>
-			</ul>
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/filter.html"
+				objacts_block="objacts-map__" 
+				prefix_block="_omcb__"
+			]]
 		</div>
 		<div id="map-google" class="{{prefix_block}}map"></div>
 	</div>

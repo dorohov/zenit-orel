@@ -61,8 +61,8 @@
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
-				<li><a href="/apartments.html">Квартиры</a></li>
-				<li><a href="/com-objects.html">Коммерческая недвижимость</a></li>
+				<li><a href="/objacts-apart.html">Квартиры</a></li>
+				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
 				<li><a href="/buyers.html">Покупателям</a></li>
 				<li><a href="/action.html">Акции</a></li>
 				<li><a href="/blog.html">Блог компании</a></li>
@@ -517,13 +517,13 @@
 					style="background-image: url(/img/index/objacts-item2.jpg)"
 				>
 					<div class="_ocb__objacts-inner objacts__inner">
-						<div class="_ocb__objacts-name objacts__name">
+						<div class="_ocb__objacts-note objacts__note">
 							<div class="_ocb__objacts-line objacts__line top"></div>
 							<div class="_ocb__objacts-line objacts__line bottom"></div>
 							<div class="_ocb__objacts-square objacts__square ">
 								<div class="objacts__square-inner"></div>
 							</div>
-							Жилая недвижимость
+							<div class="_ocb__objacts-name objacts__name">Жилая недвижимость</div>
 						</div>
 					</div>
 				</a>
@@ -533,13 +533,15 @@
 					style="background-image: url(/img/index/blog-objacts-lock.png)"
 				>
 					<div class="_ocb__objacts-inner objacts__inner">
-						<div class="_ocb__objacts-name objacts__name">
+						<div class="_ocb__objacts-note objacts__note">
 							<div class="_ocb__objacts-line objacts__line top"></div>
 							<div class="_ocb__objacts-line objacts__line bottom"></div>
 							<div class="_ocb__objacts-square objacts__square ">
 								<div class="objacts__square-inner"></div>
 							</div>
-							Коммерческая
+							<div class="_ocb__objacts-name objacts__name">
+								Коммерческая
+							</div>
 						</div>
 					</div>
 				</a>
@@ -595,27 +597,34 @@
 	</div>
 	<div class="_omcb__map-block">
 		<div class="container">
-			<ul class="objacts-map__filter">
-				<li>
-					<a href="#" class="objacts-map__filter-item noicon is--active">Все<br> объекты</a>
-				</li>
-				<li>
-					<a href="#" class="objacts-map__filter-item">
-						<span><svg class="icon-svg icon-filter-build" role="img">
+			<div class="objacts-map__filter-panel _omcb__filter-panel">
+	<ul class="objacts-map__filter _omcb__filter">
+		<li>
+			<a href="#" class="objacts-map__filter-item _omcb__filter-item is--active" title="Все объекты">
+				<span class="objacts-map__filter-icon _omcb__filter-icon"><svg class="icon-svg icon-filter-all" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-all"></use>
+</svg></span>
+				<span class="objacts-map__filter-name _omcb__filter-name" >Все<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="objacts-map__filter-item _omcb__filter-item" title="Строящиеся объекты">
+				<span class="objacts-map__filter-icon _omcb__filter-icon"><svg class="icon-svg icon-filter-build" role="img">
 	<use xlink:href="/img/svg/sprite.svg#filter-build"></use>
 </svg></span>
-						Строящиеся<br> объекты
-					</a>
-				</li>
-				<li>
-					<a href="#" class="objacts-map__filter-item">
-						<span><svg class="icon-svg icon-filter-ready" role="img">
+				<span class="objacts-map__filter-name _omcb__filter-name">Строящиеся<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="objacts-map__filter-item _omcb__filter-item" title="Объекты, сданные в эксплуатацию">
+				<span class="objacts-map__filter-icon _omcb__filter-icon"><svg class="icon-svg icon-filter-ready" role="img">
 	<use xlink:href="/img/svg/sprite.svg#filter-ready"></use>
 </svg></span>
-						Объекты, сданные<br> в эксплуатацию
-					</a>
-				</li>
-			</ul>
+				<span class="objacts-map__filter-name _omcb__filter-name">Объекты, сданные<br> в эксплуатацию</span>
+			</a>
+		</li>
+	</ul>
+</div>
 		</div>
 		<div id="map-google" class="_omcb__map"></div>
 	</div>

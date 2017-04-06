@@ -1,0 +1,68 @@
+.objacts-item-content-page{}
+._oicp__{
+	&row{		    
+		margin-bottom: 5vw;
+		@media @media-size-sm{flex-wrap: wrap;}
+	}
+	&cols{
+		@media @media-device{width: 100%; margin-bottom: 30px;}
+		width: 50%;
+	}
+	&text-block{
+		font-size: @b-fs + 2px;
+		max-width: 620px;
+		margin-bottom: 5.7vw;
+		p, div, ol, ul {margin-bottom: 20px;}
+	}
+	&heading-page__hgroup-more{
+		text-align: center;
+		margin-bottom: 4.6vw;
+		position: relative;
+	}
+	&more-objacts{
+		margin-bottom: 7.2vw;
+		position: relative;
+	}
+	&form-block{
+	    max-width: 1030px;  
+	    margin: 0 auto;  	
+    	@media @media-screen{margin-bottom: 2vw;}
+	}
+	//line
+	
+	&line-center-vert{
+		position: absolute;
+		bottom: -4.6vw;
+    	left: 50%;
+    	height: 3.1vw;
+	}
+	&line-center-horiz{
+		position: absolute;
+		bottom: -1.5vw;
+    	width: 8vw;
+    	&.left{
+    		left: ~"calc(50% - 8vw + 1px)";
+    	}
+    	&.right{
+    		left: ~"calc(50% + 0vw)";
+    	}
+
+	}
+	&line-center-vert-bottom{
+		position: absolute;
+		bottom: ~"calc(-6vw + 30px)";
+    	left: 50%;
+    	height: 6vw;
+	}
+	&line-center-horiz-bottom{
+		position: absolute;
+		bottom: ~"calc(-6vw + 30px)";
+    	width: 8vw;
+    	&.left{
+    		left: ~"calc(50% - 8vw + 1px)";
+    	}
+    	&.right{
+    		left: ~"calc(50% + 0vw)";
+    	}
+	}
+}

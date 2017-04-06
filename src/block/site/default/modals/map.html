@@ -1,0 +1,17 @@
+<div class="modal fade modal-map" id="modal-objacts-map" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{modal_prefix}}dialog">
+		<div class="modal-content {{modal_prefix}}content">
+			<div class="modal-body {{modal_prefix}}body" >
+				<button type="button" class="btn-site btn-close {{modal_prefix}}close" data-dismiss="modal" aria-hidden="true">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel"]] 
+				</button>				
+				[[azbntple 
+					tpl="/src/block/site/default/objacts/filter.html"
+					objacts_block="objacts-map__" 
+					prefix_block="modal-map__"
+				]]
+				<div id="map-google" class="{{modal_prefix}}map"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="{{class}} content-block">
+	<div class="container">		
+		[[azbntple 
+			tpl="/src/block/site/default/breadcrumb/level1.html"
+			prefix_block="_occp__" 
+			prefix_bread="breadcrumb__" 
+			level_1="Коммерческая недвижимость" 
+		]]
+		<div class="heading-page__block {{prefix_block}}heading-page__block">
+			<h1 class="{{prefix_block}}heading heading-page">{{heading_page}}</h1>	
+			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map"><span>Объекты на карте</span></button> 	
+		</div>
+
+		[[azbntple 
+			tpl="/src/block/site/default/objacts/filter.html"
+			objacts_block="objacts-map__" 
+			prefix_block="_occp__"
+		]]
+
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}cols">
+				[[azbntple 
+					tpl="/src/block/site/default/objacts/objacts.html"
+					objacts_block="objacts__" 
+					prefix_block="_oacp__"
+					objacts_name="ул. Лазурная, д. 7"
+					objacts_image="obj-lock-com.png"
+					objacts_buy_floor="315"
+					objacts_finish_date="03 октября 2013 года"
+				]]	
+			</div>
+		</div>
+
+	</div>
+</div>

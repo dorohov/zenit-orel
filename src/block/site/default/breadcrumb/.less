@@ -6,29 +6,52 @@
 .breadcrumb__{
 	&list{
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		font-size: @b-fs - 1px;
-		margin-left: -25px;
-		margin-right: -25px;
+		@media @media-device{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		@media @media-screen{
+			margin-left: -25px;
+			margin-right: -25px;
+		}
 	}
 	&list-item{
-		padding-left: 25px;
-		padding-right: 25px;
 		position: relative;
-		&.is--active{
-			font-weight: 700;
-			color: @bread-color-active;
+		@media @media-device{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@media @media-screen{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		&{
 			&:before{
 				content: '';
 				position: absolute;
 				top: 50%;
 				height: 1px;
 				background-color: @blue-dark;
-				width: 25px;
-				left: -12.5px;
+				@media @media-device{
+					width: 15px;
+					right: -7.5px;
+				}
+				@media @media-screen{
+					width: 25px;
+					right: -12.5px;
+				}
 			}
+		}
+		&.is--active{
+			font-weight: 700;
+			color: @bread-color-active;
+			&::before{display: none}
+			
 		}
 	}
 	&list-link{

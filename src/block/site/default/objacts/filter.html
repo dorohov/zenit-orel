@@ -1,18 +1,21 @@
-<div class="{{objacts_block}}filter-panel">				
-	<ul class="{{objacts_block}}filter">
+<div class="{{objacts_block}}filter-panel {{prefix_block}}filter-panel">
+	<ul class="{{objacts_block}}filter {{prefix_block}}filter">
 		<li>
-			<a href="#" class="{{objacts_block}}filter-item noicon is--active">Все<br> объекты</a>
-		</li>
-		<li>
-			<a href="#" class="{{objacts_block}}filter-item">
-				<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-build"]]</span>
-				Строящиеся<br> объекты
+			<a href="#" class="{{objacts_block}}filter-item {{prefix_block}}filter-item is--active" title="Все объекты">
+				<span class="{{objacts_block}}filter-icon {{prefix_block}}filter-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-all"]]</span>
+				<span class="{{objacts_block}}filter-name {{prefix_block}}filter-name" >Все<br> объекты</span>
 			</a>
 		</li>
 		<li>
-			<a href="#" class="{{objacts_block}}filter-item">
-				<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-ready"]]</span>
-				Объекты, сданные<br> в эксплуатацию
+			<a href="#" class="{{objacts_block}}filter-item {{prefix_block}}filter-item" title="Строящиеся объекты">
+				<span class="{{objacts_block}}filter-icon {{prefix_block}}filter-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-build"]]</span>
+				<span class="{{objacts_block}}filter-name {{prefix_block}}filter-name">Строящиеся<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="{{objacts_block}}filter-item {{prefix_block}}filter-item" title="Объекты, сданные в эксплуатацию">
+				<span class="{{objacts_block}}filter-icon {{prefix_block}}filter-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="filter-ready"]]</span>
+				<span class="{{objacts_block}}filter-name {{prefix_block}}filter-name">Объекты, сданные<br> в эксплуатацию</span>
 			</a>
 		</li>
 	</ul>

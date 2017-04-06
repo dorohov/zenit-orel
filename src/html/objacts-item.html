@@ -15,10 +15,12 @@
 		]]
 		<div class="site-wrap">
 			[[azbntple 
-				tpl="/src/block/site/page/apartments/.html" 
-				class="apartments-content-page"
-				prefix_block="_acp__" 
-				heading_page="Жилая недвижимость" 
+				tpl="/src/block/site/page/objacts/item/.html" 
+				class="objects-item-content-page"
+				prefix_block="_oicp__" 
+				heading_page="ул. Московская, д.&nbsp;76"  
+				carousel_block="carousel__"
+				prefix_objacts="_oacp__"
 			]]
 			[[azbntple 
 				tpl="/src/block/site/default/footer/.html" 
@@ -29,10 +31,14 @@
 			]]
 		</div>
 
+		[[azbntple 
+			tpl="/src/block/site/default/modals/map.html" 
+			modal_prefix="modal-map__"
+		]]
+
 		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
 		[[azbntple tpl="/src/block/site/default/script/wow.html" ]]
 		[[azbntple tpl="/src/block/site/default/script/response.html" ]] 
-		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]] 
-		[[azbntple tpl="/src/block/site/default/script/validationEngine.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]]  
 	</body>
 </html>

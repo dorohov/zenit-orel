@@ -186,8 +186,7 @@
 			display: block!important; 
 		    height: auto!important;
 		    margin-bottom: 8vw;
-		}
-		
+		}		
 	}
 	&carousel-heading{
 		font-weight: 700;
@@ -230,5 +229,107 @@
 			width: 25%;
 		}
 		@media @media-size-md{width: 40%;}
+	}
+}
+//
+._oicp__{
+	&carousel-indicators{	
+		width: 245px;
+		height: 295px;
+		padding: 40px 45px 100px;
+		@media @media-size-xs{display: none}
+		@media @media-device{
+			right: 0;
+			bottom: -20px;
+		}
+		@media @media-screen{
+			right: 1.5vw;
+    		bottom: 10px;
+		}
+		@media @media-size-sml{
+			width: 220px;
+    		height: 265px;
+		}
+	}
+	&carousel-indicators-line{		
+		top: 40px; right: 45px; bottom: 100px; left: 45px;		
+		@media @media-size-xs{
+			top: 15px; right: 35px; bottom: 120px; left: 35px;
+		}
+		&::before,
+		&::after{
+			width: 25px;
+			@media @media-size-sml{width: 20px;}
+		}
+	}
+	&carousel-indicators-inner{
+		li{
+			padding-bottom: 15px;
+    		&::before,
+    		&::after{
+				padding-left: 50px;
+				padding-right: 50px;
+    			text-align: center;
+			}
+    		&::before{
+				.calcFontSize(50, 80, 320, 1680);
+				.calcLineHeight(50, 80, 320, 1680); 
+				bottom: 65px;		
+    		}
+    		&::after{
+    			.calcFontSize(16, 20, 320, 1680);
+				.calcLineHeight(20, 22, 320, 1680); 
+				bottom: 0;
+				overflow: hidden;
+				height: 95px;
+				padding-top: 20px;
+    		}
+			span{
+				width: 11px;
+				height: 11px;
+				right: 20px;
+				z-index: 10;
+				@media @media-size-xs{right: 10px;}
+				@media @media-size-sml{right: 15px;}
+			}
+		}
+	}
+	&carousel-inner{
+		//min-height: 600px;
+		@media @media-screen{min-height: 32.5vw;}
+		@media @media-size-sml{min-height: 500px;}
+	}
+	&carousel-row{
+		display: block;	
+	}
+	&carousel-cols-img{
+		width: 100%;
+		margin-bottom: 3.8vw;
+	}
+	&carousel-cols-note{
+		font-size: @b-fs - 1px;
+		line-height: @b-lh - 6px;
+		@media @media-size-sm{max-width: 500px;}
+		@media @media-screen{
+			width: 27vw;
+    		max-width: 495px;
+		}
+	}
+	&carousel-heading{
+		font-weight: 800;
+		.calcFontSize(24, 46, 320, 1680);
+		.calcLineHeight(30, 52, 320, 1680); 
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		margin-bottom: 8px;
+		@media @media-notsmart{display: none;}
+		&::before{
+			content: attr(data-indicators-count);
+			font-weight: 800;
+			padding-right: 10px;
+			color: #c5deff;
+			.calcFontSize(50, 100, 320, 1680);
+			.calcLineHeight(50, 100, 320, 1680); 
+		}
 	}
 }

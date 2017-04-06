@@ -99,4 +99,15 @@ function initMap() {
 			map: map,
 			icon: iconReady
 		});
-}
+
+        $(window).resize(function() {
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(coord);
+        });
+};
+$(function () {
+	$(document.body).on('shown.bs.modal', '.modal', {}, function(event){
+		event.preventDefault();
+		$(window).trigger('resize');      
+	});  
+});

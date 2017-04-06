@@ -61,8 +61,8 @@
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
-				<li><a href="/apartments.html">Квартиры</a></li>
-				<li><a href="/com-objects.html">Коммерческая недвижимость</a></li>
+				<li><a href="/objacts-apart.html">Квартиры</a></li>
+				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
 				<li><a href="/buyers.html">Покупателям</a></li>
 				<li><a href="/action.html">Акции</a></li>
 				<li><a href="/blog.html">Блог компании</a></li>
@@ -113,35 +113,68 @@
 		<li class="breadcrumb__list-item is--active">Коммерческая недвижимость</li>
 	</ul>
 </div>
-		<div class="heading-page__block">
-			<h1 class="_cocp__heading heading-page">Коммерческая недвижимость</h1>
-			<div class="objacts-map__filter-panel">				
-	<ul class="objacts-map__filter">
+		<div class="heading-page__block _cocp__heading-page__block">
+			<h1 class="_cocp__heading heading-page">Коммерческая недвижимость</h1>	
+			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map"><span>Объекты на карте</span></button> 	
+		</div>
+
+		<div class="objacts-map__filter-panel _acp__filter-panel">
+	<ul class="objacts-map__filter _acp__filter">
 		<li>
-			<a href="#" class="objacts-map__filter-item noicon is--active">Все<br> объекты</a>
-		</li>
-		<li>
-			<a href="#" class="objacts-map__filter-item">
-				<span><svg class="icon-svg icon-filter-build" role="img">
-	<use xlink:href="/img/svg/sprite.svg#filter-build"></use>
+			<a href="#" class="objacts-map__filter-item _acp__filter-item is--active" title="Все объекты">
+				<span class="objacts-map__filter-icon _acp__filter-icon"><svg class="icon-svg icon-filter-all" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-all"></use>
 </svg></span>
-				Строящиеся<br> объекты
+				<span class="objacts-map__filter-name _acp__filter-name" >Все<br> объекты</span>
 			</a>
 		</li>
 		<li>
-			<a href="#" class="objacts-map__filter-item">
-				<span><svg class="icon-svg icon-filter-ready" role="img">
+			<a href="#" class="objacts-map__filter-item _acp__filter-item" title="Строящиеся объекты">
+				<span class="objacts-map__filter-icon _acp__filter-icon"><svg class="icon-svg icon-filter-build" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-build"></use>
+</svg></span>
+				<span class="objacts-map__filter-name _acp__filter-name">Строящиеся<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="objacts-map__filter-item _acp__filter-item" title="Объекты, сданные в эксплуатацию">
+				<span class="objacts-map__filter-icon _acp__filter-icon"><svg class="icon-svg icon-filter-ready" role="img">
 	<use xlink:href="/img/svg/sprite.svg#filter-ready"></use>
 </svg></span>
-				Объекты, сданные<br> в эксплуатацию
+				<span class="objacts-map__filter-name _acp__filter-name">Объекты, сданные<br> в эксплуатацию</span>
 			</a>
 		</li>
 	</ul>
-</div>		
+</div>
+
+		<div class="row _cocp__row">
+			<div class="cols _cocp__cols">
+				<a href="/apartments-item.html" class="_acp__objacts objacts-block" 
+	style="background-image: url(/img/objacts/obj-lock-com.png)"
+>
+	<div class="_acp__objacts-inner objacts__inner">
+		<div class="_acp__objacts-note objacts__note">
+			<div class="_acp__objacts-line objacts__line top"></div>
+			<div class="_acp__objacts-line objacts__line bottom"></div>
+			<div class="_acp__objacts-line objacts__line bottom"></div>
+			<div class="_acp__objacts-name objacts__name">
+				ул. Лазурная, д. 7
+			</div>
+			<div class="_acp__objacts-floor objacts__floor" data-buy-floor="315">
+				квартир<br> в продаже
+			</div>
+			<div class="_acp__objacts-finish-date objacts__finish-date" data-finish-date="03 октября 2013 года">
+				Дом сдан в эксплуатацию
+			</div>
+		</div>
+	</div>
+</a>	
+			</div>
 		</div>
 
 	</div>
 </div>
+
 			<footer class="footer-site">	
 	<div class="container footer__container">
 		<div class="row footer__row">
@@ -225,6 +258,49 @@
 </footer>
 		</div>
 
+		<div class="modal fade modal-map" id="modal-objacts-map" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-map__dialog">
+		<div class="modal-content modal-map__content">
+			<div class="modal-body modal-map__body" >
+				<button type="button" class="btn-site btn-close modal-map__close" data-dismiss="modal" aria-hidden="true">
+					<svg class="icon-svg icon-cancel" role="img">
+	<use xlink:href="/img/svg/sprite.svg#cancel"></use>
+</svg> 
+				</button>				
+				<div class="objacts-map__filter-panel modal-map__filter-panel">
+	<ul class="objacts-map__filter modal-map__filter">
+		<li>
+			<a href="#" class="objacts-map__filter-item modal-map__filter-item is--active" title="Все объекты">
+				<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-all" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-all"></use>
+</svg></span>
+				<span class="objacts-map__filter-name modal-map__filter-name" >Все<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="objacts-map__filter-item modal-map__filter-item" title="Строящиеся объекты">
+				<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-build" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-build"></use>
+</svg></span>
+				<span class="objacts-map__filter-name modal-map__filter-name">Строящиеся<br> объекты</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="objacts-map__filter-item modal-map__filter-item" title="Объекты, сданные в эксплуатацию">
+				<span class="objacts-map__filter-icon modal-map__filter-icon"><svg class="icon-svg icon-filter-ready" role="img">
+	<use xlink:href="/img/svg/sprite.svg#filter-ready"></use>
+</svg></span>
+				<span class="objacts-map__filter-name modal-map__filter-name">Объекты, сданные<br> в эксплуатацию</span>
+			</a>
+		</li>
+	</ul>
+</div>
+				<div id="map-google" class="modal-map__map"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -261,18 +337,6 @@
 </script> 
 		<script src="/js/google-map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5mvq0SP3WCozmHWsYmfdLq_Y3vlaosik&callback=initMap"
-    async defer></script> 
-		<link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
-<script src="/js/validationEngine.jquery/jquery.validationEngine-ru.min.js" ></script>
-<script src="/js/validationEngine.jquery/jquery.validationEngine.min.js" ></script>
-<script>			
-	$(document).ready(function () {
-		$("form.form-site").validationEngine(
-			'attach', {
-				promptPosition : "bottomLeft"
-			}
-		);
-	});			
-</script> 
+    async defer></script>  
 	</body>
 </html>
