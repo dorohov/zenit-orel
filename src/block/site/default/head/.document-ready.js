@@ -15,7 +15,3 @@ $('.btn-journal').on('click', function(){
 });
 
 $('._acb__item ul').addClass('ul-site');
-
-$("#objacts-carousel").carousel({
-  	//swipe: 50 // percent-per-second, default is 50. Pass false to disable swipe
-});

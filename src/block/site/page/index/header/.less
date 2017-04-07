@@ -4,13 +4,28 @@
 	background-repeat: no-repeat;
     background-size: cover;
     color: @white;
-	@media @media-size-xs{min-height: 100vh;}
+	@media @media-size-xs{
+		min-height: 100vh;
+		position: relative;
+		&::before{
+			content: '';
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: fadeout(@black, 75%);
+
+		}
+	}
 	@media @media-size-sm{height: ~"calc(100vh - @{b-nav-top-sm})";}
 	@media @media-screen{height: 100vh;} 
 }
 ._hcb__{
 	&container{
 		height: 100%;
+		@media @media-size-xs{z-index: 2; position: relative;}
 	}
 	&flex{
 		display: flex;

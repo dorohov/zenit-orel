@@ -1,0 +1,54 @@
+<div class="{{class}} content-block">
+	<div class="container {{prefix_block}}container">		
+		[[azbntple 
+			tpl="/src/block/site/default/breadcrumb/level1.html"
+			prefix_block="_oacp__" 
+			prefix_bread="breadcrumb__" 
+			level_1="Контакты" 
+		]]	
+
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}cols-left">				
+				<div class="heading-page__hgroup {{prefix_block}}heading-page__hgroup">
+					<h1 class="{{prefix_block}}heading heading-page">{{heading_page}}</h1>	
+					<h3 class="heading-page-small">Cвяжитесь с нами любым удобным для вас способом.</h3>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}cols-right">
+				<div class="row {{prefix_block}}contacts-row">
+					<div class="cols {{prefix_block}}contacts-cols one">
+						<div class="{{prefix_block}}item">
+							<div class="{{prefix_block}}item-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="address" ]]</div>
+							{{contacts.address}}
+						</div>
+						<div class="{{prefix_block}}item">
+							<div class="{{prefix_block}}item-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="tel" ]]</div>
+							<div>Офис продаж: <a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a></div>
+							<div>Приемная/факс: <a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a></div>
+						</div>
+					</div>
+					<div class="cols {{prefix_block}}contacts-cols two">
+						<div class="{{prefix_block}}item">
+							<div class="{{prefix_block}}item-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="clock" ]]</div>
+							Режим работы офиса продаж
+						</div>
+						<div class="{{prefix_block}}item">
+							<div>Пн.-Пт. 08:30 - 19:00</div>
+							<div>Суб. 10:00 - 15:00</div>
+						</div>
+					</div>
+					<div class="cols {{prefix_block}}contacts-cols tree">
+						<div class="{{prefix_block}}item">
+							<div class="{{prefix_block}}item-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="mailto" ]]</div>
+							<a href="mailto:{{contacts.email}}" class="{{prefix_block}}mailto">{{contacts.email}}</a>
+						</div>
+						<div class="{{prefix_block}}item-btn">
+							<button type="button" class="btn-site btn-blue {{prefix_block}}btn"><span>Напишите нам</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="map-google-office" class="{{prefix_block}}map"></div>
+</div>
