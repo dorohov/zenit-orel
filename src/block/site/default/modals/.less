@@ -22,18 +22,13 @@
 	z-index: @zindex-modal;
 	-webkit-overflow-scrolling: touch;
 	outline: 0;
-	&.fade .modal-dialog {
-		.translate(0, 0%);
-		.transition-transform(~"0.5s");
-	}
-	&.in .modal-dialog { .translate(0, 10%) }
 	@media @media-size-xs{
-		&.fade .modal-dialog {.translate(-100%, 0);}
-		&.in .modal-dialog { .translate(0, 0%) }
+		&.fade .modal-dialog {left: -100%;}
+		&.in .modal-dialog {left: 0;}
 	}
-	@media @media-notsmart{		
-		&.fade ._msc__dialog {.translate(-50%,-300%);}
-		&.in ._msc__dialog { .translate(-50%,-50%) }
+	@media @media-notsmart{
+		&.fade .modal-dialog {top: 0;}
+		&.in .modal-dialog {top: 10%;}
 	}
 }
 .modal-open .modal {
@@ -56,53 +51,56 @@
 
 }
 .modal-dialog {
+	transition: all 0.5s;
 	position: relative;
 	@media @media-size-xs 	{width: auto;	margin: 0px;}  
 	@media @media-size-sm 	{width: 620px;	margin: 10px auto;}  
-	@media @media-screen 	{width: 620px;	margin: 0px auto;}  
-}
-.modal-content {
-	position: relative;
-	outline: 0;
+	@media @media-screen 	{width: 750px;	margin: 0px auto;} 
+	 
 }
 .modal-body {
 	position: relative;
-	padding: 40px 30px 30px;
 	background: @white;
 	color: @black;	
 	@media @media-size-xs{padding: 25px;}	
-	@media @media-size-sml{padding: 30px;}
+	@media @media-size-sm{padding: 70px 60px 40px 60px;}
+	@media @media-screen{padding: 7vw 7vw 3vw;}
+	//@maket: url(/img/maket/modal.jpg) no-repeat center -5px;	
+	//background: @maket;
+	//min-height: 650px;
 }
-
+.modal-content{    
+	@opacity: 0.5;  
+	//opacity: @opacity; 
+}
 // Title text within header
-.modal-heading{}
 .modal-title {
 	font-weight: 700;
-	margin-bottom: 20px;
-	.calcFontSize(24, 34, 320, 1680);
-	.calcLineHeight(30, 40, 320, 1680);
+	margin-bottom: 30px;
+	.calcFontSize(18, 21, 320, 1680);
+	.calcLineHeight(20, 23, 320, 1680);
 }
 .modal-btn-close{
     position: absolute;
-    top: 10px;
-    right: 10px;
     z-index: 5;
-    //transform: translateY(-50%);
-	@media @media-size-xs-p{
-		top: 20px;
-		right: 50%; 
-		transform: translateX(50%);
+	@media @media-size-xs{
+		top: 0px;
+		right: 0px; 
+		width: 40px;
+		height: 40px;
+		padding: 10px;
 	}
-	@media @media-size-xs-l{
-		top: 20px;
-		right: 20px;
+	@media @media-size-sm{
+		top: 30px;
+		right: 30px;
 	}
-}
-.modal-block{
-    @media @media-size-xs-p {padding-top: 50px;}
+	@media @media-screen{
+		top: 2.5vw;
+    	right: 2.5vw;
+	}
 }
 .modal-note{
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 // Measure scrollbar width for padding body during modal show/hide
 .modal-scrollbar-measure {
@@ -114,6 +112,88 @@
 }
 
 //custom styles
+.modal-banks{
+	/*display: block;
+	opacity: 1;
+	background: @black;*/
+	&.in{
+		.modal-banks__line{
+			transform: scale(1, 1);
+		}
+	}
+}
+.modal-banks__{
+	&content{
+		max-width: 370px;
+		margin: 0 auto;
+	}
+	&note{
+		//padding-top: 15px;
+		font-size: @b-fs - 4px;
+		line-height: @b-lh - 8px;
+		font-weight: 300;
+	}
+	&line{
+		transform-origin: 0 0;
+		transition-property: transform;
+		position: absolute;
+		transition-duration: 0.8s;
+		&.left-vert{
+			transform: scale(1, 0);
+			transition-delay: 0.8s;
+			@media @media-size-sm{
+				top: 30px;
+				left: 5.5vw;
+				bottom: 30px;
+		    }
+			@media @media-screen{
+				top: 5vw;
+				left: 5.5vw;
+				bottom: 2vw;				
+			}
+		}
+		&.left-horiz{
+			transform: scale(0, 1);
+			@media @media-size-sm{
+			    top: 30px;
+		    	left: 20px;
+		    	width: 150px;
+		    }
+			@media @media-screen{
+			    top: 5vw;
+		    	left: 3vw;
+		    	width: 17vw;
+		    }
+		}
+		&.right-vert{
+			transform: scale(1, 0);
+			@media @media-size-sm{
+				top: 80px;
+				bottom: 30px;
+				right: 40px;
+			}
+			@media @media-screen{
+				top: 5vw;
+				right: 5vw;
+				bottom: 2vw;
+			}
+		}
+		&.right-horiz{ 
+			transform: scale(0, 1);
+			transition-delay: 0.8s;
+			@media @media-size-sm{
+				bottom: 30px;
+				right: 20px;
+				width: 100px;
+			}
+			@media @media-screen{
+		   		bottom: 2vw;
+	    		right: 4vw;
+	    		width: 6vw;
+			}
+		}
+	}
+}
 .modal-map{	
 	@media @media-size-xs{
 		&.fade .modal-map__dialog {.translate(-100%, 0);}

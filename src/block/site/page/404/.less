@@ -1,0 +1,102 @@
+.error-content-page{
+	@media @media-notsmart{
+		height: 100vh;
+	}
+}
+._ecp__{
+	&container{
+		height: 100%;
+	}
+	&inner{
+		align-items: center;
+		height: 100%;
+		justify-content: space-between;
+		overflow: hidden;
+		@media @media-device{flex-wrap: wrap;}
+	}
+	&cols-left{
+		height: 100%;
+		@media @media-device{width: 100%;}
+		@media @media-device-l{width: 60%;}
+		@media @media-screen{width: 68%;}
+	}
+	&cols-right{
+		@media @media-device{width: 100%; order: -1; margin-bottom: 30px;}
+		@media @media-device-l{width: 40%; order: 1;}
+		@media @media-screen{width: 32%;}
+	}
+	&bg{
+		position: relative;
+		height: 100%;
+		width: 100%; 
+		background-image: url("@{url-path-img}/bg/bg-404.png");
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		@media @media-size-xs-p{height: 300px;}
+		@media @media-size-xs-l{height: 250px;}
+		@media @media-size-sm-p{
+			background-position: top center;
+		}
+	}
+	&text{
+		position: relative;
+		background-color: @white;
+	    max-width: 370px;
+		padding: 3vw 10px;
+	}
+	&heading{
+		font-weight: 700;
+		.calcFontSize(20, 40, 320, 1680);
+		.calcLineHeight(30, 50, 320, 1680);
+		letter-spacing: 4px;
+		color: @blue;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	&link{
+		padding-top: 25px;
+		a{
+			display: inline-block;
+			text-transform: uppercase;
+			font-weight: 300;
+			letter-spacing: 2px;
+			border-bottom: 1px solid @b-color-a;
+			transition: @transition-site;
+			.calcFontSize(18, 22, 320, 1680);
+			.calcLineHeight(20, 24, 320, 1680);
+			&:hover{
+				border-bottom: 1px solid fadeout(@white, 100%);
+			}
+		}
+	}
+	// line
+	&line-top-vert{
+		position: absolute;
+		top: -18vw;
+		left: 4vw;
+		height: 18vw;
+		@media @media-device{display: none}
+	}
+	&line-top-horiz{
+		position: absolute;
+		top: 0vw;
+		left: 0px;
+		width: 100%;
+		@media @media-device{display: none}
+	}
+	&line-bottom-vert{
+		position: absolute;
+		bottom: -18vw;
+		right: 4vw;
+		height: 18vw;
+		@media @media-device{display: none}
+	}
+	&line-bottom-horiz{
+		position: absolute;
+		bottom: 0vw;
+		left: 0px;
+		width: 100%;
+		@media @media-device{display: none}
+	}
+}

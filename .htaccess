@@ -13,4 +13,4 @@ Header set Cache-Control "max-age=604800, proxy-revalidate"
 </FilesMatch>
 
 </IfModule>
-#ErrorDocument 404  http://artstyle.dorohovdesign.ru/404.html
+#ErrorDocument 404  http://zenit-orel.dorohovdesign.ru/404.html

@@ -1,0 +1,76 @@
+.buyers-content-page{}
+._bucp__{
+	&container{
+		padding-bottom: 5px;
+	}
+	&container-bottom{
+		@media @media-device{margin-bottom: 35px;}
+		@media @media-screen{margin-bottom: 2vw;}
+	}
+	&gray-block{
+		background: #f3f3f3;
+		padding: 1px 0;
+		margin-bottom: 6.7vw;
+	}
+	&text-row{
+		.calcFontSize(16, 18, 320, 1680);
+		.calcLineHeight(24, 26, 320, 1680);	
+		@media @media-screen{
+			margin-right: -30px;
+			margin-left: -30px; 
+		}
+		.cols{
+			@media @media-screen{
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+			p, div, ul, ol{
+				margin-bottom: 20px;
+			}
+			ul{
+				list-style: none; 
+				padding: 0;
+				> li{
+					position: relative;
+					padding-left: 20px;
+					margin-bottom: 15px;
+					&::before{
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 7px;
+						background: @b-color-a;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+	// line
+	&line-left-vert{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+	&line-left-horiz{
+		position: absolute;
+		bottom: 0;
+		left: -20px;
+		width: 8vw;
+	}
+	&line-right-vert{
+		position: absolute;
+		top: 0;
+		left: 48vw;
+		height: 7vw;
+	}
+	&line-right-horiz{
+		position: absolute;
+		top: 7vw;
+		left: 45vw;
+		width: 33vw;
+	}
+}

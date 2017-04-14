@@ -1,5 +1,8 @@
-<a href="/objacts-item.html" class="{{prefix_block}}objacts objacts-block" 
+<a href="/objacts-item.html" 
+	class="{{prefix_block}}objacts objacts-block" 
 	style="background-image: url({{url-path-img}}/objacts/{{objacts_image}})"
+	data-status-buy="{{objacts_status_buy}}"
+	data-status-building="{{objacts_status_building}}"
 >
 	<div class="{{prefix_block}}objacts-inner {{objacts_block}}inner">
 		<div class="{{prefix_block}}objacts-note {{objacts_block}}note">
@@ -9,11 +12,13 @@
 			<div class="{{prefix_block}}objacts-name {{objacts_block}}name">
 				{{objacts_name}}
 			</div>
-			<div class="{{prefix_block}}objacts-floor {{objacts_block}}floor" data-buy-floor="{{objacts_buy_floor}}">
-				квартир<br> в продаже
+			<div class="{{prefix_block}}objacts-floor {{objacts_block}}floor" data-buy-floor="{{objacts_status_val}}">
+				{{objacts_status_name}}
 			</div>
-			<div class="{{prefix_block}}objacts-finish-date {{objacts_block}}finish-date" data-finish-date="{{objacts_finish_date}}">
-				Дом сдан в эксплуатацию
+			<div 
+				class="{{prefix_block}}objacts-finish-date {{objacts_block}}finish-date" 
+				data-finish-date="{{objacts_date_val}}">
+				{{objacts_date_name}}
 			</div>
 		</div>
 	</div>

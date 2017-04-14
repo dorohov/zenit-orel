@@ -1,0 +1,28 @@
+<div class="blog-navbar">		
+	<div class="{{blog_nav_block}}collapse">			
+		<div class="{{blog_nav_block}}inner">
+			[[azbntple 
+				tpl="/src/block/site/default/search/.html"
+				prefix_block="_bcp__" 
+				search_block="search__"
+				search_placeholder="Поиск"
+			]]						
+			[[azbntple 
+				tpl="/src/block/site/default/blog/filter.html"
+				prefix_block="_bcp__" 
+				blog_block="blog-filter__"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/blog/tags.html"
+				prefix_block="_bcp__" 
+				blog_block="blog-tags__"
+			]]
+		</div>
+	</div>
+	<button type="button" class="{{blog_nav_block}}hamburger hamburger hamburger--arrowalt-r" data-toggle-blog=".blog-navbar">
+		<span class="hamburger-box {{blog_nav_block}}hamburger-box">
+			<span class="hamburger-inner {{blog_nav_block}}hamburger-inner"></span> 
+		</span>
+		<span class="{{blog_nav_block}}hamburger-name">Меню блога</span>
+	</button>
+</div>

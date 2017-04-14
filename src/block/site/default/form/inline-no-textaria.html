@@ -16,10 +16,19 @@
 				<input type="tel" class="{{prefix_form}}control form-control validate[required,custom[email]]" id="f[email]" name="f[Email]" placeholder="E-mail"> 
 			</div>	
 		</div>
-		<div class="cols {{prefix_form}}cols">
+		<div class="cols {{prefix_form}}cols btn">
 			<div class="{{prefix_form}}btn-block">
 				<button type="submit" class="btn-site btn-blue btn-submit {{prefix_form}}btn"><span>{{btn_name}}</span></button>
 			</div>	 
+		</div>		
+		<div class="cols {{prefix_form}}cols full">
+			<div class="material-switch {{prefix_form}}item">
+                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox"/>
+                <label for="f[processing]" class="material-switch__label"></label>
+				<label for="f[processing]" class="material-switch__text"> 
+					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
+				</label>
+            </div>	
 		</div>
 	</div>
 </form> 

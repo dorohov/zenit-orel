@@ -1,6 +1,6 @@
 (function() {
 	"use strict";
-	$(window).load(function(){
+	$(window).on('load',function(){
 		$("[data-toggle-nav]").click(function() {
 			var toggle_el = $(this).data("toggle-nav"); 
 			$(toggle_el).toggleClass("open-sidebar");
@@ -13,6 +13,11 @@
 			var toggle_el = $(this).data("body"); 
 			$(toggle_el).toggleClass("open-navbar");
 		});
-
+		$("[data-toggle-blog]").click(function() {
+			var toggle_el = $(this).data("toggle-blog"); 
+			$(toggle_el).toggleClass("is--open");
+			$(this).toggleClass("is--active"); 
+			$("body").toggleClass("blog-navbar--open"); 
+		});
 	});
 })();

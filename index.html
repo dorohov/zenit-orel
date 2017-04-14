@@ -63,7 +63,7 @@
 				<li><a href="/">Главная</a></li>
 				<li><a href="/objacts-apart.html">Квартиры</a></li>
 				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
-				<li><a href="/buyers.html">Покупателям</a></li>
+				<li><a href="/buyers-ways.html">Покупателям</a></li> 
 				<li><a href="/action.html">Акции</a></li>
 				<li><a href="/blog.html">Блог компании</a></li>
 				<li><a href="/about.html">О нас</a></li>
@@ -155,24 +155,25 @@
 	<div class="container _acb__container">		
 		<div 
 			class="_acb__line-left-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.4s"
+			data-wow-duration="1.5s" 
+			data-wow-delay="0.5s"
 			data-wow-offset="10"
 			></div>	
 		<div 
 			class="_acb__line-center-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
+			data-wow-duration="3s"  
 			data-wow-delay="0.4s"
 			data-wow-offset="10"
 			></div>	
 		<div 
 			class="_acb__line-left-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.6s"
+			data-wow-duration="1s" 
+			data-wow-delay="2s"
+			data-wow-offset=" "
 			></div>
 		<div 
 			class="_acb__line-right-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
+			data-wow-duration="1.5s" 
 			data-wow-delay="0.4s"
 			data-wow-offset="10"
 			></div>
@@ -513,7 +514,7 @@
 		<h4 class="_ocb__heading-small heading-small-index-block">Выгодная возможность купить новую комфортабельную квартиру<br>в удобном во всех отношениях районе города</h4>			
 		<div class="row _ocb__row">
 			<div class="cols _ocb__cols">				
-				<a href="#" class="_ocb__objacts objacts-block" 
+				<a href="/objacts-apart.html" class="_ocb__objacts objacts-block" 
 					style="background-image: url(/img/index/objacts-item2.jpg)"
 				>
 					<div class="_ocb__objacts-inner objacts__inner">
@@ -529,7 +530,7 @@
 				</a>
 			</div>
 			<div class="cols _ocb__cols">
-				<a href="#" class="_ocb__objacts objacts-block" 
+				<a href="/objacts-com.html" class="_ocb__objacts objacts-block" 
 					style="background-image: url(/img/index/blog-objacts-lock.png)"
 				>
 					<div class="_ocb__objacts-inner objacts__inner">
@@ -662,21 +663,21 @@
 				data-wow-delay="0.4s"
 				data-wow-offset="10"
 				></div>
-			<a href="/buyers.html" class="btn-site btn-blue btn-buyers"><span>Подробнее</span></a>
+			<a href="/buyers-ways.html" class="btn-site btn-blue btn-buyers"><span>Подробнее</span></a>
 		</div>
 		<h2 class="_bucb__heading heading-index-block">Покупателям</h2>	
 		<div class="row _bucb__link-row">
 			<div class="cols _bucb__link-cols">
-				<a href="#" class="_bucb__link-item">Способы приобретения жилья</a>
+				<a href="/buyers-ways.html" class="_bucb__link-item">Способы приобретения жилья</a>
 			</div>
 			<div class="cols _bucb__link-cols">
-				<a href="#" class="_bucb__link-item">Ипотечное кредитование</a>
+				<a href="/buyers-mortgage.html" class="_bucb__link-item">Ипотечное кредитование</a>
 			</div>
 			<div class="cols _bucb__link-cols">
-				<a href="#" class="_bucb__link-item">Военная ипотека</a>
+				<a href="/buyers-military.html" class="_bucb__link-item">Военная ипотека</a>
 			</div>
 			<div class="cols _bucb__link-cols">
-				<a href="#" class="_bucb__link-item">Материнский капитал</a>
+				<a href="/buyers-maternal.html" class="_bucb__link-item">Материнский капитал</a>
 			</div>
 		</div>
 		<div class="_bucb__form-block">			
@@ -698,10 +699,19 @@
 				<input type="tel" class="form__control form-control validate[required,custom[email]]" id="f[email]" name="f[Email]" placeholder="E-mail"> 
 			</div>	
 		</div>
-		<div class="cols form__cols">
+		<div class="cols form__cols btn">
 			<div class="form__btn-block">
 				<button type="submit" class="btn-site btn-blue btn-submit form__btn"><span>Отправить заявку</span></button>
 			</div>	 
+		</div>		
+		<div class="cols form__cols full">
+			<div class="material-switch form__item">
+                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox"/>
+                <label for="f[processing]" class="material-switch__label"></label>
+				<label for="f[processing]" class="material-switch__text"> 
+					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
+				</label>
+            </div>	
 		</div>
 	</div>
 </form> 

@@ -1,56 +1,30 @@
-.contacts-content-page{}
-._ccp__{
+.blog-content-page{}
+._bcp__{
 	.content-block &container{
-		@media @media-device{padding-bottom: 35px}
-		@media @media-screen{padding-bottom: 0.5vw}
+		padding-bottom: 15px;
 	}
-	&row{
-		flex-wrap: wrap;
+	&heading-page__hgroup{
+		margin-bottom: 0;
 	}
-	&cols-left{
-		width: 100%;
-		@media @media-size-xxl{width: 44%;}
+	&block{
+		background: #f3f3f3;
 	}
-	&cols-right{
-		width: 100%;
-		@media @media-size-xxl{width: 56%;}
+	.content-block &block-container{
+		padding-top: 35px;
+		padding-bottom: 35px;
+		margin-bottom: 35px;
 	}
-	&contacts-row{		
-		@media @media-size-sm-p{flex-wrap: wrap;}
-		@media @media-size-xxl{justify-content: space-between;}
+	&block-row{
+		@media @media-device{flex-wrap: wrap;}
 	}
-	&contacts-cols{
-		@media @media-device{margin-bottom: 15px;}
-		@media @media-size-xs{width: 100%;}
-		@media @media-size-sm-p{width: 100%;}
-		/*&.one{width: 43%;}
-		&.two{width: 34%;}
-		&.tree{width: 23%;}*/
+	&block-cols-left{
+		@media @media-device{width: 100%}
+		@media @media-screen{width: 80%}
+		//@media @media-size-xxl{width: 85%} 
 	}
-	&item{
-		padding-left: 40px;
-		margin-bottom: 10px;
-		position: relative;
-		a{
-			&, &:hover, &:focus{color: @b-color;}
-		}
-	}
-	&item-btn{
-		padding-top: 10px;
-	}
-	&item-icon{
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		width: 25px;
-		height: 27px;
-		svg{
-			fill: @blue;
-		}
-	}
-	&map{
-		height: 450px;
-		margin-bottom: 1.5vw;
+	&block-cols-right{
+		@media @media-device{width: 100%}
+		@media @media-screen{width: 20%}
+		//@media @media-size-xxl{width: 15%}   
 	}
 }

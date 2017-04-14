@@ -9,7 +9,18 @@
 				}
 			}
 			@media @media-size-sm-p{width: 33.3333%;}
-			@media @media-screen{width: 25%;}
+			@media @media-device{
+				&.btn{
+					order: 1;
+				}
+			}
+			@media @media-screen{
+				width: 25%;
+				&.full{
+					margin-top: 20px;
+				}
+			}
+			&.full{width: 100%;}
 		}
 		.form__btn{
 			height: 56px;
@@ -17,6 +28,18 @@
 	    	text-align: center;
 	   		width: 100%;
 			@media @media-device{height: 46px;}	
+		}
+		.material-switch{
+			@media @media-notsmart{
+				max-width: 350px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
+	}
+	&.block{
+		.form__item{
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -40,10 +63,13 @@
 		justify-content: center;
 	}
 	&cols{
-
+		width: 100%;
 	}
 	&item{
 		@media @media-device{margin-bottom: 30px;}
+		label{
+			font-weight: 400;
+		}
 	}
 	&control{
 		background:	@b-form-bg;
@@ -74,93 +100,71 @@
 			transform: scale(1.1);
 		}
 	}
+	&btn-block{
+		margin-bottom: 15px;
+	}
+}
+
+.material-switch{}
+.material-switch__input[type="checkbox"]{
+	//display: none;
+	visibility: hidden;
+	margin: 0;
+	width: 1px;
+	height: 1px;
+} 
+.material-switch__label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    &::before {
+	    background: @black;
+	    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	    border-radius: 8px;
+	    content: '';
+	    height: 16px;
+	    margin-top: -8px;
+	    position:absolute;
+	    opacity: 0.3;
+	    transition: all 0.4s ease-in-out;
+	    width: 40px;
+	}  
+	&::after {
+	    background: @white;
+	    border-radius: 16px;
+	    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	    content: '';
+	    height: 24px;
+	    left: -4px;
+	    margin-top: -8px;
+	    position: absolute;
+	    top: -4px;
+	    transition: all 0.3s ease-in-out;
+	    width: 24px;
+	}
+} 
+.material-switch__text{
+	display: inline;
+	font-size: @b-fs - 3px;
+
+}
+.material-switch__input[type="checkbox"]:checked + .material-switch__label::before {
+    background: @blue;
+    opacity: 0.5;
+} 
+.material-switch__input[type="checkbox"]:checked + .material-switch__label::after {
+    background: @blue;
+    left: 20px;
+}
+.modal-banks__{
 	&btn{
-
-	}
-}
-._frs__input{
-	display: block;
-	font-weight: normal;
-	font-family: @b-form-label-ff;
-	font-size: @b-form-label-fs;
-	line-height: @b-form-label-lh;
-}
-._frs__input,
-._frs__textarea{margin-bottom: 25px;}
-
-._frs__form-control{
-	 
-	// Unstyle the caret on `<select>`s in IE10+.
-	&::-ms-expand {
-	border: 0;
-	background-color: transparent;
-	}
-	@media @media-device{height: 46px;}
-}
-textarea._frs__form-control{
-	height: 100px;
-	max-height: 100px;
-	padding: 20px;
-}
-._frs__row{
-	@media @media-device{flex-wrap: wrap; justify-content: center;}
-}
-._frs__cols{
-	width: 33.3333%;
-	@media @media-size-xs{width: 100%;}
-	@media @media-size-sm-p{width: 50%;}
-}
-._frs__btn{
-	text-align: center;
-}
-
-.form-inline__input{
-	display: flex;
-	align-items: flex-end;
-	margin-bottom: 35px;
-	@media @media-size-xs{flex-wrap: wrap;}
-}
-.form-inline__label{
-	font-size: @b-fs + 4px; //20px;
-	line-height: @b-lh - 4px; //20px;
-	@media @media-size-xs{margin-bottom: 5px;}
-	&._name{
-	    width: 10%;
-    	min-width: 45px;
-		@media @media-size-xs{width: 100%;}
-	}
-	&._phone{
-		width: 20%;
-		min-width: 88px;
-		@media @media-size-xs{width: 100%;}
-	}
-	&._comment{
-		width: 16%;
-		min-width: 145px;
-		@media @media-size-xs-p{width: 100%;}
-	}
-}
-.form-inline__form-control{
-	display: block;
-	background:	none;
-	height: 25px;
-	border: 0;
-	border-bottom: 1px solid @b-form-i-border;
-	transition: @transition-site;
-	&._name{
-		width: 90%; 
-		@media @media-size-xs{width: 100%;}
-	}
-	&._phone{
-		width: 80%;
-		@media @media-size-xs{width: 100%;}
-	}
-	&._comment{
-		width: 84%;
-		@media @media-size-xs{width: 100%;}
-	}
-	&:focus{ 	
-		border-color: @b-form-i-border-f;
-		outline: none;
+		width: 100%;
+		letter-spacing: 3.5px;
+		font-weight: 800;
+		@media @media-device{padding: 10px 20px;}
+		@media @media-screen{padding: 0.6vw 1vw;}
 	}
 }
