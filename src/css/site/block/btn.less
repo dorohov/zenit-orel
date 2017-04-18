@@ -14,6 +14,7 @@
 		color: inherit;
 	}
 }
+/*
 .btn-blue{
     position: relative;
 	color: lighten(@b-color-a, 0%); 
@@ -46,6 +47,81 @@
 	    &::before{
 			transform: scale(1, 1);
 	    } 
+	}
+}*/
+
+.btn-blue{
+    position: relative;
+	color: lighten(@b-color-a, 0%); 
+	border-width: 2px;
+	border-style: solid;
+	border-color: lighten(@b-color-a, 0%);
+	text-transform: uppercase;
+	font-weight: 700; 
+	font-size: @b-fs - 2px;
+	//transition: color 0.3s cubic-bezier(0.76,-0.07, 0.89, 0.72);
+	transition: color 0.3s ease;
+    &::before{
+    	content: '';
+    	position: absolute;
+    	top: ~"calc(50% - 2px)";
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: @blue;
+		transform-origin: left 0;
+		transform: scale(0, 1); 	
+		transition: transform 0.3s ease 0.3s;
+    }
+    .name{
+    	position: relative;
+    	z-index: 2;
+    }
+    .bg{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	z-index: 1;
+    	&::before,
+    	&::after{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			background: @blue;
+			left: 0px;
+			width: 100%;
+			background: @blue;
+			height: 50%;
+			top: 50%;
+			transform: scale(1, 0);
+			transition: transform 0.3s ease;
+    	}
+    	&::before{
+    		top: 0;
+			transform-origin: 0 bottom;
+    	}
+    	&::after{
+    		top: 50%;
+			transform-origin: 0 top;
+    	}
+    }
+	&:hover{
+		color: @white;
+		border-color: lighten(@b-color-a, 0%);
+		transition: color 0.5s ease 0.3s;
+    	&::before{
+			transform: scale(1, 1);
+			transition: transform 0.3s ease;
+    	}
+    	.bg{
+	    	&::before,
+	    	&::after{
+				transform: scale(1, 1);
+				transition: transform 0.5s ease 0.3s;
+	    	}
+    	}
 	}
 }
 .btn-more{

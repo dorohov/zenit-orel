@@ -22,7 +22,10 @@
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=zmiCynB6e65ajX1qWWP6ejDkuCtRk1AC/Mey9RmBJhcOvT4UV2fESqRDGma3Jc0MVPtNxFw7Aj3ARiAsx3B15i7Zn*mpvUAK2Misb/GsPdn0IchUXLXuto/R*L*7q38jLZjg18Wik6gYqjmCQW704OEHNrNQTjtv8WiB4CmoB3A-&pixel_id=1000073085';</script> 		
 	</head>
 	<body class="index-page">
-		<nav class="navbar-site second">
+		<nav class="navbar-site second {{navbar_animation}}"
+	data-wow-duration="{{navbar_duration}}" 
+	data-wow-delay="{{navbar_delay}}"
+	data-wow-offset="{{navbar_offset}}">
 	<div class="container navbar__container">
 		<div class="row navbar__row">
 			<div class="cols navbar__cols-logotip">
@@ -46,18 +49,32 @@
 				</div>
 			</div>
 			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="navbar__hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
-					<div class="navbar__hamburger-inner"></div>
+				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
+
+			
 		</div>
 	</div>
 </nav>
 <div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="navbar__modal-dialog">
-		<button type="button" class="btn-site navbar__hamburger is--close" data-dismiss="modal" aria-hidden="true">
-			<div class="navbar__hamburger-inner"></div>
-		</button>
+		<div class="btn-site navbar__hamburger-block">
+			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
@@ -115,7 +132,10 @@
 </div>
 		<div class="heading-page__block _oacp__heading-page__block">
 			<h1 class="_oacp__heading heading-page">Жилая недвижимость</h1>	
-			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map"><span>Объекты на карте</span></button> 	
+			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map">	
+				<span class="name">Объекты на карте</span>
+				<span class="bg"></span>
+			</button> 	
 		</div>
 
 		<div class="objacts-map__filter-panel _oacp__filter-panel">
@@ -155,6 +175,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #4e9e0d">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Скоро в продаже</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -182,6 +207,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #deb126">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Старт продаж</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -209,6 +239,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #8a0f1b">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Осталось 2 квартиры</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -236,6 +271,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #deb126">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Рассрочка</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -263,6 +303,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #012d6a">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Дом сдан</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -290,6 +335,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label is--visible">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #012d6a">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">Дом сдан</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -317,6 +367,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -344,6 +399,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -371,6 +431,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -398,6 +463,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -425,6 +495,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -452,6 +527,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -479,6 +559,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -506,6 +591,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -533,6 +623,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -560,6 +655,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -587,6 +687,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -614,6 +719,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -641,6 +751,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -668,6 +783,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -695,6 +815,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -722,6 +847,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -749,6 +879,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -776,6 +911,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -803,6 +943,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -830,6 +975,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -857,6 +1007,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -884,6 +1039,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -911,6 +1071,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -938,6 +1103,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -965,6 +1135,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -992,6 +1167,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1019,6 +1199,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1046,6 +1231,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1073,6 +1263,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1100,6 +1295,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1127,6 +1327,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1154,6 +1359,11 @@
 	data-status-buy="sale-finish"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -1319,14 +1529,20 @@
 <script>svg4everybody();</script>
 		<script src="/js/wow.min.js" ></script>
 <script>			
-	var wow = new WOW(
- 		{
-			boxClass:     'wow',      
-			animateClass: 'animated',
-			mobile:       false,
-		}
-	);
-	wow.init();			
+	if($(document.body).find('.page-loader').length > 0) {
+
+	} else {
+		var wow = new WOW(
+	 		{
+				boxClass:     'wow',      
+				animateClass: 'animated',
+				mobile:       false,
+			}
+		);
+		wow.init();		
+	}
+
+		
 </script>
 		<script src="/js/response.min.js" ></script> 
 <script>

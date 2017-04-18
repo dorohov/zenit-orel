@@ -2,11 +2,11 @@ $('.navbar-site').addClass("scroll");
 var topPos = $(document).scrollTop();		
 var snb = $('.navbar-site.scroll');
 if(snb.hasClass('scroll-navbar')) {
-	if(topPos < 500) {
+	if(topPos < 600) {
 		snb.removeClass('scroll-navbar');
 	} 
 } else {
-	if(topPos > 500) {
+	if(topPos > 600) {
 		snb.addClass('scroll-navbar');
 	}
 }	

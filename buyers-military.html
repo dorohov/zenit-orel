@@ -22,7 +22,10 @@
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=zmiCynB6e65ajX1qWWP6ejDkuCtRk1AC/Mey9RmBJhcOvT4UV2fESqRDGma3Jc0MVPtNxFw7Aj3ARiAsx3B15i7Zn*mpvUAK2Misb/GsPdn0IchUXLXuto/R*L*7q38jLZjg18Wik6gYqjmCQW704OEHNrNQTjtv8WiB4CmoB3A-&pixel_id=1000073085';</script> 		
 	</head>
 	<body class="index-page">
-		<nav class="navbar-site second">
+		<nav class="navbar-site second {{navbar_animation}}"
+	data-wow-duration="{{navbar_duration}}" 
+	data-wow-delay="{{navbar_delay}}"
+	data-wow-offset="{{navbar_offset}}">
 	<div class="container navbar__container">
 		<div class="row navbar__row">
 			<div class="cols navbar__cols-logotip">
@@ -46,18 +49,32 @@
 				</div>
 			</div>
 			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="navbar__hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
-					<div class="navbar__hamburger-inner"></div>
+				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
+
+			
 		</div>
 	</div>
 </nav>
 <div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="navbar__modal-dialog">
-		<button type="button" class="btn-site navbar__hamburger is--close" data-dismiss="modal" aria-hidden="true">
-			<div class="navbar__hamburger-inner"></div>
-		</button>
+		<div class="btn-site navbar__hamburger-block">
+			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
@@ -357,14 +374,20 @@
 <script>svg4everybody();</script>
 		<script src="/js/wow.min.js" ></script>
 <script>			
-	var wow = new WOW(
- 		{
-			boxClass:     'wow',      
-			animateClass: 'animated',
-			mobile:       false,
-		}
-	);
-	wow.init();			
+	if($(document.body).find('.page-loader').length > 0) {
+
+	} else {
+		var wow = new WOW(
+	 		{
+				boxClass:     'wow',      
+				animateClass: 'animated',
+				mobile:       false,
+			}
+		);
+		wow.init();		
+	}
+
+		
 </script>
 	</body>
 </html>

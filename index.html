@@ -22,7 +22,19 @@
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=zmiCynB6e65ajX1qWWP6ejDkuCtRk1AC/Mey9RmBJhcOvT4UV2fESqRDGma3Jc0MVPtNxFw7Aj3ARiAsx3B15i7Zn*mpvUAK2Misb/GsPdn0IchUXLXuto/R*L*7q38jLZjg18Wik6gYqjmCQW704OEHNrNQTjtv8WiB4CmoB3A-&pixel_id=1000073085';</script> 		
 	</head>
 	<body class="index-page">
-		<nav class="navbar-site index">
+		<div class="page-loader active preload-anim__block " >
+	<div class="preload-anim__inner">
+		<div>
+			<a class="close-loader preload-anim__close" href="#not-lazyload" >
+				<div id="bodymovin"></div>			
+			</a>
+		</div>
+	</div>
+</div>
+		<nav class="navbar-site index wow fadeToBottom"
+	data-wow-duration="1s" 
+	data-wow-delay="0.5s"
+	data-wow-offset=" ">
 	<div class="container navbar__container">
 		<div class="row navbar__row">
 			<div class="cols navbar__cols-logotip">
@@ -46,18 +58,32 @@
 				</div>
 			</div>
 			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="navbar__hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
-					<div class="navbar__hamburger-inner"></div>
+				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
+
+			
 		</div>
 	</div>
 </nav>
 <div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="navbar__modal-dialog">
-		<button type="button" class="btn-site navbar__hamburger is--close" data-dismiss="modal" aria-hidden="true">
-			<div class="navbar__hamburger-inner"></div>
-		</button>
+		<div class="btn-site navbar__hamburger-block">
+			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
@@ -104,39 +130,69 @@
 		</div>
 	</div>
 </div>
-		<div class="site-wrap">
+		<div class="site-wrap is--hidden">
 			<div class="header-content-block">
 	<div class="container _hcb__container">
 		<div class="_hcb__flex">
 			<div class="_hcb__inner">
-				<h1 class="_hcb__heading">Инвестируйте<br> в комфорт</h1>
+				<h1 class="_hcb__heading"
+				>
+					<span class="wow fadeToRightXl"
+					data-wow-duration="1s" 
+					data-wow-delay="0.6s"
+					data-wow-offset=" ">Инвестируйте</span> 
+					<span class="wow fadeToLeftXl"
+					data-wow-duration="1s" 
+					data-wow-delay="0.6s"
+					data-wow-offset=" ">в комфорт</span>
+				</h1>
 				<div class="row _hcb__row">
 					<div class="cols _hcb__cols">
-						<div class="_hcb__item">
+						<div class="_hcb__item wow fadeToRightSm"
+							data-wow-duration="1.5s" 
+							data-wow-delay="0.5s"
+							data-wow-offset=" "
+						>
 							<div class="_hcb__item-num">20</div>
 							<div class="_hcb__item-note">Лет на российском<br>рынке строительства</div>
 						</div>
 					</div>
 					<div class="cols _hcb__cols">
-						<div class="_hcb__item">
+						<div class="_hcb__item wow fadeToRightSm"
+							data-wow-duration="1.5s" 
+							data-wow-delay="0.8s"
+							data-wow-offset=" "
+						>
 							<div class="_hcb__item-num">3 600</div>
 							<div class="_hcb__item-note">Квартир<br>реализованно</div>
 						</div>
 					</div>
 					<div class="cols _hcb__cols">
-						<div class="_hcb__item">
+						<div class="_hcb__item wow fadeToRightSm"
+							data-wow-duration="1.5s" 
+							data-wow-delay="1s"
+							data-wow-offset=" "
+						>
 							<div class="_hcb__item-num">24</div>
 							<div class="_hcb__item-note">Готовых<br>объектов</div>
 						</div>
 					</div>
 					<div class="cols _hcb__cols">
-						<div class="_hcb__item">
+						<div class="_hcb__item wow fadeToRightSm"
+							data-wow-duration="1.5s" 
+							data-wow-delay="1.2s"
+							data-wow-offset=" "
+						>
 							<div class="_hcb__item-num">228 962</div>
 							<div class="_hcb__item-note">Квадратных метров<br>жилой недвижимости</div>
 						</div>
 					</div>
 					<div class="cols _hcb__cols">
-						<div class="_hcb__item">
+						<div class="_hcb__item wow fadeToRightSm"
+							data-wow-duration="1.5s" 
+							data-wow-delay="1.4s"
+							data-wow-offset=" "
+						>
 							<div class="_hcb__item-num">4 260</div>
 							<div class="_hcb__item-note">Счастливых<br>семей</div>
 						</div>
@@ -157,25 +213,25 @@
 			class="_acb__line-left-vert line-anim vert wow scaleToBottom"
 			data-wow-duration="1.5s" 
 			data-wow-delay="0.5s"
-			data-wow-offset="10"
+			data-wow-offset="100"
 			></div>	
 		<div 
 			class="_acb__line-center-vert line-anim vert wow scaleToBottom"
 			data-wow-duration="3s"  
 			data-wow-delay="0.4s"
-			data-wow-offset="10"
+			data-wow-offset="100"
 			></div>	
 		<div 
 			class="_acb__line-left-horiz line-anim horiz wow scaleToRight"
 			data-wow-duration="1s" 
 			data-wow-delay="2s"
-			data-wow-offset=" "
+			data-wow-offset="100"
 			></div>
 		<div 
 			class="_acb__line-right-vert line-anim vert wow scaleToBottom"
 			data-wow-duration="1.5s" 
 			data-wow-delay="0.4s"
-			data-wow-offset="10"
+			data-wow-offset="100"
 			></div>
 		<div class="row _acb__row">
 			<div class="cols _acb__cols-left">
@@ -250,7 +306,10 @@
 				</div>
 
 			</div>
-			<div class="cols _acb__cols-right">
+			<div class="cols _acb__cols-right 				wow fadeToLeft"
+					data-wow-duration="1s" 
+					data-wow-delay="0.8s"
+					data-wow-offset=" ">
 				<h2 class="_acb__heading heading-index-block">О компании</h2>
 				<h4 class="_acb__heading-small heading-small-index-block">Что даёт вам основание для выбора нашей компании?</h4>
 				<section class="text-block _acb__text-block ">
@@ -258,50 +317,59 @@
 					<p>«Зенит» принимает активное участие в&nbsp;застройке жилых районов города многоквартирными кирпичными и&nbsp;монолитно-кирпичными домами, осуществляя точечную и&nbsp;поквартальную застройку. В&nbsp;настоящее время компания успешно реализует 3&nbsp;проекта поквартальной застройки&nbsp;— жилые комплексы «Центральный», «Лазурный» и&nbsp;«Камелот», находящиеся в&nbsp;благоустроенных, с&nbsp;развитой инфраструктурой районах города Орла. Одновременно с&nbsp;этим ведется строительство 4&nbsp;объектов точечной застройки в&nbsp;Железнодорожном, Заводском и&nbsp;Северном районах города.</p>
 				</section>
 				<div class="_acb__btn-block">
-					<a href="/about.html" class="btn-site btn-blue btn-more"><span>Подробнее</span></a>
+					<a href="/about.html" class="btn-site btn-blue btn-more">
+						<span class="name">Подробнее</span>
+						<span class="bg"></span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>	
 			<div class="blog-content-block">
-	<div class="container _bcb__container">
-		<div 
-			class="_bcb__line-left-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="0.7s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
-			></div>		
+	<div class="container _bcb__container">	
 		<div 
 			class="_bcb__line-left-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.7s"
-			data-wow-offset="50"
+				data-wow-duration="1s" 
+				data-wow-delay="0.7s"
+				data-wow-offset="100"
 			></div>	
 		<div 
 			class="_bcb__line-right-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="0.7s" 
-			data-wow-delay="0.4s"
+				data-wow-duration="1s" 
+				data-wow-delay="0.7s"
+				data-wow-offset="100"
 			></div>		
 		<div 
-			class="_bcb__line-right-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.7s"
+			class="_bcb__line-right-vert line-anim vert  wow scaleToBottom"
+				data-wow-duration="1s" 
+				data-wow-delay="1.7s"
+				data-wow-offset="100"
 			></div>	
 		<div class="row heading-block _bcb__heading-block">
-			<div class="cols _bcb__heading-cols">
+			<div class="cols _bcb__heading-cols 				wow fadeToRight"
+					data-wow-duration="1s" 
+					data-wow-delay="0.6s"
+					data-wow-offset=" ">
 				<h2 class="_bcb__heading heading-index-block">Актуальное</h2>
 				<h4 class="_bcb__heading-small heading-small-index-block">Действующий акции и свежие новости</h4>
 			</div>
 			<div class="cols _bcb__btn-cols">
-				<a href="/blog.html" class="btn-site btn-blue btn-more-news"><span>Больше новостей</span></a>
+				<a href="/blog.html" class="btn-site btn-blue btn-more-news">	
+					<span class="name">Больше новостей</span>
+					<span class="bg"></span>
+				</a>
 			</div>
 		</div>
 			
 		<div class="row _bcb__row">
 			<div class="cols _bcb__cols">
 				<div class="_bcb__blog-inner">					
-					<div id="blog-carousel" class="carousel blog__carousel  _bcb__carousel slide carousel-fade" data-ride="carousel">
+					<div id="blog-carousel" class="carousel blog__carousel _bcb__carousel slide carousel-fade wow fadeToRight"
+						data-wow-duration="1s" 
+						data-wow-delay="0.8s"
+						data-wow-offset=" " 
+						data-ride="carousel">
 						<div class="blog__inner _bcb__carousel-inner carousel-inner">
 							<a href="/blog-item.html" class="blog__carousel-item _bcb__carousel-item item active" style="background-image: url(/img/index/blog-action-item1.jpg)"
 							 	src=""
@@ -346,7 +414,10 @@
 							</li>
 						</ol>
 					</div>
-					<div class="row _bcb__blog-row">
+					<div class="row _bcb__blog-row wow fadeToTop"
+					data-wow-duration="1s" 
+					data-wow-delay="0.9s"
+					data-wow-offset="-100">
 						<div class="cols _bcb__blog-cols">
 							<article class="blog__item">
 								<div class="blog__item-inner">	
@@ -403,7 +474,10 @@
 			</div>
 			<div class="cols _bcb__cols">		
 				<div class="_bcb__blog-inner">			
-					<div class="row _bcb__blog-row">
+					<div class="row _bcb__blog-row 				wow fadeToBottom"
+					data-wow-duration="1s" 
+					data-wow-delay="0.9s"
+					data-wow-offset=" ">
 						<div class="cols _bcb__blog-cols">
 							<article class="blog__item">
 								<div class="blog__item-inner">
@@ -456,7 +530,10 @@
 							</article>
 						</div>
 					</div>	
-					<div class="_bcb__blog-panel">
+					<div class="_bcb__blog-panel 				wow fadeToLeft"
+					data-wow-duration="1s" 
+					data-wow-delay="0.9s"
+					data-wow-offset="-100">
 						<article class="blog__item">
 							<div class="blog__item-inner">
 								<div class="blog__item-cat">
@@ -492,26 +569,33 @@
 			<div class="objacts-content-block">
 	<div class="container _ocb__container">
 		<div 
-			class="_ocb__line-center-vert line-anim vert  wow scaleToBottom"
-			data-wow-duration="0.5s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
+			class="_ocb__line-center-vert line-anim vert wow scaleToBottom"
+				data-wow-duration="0.8s" 
+				data-wow-delay="0.5s"
+				data-wow-offset="150"
 			></div>		
 		<div 
 			class="_ocb__line-center-horiz left line-anim horiz wow scaleToLeft"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.8s"
-			data-wow-offset="50"
+				data-wow-duration="0.8s" 
+				data-wow-delay="1.3s"
+				data-wow-offset="150"
 			></div>	
 			
 		<div 
 			class="_ocb__line-center-horiz right line-anim horiz wow scaleToRight"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.8s"
-			data-wow-offset="50"
-			></div>			
-		<h2 class="_ocb__heading heading-index-block">Недвижимость</h2>
-		<h4 class="_ocb__heading-small heading-small-index-block">Выгодная возможность купить новую комфортабельную квартиру<br>в удобном во всех отношениях районе города</h4>			
+				data-wow-duration="0.8s" 
+				data-wow-delay="1.3s"
+				data-wow-offset="150"
+			></div>	
+		<div class="wow fadeToBottom"
+			data-wow-duration="1s" 
+			data-wow-delay="0.6s"
+			data-wow-offset=" ">		
+			<h2 class="_ocb__heading heading-index-block">
+				Недвижимость
+			</h2>
+			<h4 class="_ocb__heading-small heading-small-index-block">Выгодная возможность купить новую комфортабельную квартиру<br>в удобном во всех отношениях районе города</h4>
+		</div>			
 		<div class="row _ocb__row">
 			<div class="cols _ocb__cols">				
 				<a href="/objacts-apart.html" class="_ocb__objacts objacts-block" 
@@ -553,14 +637,17 @@
 			<div class="objacts-map-content-block">
 	<div class="container _omcb__container">
 		<div 
-			class="_omcb__line-left-vert line-anim vert  wow scaleToBottom"
-			data-wow-duration="0.5s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
+			class="_omcb__line-left-vert line-anim vert wow scaleToBottom"
+				data-wow-duration="1s" 
+				data-wow-delay="0.5s"
+				data-wow-offset="200"
 			></div>	
 		
 		<div class="row _omcb__row">
-			<div class="cols _omcb__cols">				
+			<div class="cols _omcb__cols wow fadeToRight"
+				data-wow-duration="1s" 
+				data-wow-delay="0.8s"
+				data-wow-offset=" ">				
 				<h2 class="_omcb__heading heading-index-block">Карта объектов</h2>
 				<h4 class="_omcb__heading-small heading-small-index-block">Интерактивная карта объектов</h4>
 				<div class="_omcb__text">
@@ -570,25 +657,31 @@
 			<div class="cols _omcb__cols">
 				<div class="_omcb__panel">					
 				<div 
-					class="_omcb__line-top-right-vert  line-anim vert wow scaleToBottom"
-					data-wow-duration="0.5s" 
-					data-wow-offset="50"
+					class="_omcb__line-top-right-vert line-anim vert 
+					wow scaleToBottom"
+						data-wow-duration="1s" 
+						data-wow-delay="0s"
+						data-wow-offset="200"
 					></div>	
 				<div 
-					class="_omcb__line-top-right-horiz  line-anim horiz wow scaleToLeft"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.5s"
-					data-wow-offset="50"
+					class="_omcb__line-top-right-horiz line-anim horiz 
+					wow scaleToLeft"
+						data-wow-duration="1s" 
+						data-wow-delay="1s"
+						data-wow-offset="-200"
 					></div>	
 				<div 
-					class="_omcb__line-bottom-right-horiz  line-anim horiz wow scaleToLeft"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.5s"
+					class="_omcb__line-bottom-right-horiz line-anim horiz wow scaleToLeft"
+						data-wow-duration="1s" 
+						data-wow-delay="1s"
+						data-wow-offset="-200"
 					></div>				
 				<div 
-					class="_omcb__line-bottom-right-vert  line-anim vert wow scaleToBottom"
-					data-wow-duration="0.5s" 
-					data-wow-delay="1.3s"
+					class="_omcb__line-bottom-right-vert line-anim vert
+					 wow scaleToBottom"
+						data-wow-duration="1s" 
+						data-wow-delay="2s"
+						data-wow-offset="-200"
 					></div>	
 					Все новостройки на&nbsp;карте&nbsp;— как строящиеся объекты, так и&nbsp;готовые жилые комплексы, которые уже сданы в&nbsp;эксплуатацию.
 				</div>
@@ -634,50 +727,82 @@
 			<div class="buyers-content-block" id="about-block">
 	<div class="container _bucb__container">
 		<div class="row _bucb__row-banks">
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToRight"
+				data-wow-duration="1s" 
+				data-wow-delay="0.5s"
+				data-wow-offset="100">
 				<img src="/img/bank/item-rshb.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToRight"
+				data-wow-duration="1s" 
+				data-wow-delay="1s"
+				data-wow-offset="100">
 				<img src="/img/bank/item-ural.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeIn"
+				data-wow-duration="1s" 
+				data-wow-delay="1.5s"
+				data-wow-offset="100">
 				<img src="/img/bank/item-gazb.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToLeft"
+				data-wow-duration="1s" 
+				data-wow-delay="1s"
+				data-wow-offset="100">
 				<img src="/img/bank/item-svjaz.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToLeft"
+				data-wow-duration="1s" 
+				data-wow-delay="0.5s"
+				data-wow-offset="100">
 				<img src="/img/bank/item-sber.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToRight"
+				data-wow-duration="1s" 
+				data-wow-delay="0.5s"
+				data-wow-offset=" ">
 				<img src="/img/bank/item-mib.png" alt="">
 			</div>
-			<div class="cols _bucb__cols-banks">
+			<div class="cols _bucb__cols-banks wow fadeToLeft"
+				data-wow-duration="1s" 
+				data-wow-delay="0.5s"
+				data-wow-offset=" ">
 				<img src="/img/bank/item-vtb.png" alt="">
 			</div>
 		</div>
 		<div class="_bucb__btn-block">
 			<div 
-				class="_bucb__line-center-vert line-anim vert wow scaleToBottom"
-				data-wow-duration="0.8s" 
-				data-wow-delay="0.4s"
-				data-wow-offset="10"
+				class="_bucb__line-center-vert line-anim vert 				wow scaleToBottom"
+					data-wow-duration="1.3s" 
+					data-wow-delay="1s"
+					data-wow-offset="50"
 				></div>
-			<a href="/buyers-ways.html" class="btn-site btn-blue btn-buyers"><span>Подробнее</span></a>
+			<a href="/buyers-ways.html" class="btn-site btn-blue btn-buyers wow fadeToBottom"
+			data-wow-duration="1s" 
+			data-wow-delay="0.5s"
+			data-wow-offset="50">	
+				<span class="name">Подробнее</span>
+				<span class="bg"></span>
+			</a>
 		</div>
-		<h2 class="_bucb__heading heading-index-block">Покупателям</h2>	
-		<div class="row _bucb__link-row">
-			<div class="cols _bucb__link-cols">
-				<a href="/buyers-ways.html" class="_bucb__link-item">Способы приобретения жилья</a>
-			</div>
-			<div class="cols _bucb__link-cols">
-				<a href="/buyers-mortgage.html" class="_bucb__link-item">Ипотечное кредитование</a>
-			</div>
-			<div class="cols _bucb__link-cols">
-				<a href="/buyers-military.html" class="_bucb__link-item">Военная ипотека</a>
-			</div>
-			<div class="cols _bucb__link-cols">
-				<a href="/buyers-maternal.html" class="_bucb__link-item">Материнский капитал</a>
+		<div class="wow fadeToBottom"
+			data-wow-duration="1s" 
+			data-wow-delay="0.5s"
+			data-wow-offset="50">
+			<h2 class="_bucb__heading heading-index-block">Покупателям</h2>	
+			<div class="row _bucb__link-row">
+				<div class="cols _bucb__link-cols">
+					<a href="/buyers-ways.html" class="_bucb__link-item">Способы приобретения жилья</a>
+				</div>
+				<div class="cols _bucb__link-cols">
+					<a href="/buyers-mortgage.html" class="_bucb__link-item">Ипотечное кредитование</a>
+				</div>
+				<div class="cols _bucb__link-cols">
+					<a href="/buyers-military.html" class="_bucb__link-item">Военная ипотека</a>
+				</div>
+				<div class="cols _bucb__link-cols">
+					<a href="/buyers-maternal.html" class="_bucb__link-item">Материнский капитал</a>
+				</div>
 			</div>
 		</div>
 		<div class="_bucb__form-block">			
@@ -701,12 +826,15 @@
 		</div>
 		<div class="cols form__cols btn">
 			<div class="form__btn-block">
-				<button type="submit" class="btn-site btn-blue btn-submit form__btn"><span>Отправить заявку</span></button>
+				<button type="submit" class="btn-site btn-blue btn-submit form__btn">
+					<span class="name">Отправить заявку</span>
+					<span class="bg"></span>
+				</button>
 			</div>	 
 		</div>		
 		<div class="cols form__cols full">
 			<div class="material-switch form__item">
-                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox"/>
+                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox" checked/>
                 <label for="f[processing]" class="material-switch__label"></label>
 				<label for="f[processing]" class="material-switch__text"> 
 					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
@@ -815,16 +943,24 @@
 
 <script src="/js/svg4everybody.min.js" ></script>
 <script>svg4everybody();</script>
+		<script src="/js/bodymovin/bodymovin.min.js"></script>
+<script src="/js/bodymovin/animation.js"></script>
 		<script src="/js/wow.min.js" ></script>
 <script>			
-	var wow = new WOW(
- 		{
-			boxClass:     'wow',      
-			animateClass: 'animated',
-			mobile:       false,
-		}
-	);
-	wow.init();			
+	if($(document.body).find('.page-loader').length > 0) {
+
+	} else {
+		var wow = new WOW(
+	 		{
+				boxClass:     'wow',      
+				animateClass: 'animated',
+				mobile:       false,
+			}
+		);
+		wow.init();		
+	}
+
+		
 </script>
 		<script src="/js/response.min.js" ></script> 
 <script>

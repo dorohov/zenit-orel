@@ -1,41 +1,47 @@
 <div class="{{class}}">
-	<div class="container {{prefix_block}}container">
+	<div class="container {{prefix_block}}container">	
 		<div 
-			class="{{prefix_block}}line-left-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="0.7s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
-			></div>		
-		<div 
-			class="{{prefix_block}}line-left-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.7s"
-			data-wow-offset="50"
+			class="{{prefix_block}}line-left-vert line-anim vert {{line_left_vert_animation}}"
+				data-wow-duration="{{line_left_vert_duration}}" 
+				data-wow-delay="{{line_left_vert_delay}}"
+				data-wow-offset="{{line_left_vert_offset}}"
 			></div>	
 		<div 
-			class="{{prefix_block}}line-right-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="0.7s" 
-			data-wow-delay="0.4s"
+			class="{{prefix_block}}line-right-horiz line-anim horiz {{line_right_horiz_animation}}"
+				data-wow-duration="{{line_right_horiz_duration}}" 
+				data-wow-delay="{{line_right_horiz_delay}}"
+				data-wow-offset="{{line_right_horiz_offset}}"
 			></div>		
 		<div 
-			class="{{prefix_block}}line-right-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.7s"
+			class="{{prefix_block}}line-right-vert line-anim vert  {{line_right_vert_animation}}"
+				data-wow-duration="{{line_right_vert_duration}}" 
+				data-wow-delay="{{line_right_vert_delay}}"
+				data-wow-offset="{{line_right_vert_offset}}"
 			></div>	
 		<div class="row heading-block {{prefix_block}}heading-block">
-			<div class="cols {{prefix_block}}heading-cols">
+			<div class="cols {{prefix_block}}heading-cols 				{{heading_animation}}"
+					data-wow-duration="{{heading_duration}}" 
+					data-wow-delay="{{heading_delay}}"
+					data-wow-offset="{{heading_offset}}">
 				<h2 class="{{prefix_block}}heading heading-index-block">{{heading_block}}</h2>
 				<h4 class="{{prefix_block}}heading-small heading-small-index-block">Действующий акции и свежие новости</h4>
 			</div>
 			<div class="cols {{prefix_block}}btn-cols">
-				<a href="/blog.html" class="btn-site btn-blue btn-more-news"><span>Больше новостей</span></a>
+				<a href="/blog.html" class="btn-site btn-blue btn-more-news">	
+					<span class="name">Больше новостей</span>
+					<span class="bg"></span>
+				</a>
 			</div>
 		</div>
 			
 		<div class="row {{prefix_block}}row">
 			<div class="cols {{prefix_block}}cols">
 				<div class="{{prefix_block}}blog-inner">					
-					<div id="blog-carousel" class="carousel {{blog_block}}carousel  {{prefix_block}}carousel slide carousel-fade" data-ride="carousel">
+					<div id="blog-carousel" class="carousel {{blog_block}}carousel {{prefix_block}}carousel slide carousel-fade {{carousel_animation}}"
+						data-wow-duration="{{carousel_duration}}" 
+						data-wow-delay="{{carousel_delay}}"
+						data-wow-offset="{{carousel_offset}}" 
+						data-ride="carousel">
 						<div class="{{blog_block}}inner {{prefix_block}}carousel-inner carousel-inner">
 							<a href="/blog-item.html" class="{{blog_block}}carousel-item {{prefix_block}}carousel-item item active" style="background-image: url({{url-path-img}}/index/blog-action-item1.jpg)"
 							 	src=""
@@ -80,7 +86,10 @@
 							</li>
 						</ol>
 					</div>
-					<div class="row {{prefix_block}}blog-row">
+					<div class="row {{prefix_block}}blog-row {{item_bottom_animation}}"
+					data-wow-duration="{{item_bottom_duration}}" 
+					data-wow-delay="{{item_bottom_delay}}"
+					data-wow-offset="{{item_bottom_offset}}">
 						<div class="cols {{prefix_block}}blog-cols">
 							<article class="{{blog_block}}item">
 								<div class="{{blog_block}}item-inner">	
@@ -129,7 +138,10 @@
 			</div>
 			<div class="cols {{prefix_block}}cols">		
 				<div class="{{prefix_block}}blog-inner">			
-					<div class="row {{prefix_block}}blog-row">
+					<div class="row {{prefix_block}}blog-row 				{{item_top_animation}}"
+					data-wow-duration="{{item_top_duration}}" 
+					data-wow-delay="{{item_top_delay}}"
+					data-wow-offset="{{item_top_offset}}">
 						<div class="cols {{prefix_block}}blog-cols">
 							<article class="{{blog_block}}item">
 								<div class="{{blog_block}}item-inner">
@@ -174,7 +186,10 @@
 							</article>
 						</div>
 					</div>	
-					<div class="{{prefix_block}}blog-panel">
+					<div class="{{prefix_block}}blog-panel 				{{panel_animation}}"
+					data-wow-duration="{{panel_duration}}" 
+					data-wow-delay="{{panel_delay}}"
+					data-wow-offset="{{panel_offset}}">
 						<article class="{{blog_block}}item">
 							<div class="{{blog_block}}item-inner">
 								<div class="{{blog_block}}item-cat">

@@ -22,7 +22,10 @@
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=zmiCynB6e65ajX1qWWP6ejDkuCtRk1AC/Mey9RmBJhcOvT4UV2fESqRDGma3Jc0MVPtNxFw7Aj3ARiAsx3B15i7Zn*mpvUAK2Misb/GsPdn0IchUXLXuto/R*L*7q38jLZjg18Wik6gYqjmCQW704OEHNrNQTjtv8WiB4CmoB3A-&pixel_id=1000073085';</script> 		
 	</head>
 	<body class="index-page">
-		<nav class="navbar-site second">
+		<nav class="navbar-site second {{navbar_animation}}"
+	data-wow-duration="{{navbar_duration}}" 
+	data-wow-delay="{{navbar_delay}}"
+	data-wow-offset="{{navbar_offset}}">
 	<div class="container navbar__container">
 		<div class="row navbar__row">
 			<div class="cols navbar__cols-logotip">
@@ -46,18 +49,32 @@
 				</div>
 			</div>
 			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="navbar__hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
-					<div class="navbar__hamburger-inner"></div>
+				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
+
+			
 		</div>
 	</div>
 </nav>
 <div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="navbar__modal-dialog">
-		<button type="button" class="btn-site navbar__hamburger is--close" data-dismiss="modal" aria-hidden="true">
-			<div class="navbar__hamburger-inner"></div>
-		</button>
+		<div class="btn-site navbar__hamburger-block">
+			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 		<div class="navbar__modal-body" >
 			<ul class="navbar__modal-nav">
 				<li><a href="/">Главная</a></li>
@@ -127,7 +144,10 @@
 					<p>Улицы, в&nbsp;соседстве с&nbsp;которыми находится комплекс лофт-апартаментов Kleinhouse, отличаются исторической застройкой конца XIX- начала&nbsp;XX веков&nbsp;— с&nbsp;бывшими доходными домами и&nbsp;городскими усадьбами по&nbsp;проектам ведущих архитекторов своего времени&nbsp;— В.&nbsp;К. Олтаржевского, С.&nbsp;М.&nbsp;Гончарова, В.&nbsp;А. Величкина.</p>
 				</div>
 				<div>
-					<a href="http://msk76.ru/" class="btn-site btn-blue btn-objacts-site" target="_blank"><span>На сайт объекта</span></a>
+					<a href="http://msk76.ru/" class="btn-site btn-blue btn-objacts-site" target="_blank">
+						<span class="name">На сайт объекта</span>
+						<span class="bg"></span>
+					</a>
 				</div>
 			</div>
 			<div class="cols _oicp__cols">		
@@ -297,6 +317,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -324,6 +349,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -351,6 +381,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -378,6 +413,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -405,6 +445,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -432,6 +477,11 @@
 	data-status-buy="sale"
 	data-status-building="{{objacts_status_building}}"
 >
+	<div class="_oacp__objacts-label objacts__label {{objacts_label_visible}}">
+		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: {{objacts_label_color}}">
+		</div>
+		<div class="_oacp__objacts-label-name objacts__label-name">{{objacts_label_name}}</div> 
+	</div>
 	<div class="_oacp__objacts-inner objacts__inner">
 		<div class="_oacp__objacts-note objacts__note">
 			<div class="_oacp__objacts-line objacts__line top"></div>
@@ -497,12 +547,15 @@
 		</div>
 		<div class="cols form__cols btn">
 			<div class="form__btn-block">
-				<button type="submit" class="btn-site btn-blue btn-submit form__btn"><span>Отправить заявку</span></button>
+				<button type="submit" class="btn-site btn-blue btn-submit form__btn">
+					<span class="name">Отправить заявку</span>
+					<span class="bg"></span>
+				</button>
 			</div>	 
 		</div>		
 		<div class="cols form__cols full">
 			<div class="material-switch form__item">
-                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox"/>
+                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox" checked/>
                 <label for="f[processing]" class="material-switch__label"></label>
 				<label for="f[processing]" class="material-switch__text"> 
 					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
@@ -658,14 +711,20 @@
 <script>svg4everybody();</script>
 		<script src="/js/wow.min.js" ></script>
 <script>			
-	var wow = new WOW(
- 		{
-			boxClass:     'wow',      
-			animateClass: 'animated',
-			mobile:       false,
-		}
-	);
-	wow.init();			
+	if($(document.body).find('.page-loader').length > 0) {
+
+	} else {
+		var wow = new WOW(
+	 		{
+				boxClass:     'wow',      
+				animateClass: 'animated',
+				mobile:       false,
+			}
+		);
+		wow.init();		
+	}
+
+		
 </script>
 		<link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
 <script src="/js/validationEngine.jquery/jquery.validationEngine-ru.min.js" ></script>

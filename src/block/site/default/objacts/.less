@@ -30,6 +30,10 @@
     	&::after{
 			opacity: 1;
     	}
+    	.objacts__label{
+    		transform: translateX(~"calc(100% + 20px)");
+    		transition: 0.3s all;
+    	}
     	.objacts__note{
 		    &::before,
 		    &::after{
@@ -82,14 +86,50 @@
 }
 
 .objacts__{	
+	&label{
+		position: absolute;
+		border: 1px solid @white;
+		right: 20px;
+		top: 15px;
+		width: 150px;
+		height: 140px;
+		transition: all 0.8s;
+		display: none;
+		&.is--visible{
+			display: block;
+		}
+	}
+	&label-name,
+	&label-inner{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 10px;
+		left: 10px;
+	}
+	&label-inner{
+		opacity: 0.6;
+		z-index: 1;
+	}
+	&label-name{	
+		.calcFontSize(18, 22, 320, 1680);
+		.calcLineHeight(18, 22, 320, 1680);	
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		font-weight: 700;
+		z-index: 2;
+		overflow: hidden;
+		justify-content: center;
+	}
 	&inner{
 		position: relative;
 		z-index: 3;
 		display: flex;
 		height: 100%;
     	justify-content: center;
-   		align-items: center;
-   		
+   		align-items: center;   		
    		@media @media-size-xs{padding: 30px;}
    		@media @media-notsmart{padding: 2vw;}
 	}
@@ -211,7 +251,7 @@
 		width: 95px;
 		letter-spacing: 0.3px;
 		transition: @transition-site;
-		@media @media-device{top: -30px;}
+		@media @media-device{top: -30px; display: none}
 		@media @media-screen{top: -2.3vw;}
 		&::before{
 			content: attr(data-buy-floor);
@@ -233,7 +273,7 @@
 		font-size: @b-fs - 5px;
 		line-height: @b-lh - 6px;
 		transition: @transition-site;
-		@media @media-device{bottom: -30px;}
+		@media @media-device{bottom: -30px; display: none}
 		@media @media-screen{bottom: -2.3vw;}
 		&::after{
 			content: attr(data-finish-date);
@@ -391,6 +431,54 @@
 }
 ._oacp__,
 ._occp__{
+	&objacts{		
+	    @media @media-device{
+	    	&::before,
+	    	&::after{
+	    		display: none;
+	    	}
+	    }
+	}
+	&objacts-inner{		
+	    @media @media-device{
+	    	min-height: 20%;
+	    	bottom: 0;
+	    	position: absolute;
+	    	left: 0;
+	    	width: 100%;
+	    	height: auto;
+	    	&::before,
+	    	&::after{
+	    		position: absolute;
+	    		top: 0;
+	    		left: 0;
+	    		width: 100%;
+	    		height: 100%;
+	    		content: '';
+	    	}  
+		    &::before{
+		    	background-color: fadeout(@black, 50%);
+		    	z-index: 1;
+		    }
+		    &::after{
+				z-index: 2;
+		    	background-color: fadeout(@blue-black, 40%);
+		    }
+	    }
+	}
+	&objacts-note{
+		@media @media-device{padding: 0; position: relative; z-index: 3}
+	    &::before,
+	    &::after{
+	    	@media @media-device{display: none}
+	    }
+	}
+	&objacts-line{
+		&.top,
+		&.bottom{			
+	    	@media @media-device{display: none}
+	    }
+	}
 	&filter-panel{
 		background: #e6e6e6;
 		padding: 0 10px;

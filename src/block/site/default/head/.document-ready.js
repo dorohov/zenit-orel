@@ -15,3 +15,14 @@ $('.btn-journal').on('click', function(){
 });
 
 $('._acb__item ul').addClass('ul-site');
+
+
+$('.decor-line.v').each(function(index){
+		
+	var line = $(this);
+	
+	var _h = line.outerHeight(true);
+	
+	line.attr('data-default-height', _h);
+	
+});

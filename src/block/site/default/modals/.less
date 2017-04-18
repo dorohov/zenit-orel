@@ -9,7 +9,7 @@
 
 // Kill the scroll on the body
 .modal-open {
-	overflow: hidden; 
+	//overflow: hidden; 
 }
 .modal {
 	display: none;
@@ -28,7 +28,7 @@
 	}
 	@media @media-notsmart{
 		&.fade .modal-dialog {top: 0;}
-		&.in .modal-dialog {top: 10%;}
+		&.in .modal-dialog {top: 0%;}
 	}
 }
 .modal-open .modal {
@@ -120,6 +120,10 @@
 		.modal-banks__line{
 			transform: scale(1, 1);
 		}
+	}
+	@media @media-notsmart{
+		&.fade .modal-banks__dialog {top: 0;}
+		&.in .modal-banks__dialog {top: 10%;}
 	}
 }
 .modal-banks__{

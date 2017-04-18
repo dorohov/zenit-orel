@@ -42,7 +42,7 @@ body {
 				visibility: visible;
 			}			
 		}
-	}
+	}	
 	&.modal-open{padding: 0!important}
 	&.blog-navbar--open{
 		.navbar-site{
@@ -50,7 +50,14 @@ body {
 		}
 	}
 }
-.site-wrap{}
+.site-wrap{	
+	&.is--hidden{
+		//display: none;
+	}	
+	&.is--ready{ 
+		//display: block;				
+	}	
+}
 a{
 	color: @b-color-a;
 	transition: @transition-site;
@@ -110,48 +117,6 @@ a{
 			height: 100%;
 		}
 
-	}
-}
-.scaleToBottom{
-	animation-name: scaleToBottom;
-	animation-fill-mode: forwards;
-	transform-origin: 0 0;
-	transform: scale(1, 0);
-}
-.scaleToRight{
-	animation-name: scaleToRight;
-	animation-fill-mode: forwards;
-	transform-origin: 0 0;
-	transform: scale(0, 1);
-}
-.scaleToLeft{
-	animation-name: scaleToLeft;
-	animation-fill-mode: forwards;
-	transform-origin: right 0;
-	transform: scale(0, 1) ;
-}
-@keyframes scaleToBottom {
-	from {
-		transform: scale(1, 0);
-	}
-	to {
-		transform: scale(1, 1);
-	}
-}
-@keyframes scaleToRight {
-	from {
-		transform: scale(0, 1);
-	}
-	to {
-		transform: scale(1, 1);
-	}
-}
-@keyframes scaleToLeft {
-	from {
-		transform: scale(0, 1) ;
-	}
-	to {
-		transform: scale(1, 1);
 	}
 }
 

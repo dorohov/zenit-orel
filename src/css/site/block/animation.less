@@ -1,114 +1,232 @@
-/*._czr__anim-list{
-	list-style: none;
-	.anim{		
-		padding-left: 65px;
-		display: inline-block;
-		overflow: hidden;
-		position: relative;
-		padding-bottom: 5px;
-		text-decoration: none;
-		&:before{
-			content: '';
-			background-color:  #5d93a3;
-			width: 50px;
-			height: 1px;
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transition: @transition-site; 
-		}
-		&.in{
-			&:before{
-				animation-name: andown;
-				animation-duration: 2s;
-				animation-iteration-count: 1;
-				animation-fill-mode: forwards;
-			}
-		}
-		&.out{
-			&:before{
-				animation-fill-mode: both;
-				animation-name: andown2;
-				animation-duration: 1.5s;
-				animation-iteration-count: 1;
-			}
-		}
-	}
+.scaleToBottom{
+	animation-name: scaleToBottom;
+	animation-fill-mode: forwards;
+	transform-origin: 0 0;
+	transform: scale(1, 0);
 }
-@keyframes andown {
+.scaleToRight{
+	animation-name: scaleToRight;
+	animation-fill-mode: forwards;
+	transform-origin: 0 0;
+	transform: scale(0, 1);
+}
+.scaleToLeft{
+	animation-name: scaleToLeft;
+	animation-fill-mode: forwards;
+	transform-origin: right 0;
+	transform: scale(0, 1) ;
+}
+.fadeIn{
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToRightXl{
+	animation-name: fadeToRightXl;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToRight{
+	animation-name: fadeToRight;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToRightSm{
+	animation-name: fadeToRightSm;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToLeftXl{
+	animation-name: fadeToLeftXl;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToLeft{
+	animation-name: fadeToLeft;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToBottom{
+	animation-name: fadeToBottom;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.fadeToTop{
+	animation-name: fadeToTop;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+.scrollto{
+	animation-name: scrollto;	
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+.zoom{
+	animation-name: zoom;	
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+@keyframes scrollto {
 	from {
-		left: 0;
-		top: 50%;
-		width: 50px;
+		transform: translate(-50%, 0);
 	}
-	40% {
-		top: 98%;
-	}
-	60% {
-		left: 65px;
-	}
-	80% {
-		width: 99%;
-	}
-	to{
-		top: 98%;
-		width: 100%;
-		left: 65px;
-
-	}
-}
-@keyframes andown2 {
-	from{
-		top: 98%;
-		width: 100%;
-		left: 65px;
-
-	}
-	50% {
-		top: 98%;
-		width: 50px;
+	50%{
+		transform: translate(-50%, -5px);
 	}
 	to {
-		left: 0;
-		top: 50%;
-		width: 50px;
-	}  
-}
-._czr__anim-indic{	
-	.in{
-		&:before{
-			animation-name: anim-indic-in;
-			animation-duration: 1.5s;
-			animation-iteration-count: 1;
-			animation-fill-mode: forwards;
-		}
-	}
-	.out{
-		&:before{
-			animation-fill-mode: both;
-			animation-name: anim-indic-out;
-			animation-duration: 1.5s;
-			animation-iteration-count: 1;
-		}
+		transform: translate(-50%, 0);
 	}
 }
-@keyframes anim-indic-in {
+@keyframes scaleToBottom {
 	from {
-		top: 50%;
-	}
-	to{
-		top: 115%;
-		height: 2px;
-		background: lighten(#5d93a3, 30%);
-	}
-}
-@keyframes anim-indic-out {
-	from{
-		top: 115%;
-		height: 2px;
-		background: lighten(#5d93a3, 30%);
+		transform: scale(1, 0);
 	}
 	to {
-		top: 50%;
-	}  
-}*/
+		transform: scale(1, 1);
+	}
+}
+@keyframes scaleToRight {
+	from {
+		transform: scale(0, 1);
+	}
+	to {
+		transform: scale(1, 1);
+	}
+}
+@keyframes scaleToLeft {
+	from {
+		transform: scale(0, 1) ;
+	}
+	to {
+		transform: scale(1, 1);
+	}
+}
+@keyframes fadeIn {
+	from {
+		visibility: hidden;
+		opacity: 0;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+@keyframes fadeToRightXl {
+	from {
+		visibility: hidden;
+		//opacity: 0;
+		transform: translateX(-30px);
+		transform: translateX(-23vw);
+	}
+	to {
+		visibility: visible;
+		//opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeToRight {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeToRightSm {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-5px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeToLeftXl {
+	from {
+		visibility: hidden;
+		//opacity: 0;
+		transform: translateX(30px);
+		transform: translateX(29vw);
+	}
+	to {
+		visibility: visible;
+		//opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeToLeft {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeToBottom {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes fadeToTop {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes scaleY {
+	from {
+		transform: scale(1, 0);
+		visibility: hidden;
+	}
+	to {
+		transform: scale(1, 1);
+		visibility: visible;
+	}
+}
+@keyframes scaleX {
+	from {
+		transform: scale(0, 1);
+		visibility: hidden;
+	}
+	to {
+		transform: scale(1, 1);
+		visibility: visible;
+	}
+}
+@keyframes zoom {
+	from {
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}

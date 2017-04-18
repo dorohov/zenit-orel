@@ -1,26 +1,33 @@
 <div class="{{class}}">
 	<div class="container {{prefix_block}}container">
 		<div 
-			class="{{prefix_block}}line-center-vert line-anim vert  wow scaleToBottom"
-			data-wow-duration="0.5s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
+			class="{{prefix_block}}line-center-vert line-anim vert {{line_center_vert_animation}}"
+				data-wow-duration="{{line_center_vert_duration}}" 
+				data-wow-delay="{{line_center_vert_delay}}"
+				data-wow-offset="{{line_center_vert_offset}}"
 			></div>		
 		<div 
-			class="{{prefix_block}}line-center-horiz left line-anim horiz wow scaleToLeft"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.8s"
-			data-wow-offset="50"
+			class="{{prefix_block}}line-center-horiz left line-anim horiz {{line_center_horiz_l_animation}}"
+				data-wow-duration="{{line_center_horiz_duration}}" 
+				data-wow-delay="{{line_center_horiz_delay}}"
+				data-wow-offset="{{line_center_horiz_offset}}"
 			></div>	
 			
 		<div 
-			class="{{prefix_block}}line-center-horiz right line-anim horiz wow scaleToRight"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.8s"
-			data-wow-offset="50"
-			></div>			
-		<h2 class="{{prefix_block}}heading heading-index-block">{{heading_block}}</h2>
-		<h4 class="{{prefix_block}}heading-small heading-small-index-block">Выгодная возможность купить новую комфортабельную квартиру<br>в удобном во всех отношениях районе города</h4>			
+			class="{{prefix_block}}line-center-horiz right line-anim horiz {{line_center_horiz_r_animation}}"
+				data-wow-duration="{{line_center_horiz_duration}}" 
+				data-wow-delay="{{line_center_horiz_delay}}"
+				data-wow-offset="{{line_center_horiz_offset}}"
+			></div>	
+		<div class="{{heading_animation}}"
+			data-wow-duration="{{heading_duration}}" 
+			data-wow-delay="{{heading_delay}}"
+			data-wow-offset="{{heading_offset}}">		
+			<h2 class="{{prefix_block}}heading heading-index-block">
+				{{heading_block}}
+			</h2>
+			<h4 class="{{prefix_block}}heading-small heading-small-index-block">Выгодная возможность купить новую комфортабельную квартиру<br>в удобном во всех отношениях районе города</h4>
+		</div>			
 		<div class="row {{prefix_block}}row">
 			<div class="cols {{prefix_block}}cols">				
 				<a href="/objacts-apart.html" class="{{prefix_block}}objacts objacts-block" 

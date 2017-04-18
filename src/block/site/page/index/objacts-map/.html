@@ -1,14 +1,17 @@
 <div class="{{class}}">
 	<div class="container {{prefix_block}}container">
 		<div 
-			class="{{prefix_block}}line-left-vert line-anim vert  wow scaleToBottom"
-			data-wow-duration="0.5s" 
-			data-wow-delay="0.4s"
-			data-wow-offset="50"
+			class="{{prefix_block}}line-left-vert line-anim vert {{line_left_vert_animation}}"
+				data-wow-duration="{{line_left_vert_duration}}" 
+				data-wow-delay="{{line_left_vert_delay}}"
+				data-wow-offset="{{line_left_vert_offset}}"
 			></div>	
 		
 		<div class="row {{prefix_block}}row">
-			<div class="cols {{prefix_block}}cols">				
+			<div class="cols {{prefix_block}}cols {{map_text_animation}}"
+				data-wow-duration="{{map_text_duration}}" 
+				data-wow-delay="{{map_text_delay}}"
+				data-wow-offset="{{map_text_offset}}">				
 				<h2 class="{{prefix_block}}heading heading-index-block">{{heading_block}}</h2>
 				<h4 class="{{prefix_block}}heading-small heading-small-index-block">Интерактивная карта объектов</h4>
 				<div class="{{prefix_block}}text">
@@ -18,25 +21,31 @@
 			<div class="cols {{prefix_block}}cols">
 				<div class="{{prefix_block}}panel">					
 				<div 
-					class="{{prefix_block}}line-top-right-vert  line-anim vert wow scaleToBottom"
-					data-wow-duration="0.5s" 
-					data-wow-offset="50"
+					class="{{prefix_block}}line-top-right-vert line-anim vert 
+					{{line_top_right_vert_animation}}"
+						data-wow-duration="{{line_top_right_vert_duration}}" 
+						data-wow-delay="{{line_top_right_vert_delay}}"
+						data-wow-offset="{{line_top_right_vert_offset}}"
 					></div>	
 				<div 
-					class="{{prefix_block}}line-top-right-horiz  line-anim horiz wow scaleToLeft"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.5s"
-					data-wow-offset="50"
+					class="{{prefix_block}}line-top-right-horiz line-anim horiz 
+					{{line_top_right_horiz_animation}}"
+						data-wow-duration="{{line_top_right_horiz_duration}}" 
+						data-wow-delay="{{line_top_right_horiz_delay}}"
+						data-wow-offset="{{line_top_right_horiz_offset}}"
 					></div>	
 				<div 
-					class="{{prefix_block}}line-bottom-right-horiz  line-anim horiz wow scaleToLeft"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.5s"
+					class="{{prefix_block}}line-bottom-right-horiz line-anim horiz {{line_top_right_horiz_animation}}"
+						data-wow-duration="{{line_top_right_horiz_duration}}" 
+						data-wow-delay="{{line_top_right_horiz_delay}}"
+						data-wow-offset="{{line_top_right_horiz_offset}}"
 					></div>				
 				<div 
-					class="{{prefix_block}}line-bottom-right-vert  line-anim vert wow scaleToBottom"
-					data-wow-duration="0.5s" 
-					data-wow-delay="1.3s"
+					class="{{prefix_block}}line-bottom-right-vert line-anim vert
+					 {{line_bottom_right_vert_animation}}"
+						data-wow-duration="{{line_bottom_right_vert_duration}}" 
+						data-wow-delay="{{line_bottom_right_vert_delay}}"
+						data-wow-offset="{{line_bottom_right_vert_offset}}"
 					></div>	
 					Все новостройки на&nbsp;карте&nbsp;— как строящиеся объекты, так и&nbsp;готовые жилые комплексы, которые уже сданы в&nbsp;эксплуатацию.
 				</div>

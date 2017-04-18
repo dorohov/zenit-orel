@@ -1,4 +1,7 @@
-<nav class="{{class}}">
+<nav class="{{class}} {{navbar_animation}}"
+	data-wow-duration="{{navbar_duration}}" 
+	data-wow-delay="{{navbar_delay}}"
+	data-wow-offset="{{navbar_offset}}">
 	<div class="container {{prefix_block}}container">
 		<div class="row {{prefix_block}}row">
 			<div class="cols {{prefix_block}}cols-logotip">
@@ -22,18 +25,32 @@
 				</div>
 			</div>
 			<div class="cols {{prefix_block}}cols-hamburger">
-				<button type="button" class="{{prefix_block}}hamburger btn-site" data-toggle="modal" data-target="#modal-nav">
-					<div class="{{prefix_block}}hamburger-inner"></div>
+				<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
+
+			
 		</div>
 	</div>
 </nav>
 <div class="modal fade {{prefix_block}}modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="{{prefix_block}}modal-dialog">
-		<button type="button" class="btn-site {{prefix_block}}hamburger is--close" data-dismiss="modal" aria-hidden="true">
-			<div class="{{prefix_block}}hamburger-inner"></div>
-		</button>
+		<div class="btn-site {{prefix_block}}hamburger-block">
+			<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-dismiss="modal" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
 		<div class="{{prefix_block}}modal-body" >
 			<ul class="{{prefix_block}}modal-nav">
 				<li><a href="/">Главная</a></li>
