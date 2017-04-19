@@ -95,11 +95,11 @@
 		//overflow: hidden;
 		height: 100%;
 		position: relative;
-		perspective: 1000px;
+		//perspective: 1000px;
 		&:hover{
 			.blog__item-inner{
 				//transform: translateX(-50px);
-				@media @media-size-xs{
+				/*@media @media-size-xs{
 					transform: rotateY(-20deg) translateX(-40px) scale(.93);
 				}
 				@media @media-notsmart{
@@ -107,11 +107,28 @@
 				}
 				@media @media-size-mdl{
 					transform: rotateY(-16deg) translateX(-40px) scale(.93);
-				}
+				}*/
 			}
 		}
 	}
-	&item-inner{		
+	/*&svg{
+		position: absolute;
+		top: 0px;
+    	left: 0px;
+   		width: ~"calc(100% + 0px)";
+    	height: ~"calc(100% + 0px)";
+		z-index: 1;
+	}	
+	&rect{
+		width: 100%;
+		height: 100%;
+		fill: fadeout(@white, 100%);
+		stroke: @blue;
+		stroke-width: 4px;
+		//stroke-dasharray: 400;
+		//stroke-dashoffset: 400;
+	}	*/	
+	&item-inner{
 		background: @white;
 		transition: @transition-site;
 		position: relative;
@@ -126,11 +143,12 @@
 		}
 		@media @media-device{padding: 20px 20px;}
 		@media @media-screen{padding: 1.6vw 1.9vw;}
-		transform: rotateY(0);
-		perspective-origin: 50% 50%;
+		//transform: rotateY(0);
+		//perspective-origin: 50% 50%;
 		
 	}
 	&item-link{
+		display: none;
 		position: absolute;
 		z-index: 1;
 		top: 0;
@@ -205,6 +223,10 @@
 		margin: 0;
 		.calcFontSize(18, 22, 320, 1680);
 		.calcLineHeight(23, 27, 320, 1680);	
+		a{
+			color: @black;
+			&:hover{color: @b-color-a}
+		}
 	}
 	&item-note{
 		padding-top: 10px;
@@ -443,15 +465,15 @@
 ._bcb__{
 	&blog-panel{
 		.blog__item{
-		    @media @media-notsmart{perspective: 1200px;}
+		    //@media @media-notsmart{perspective: 1200px;}
 			&:hover{
 				.blog__item-inner{
 					//transform: rotateY(-30deg) translateX(0px) scale(.83);
 					
-					@media @media-notsmart{transform: rotateY(-20deg) translateX(-30px) scale(.91);}
-					@media @media-size-mdl{
+					//@media @media-notsmart{transform: rotateY(-20deg) translateX(-30px) scale(.91);}
+					/*@media @media-size-mdl{
 						transform: rotateY(-25deg) translateX(-25px) scale(.91);
-					}
+					}*/
 				}
 			}
 		}
@@ -468,7 +490,7 @@
 			@media @media-size-xs{width: 100%}
 			@media @media-size-sm{width: 50%}
 			@media @media-size-md{width: 50%}
-			.blog__item{
+			/*.blog__item{
 			    @media @media-screen{perspective: 1200px;}
 				&:hover{
 					.blog__item-inner{
@@ -478,7 +500,7 @@
 						}
 					}
 				}
-			}
+			}*/
 		}
 		@media @media-size-xs-p{width: 100%}
 		@media @media-size-xs-l{width: 50%}

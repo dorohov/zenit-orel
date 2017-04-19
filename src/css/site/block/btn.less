@@ -53,9 +53,9 @@
 .btn-blue{
     position: relative;
 	color: lighten(@b-color-a, 0%); 
-	border-width: 2px;
-	border-style: solid;
-	border-color: lighten(@b-color-a, 0%);
+	//border-width: 2px;
+	//border-style: solid;
+	//border-color: lighten(@b-color-a, 0%);
 	text-transform: uppercase;
 	font-weight: 700; 
 	font-size: @b-fs - 2px;
@@ -72,6 +72,24 @@
 		transform-origin: left 0;
 		transform: scale(0, 1); 	
 		transition: transform 0.3s ease 0.3s;
+    }
+    .rect-block{
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+    	z-index: 1;
+    }
+    .rect{
+		width: 100%;
+		height: 100%;
+		fill: fadeout(@white, 100%);
+		stroke: @blue;
+		stroke-width: 4px;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+  		animation: draw-btn-rect 2s linear 1s 1 forwards;
     }
     .name{
     	position: relative;
@@ -160,170 +178,10 @@
     @media @media-screen{padding: .4vw 1.5vw;}
 
 }
-
-
-
-
-
-.btn-mustard{
-	background-color: lighten(@mustard, 0%);
-	color: lighten(@b-color, 0%);
-	&:hover{
-		background-color: lighten(@mustard, 5%);
-		color: lighten(@b-color, 5%);
-	}
-}
-.btn-flat{
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: @b-fs - 2px; //14px
-    border-radius: 30px;
-    letter-spacing: 2.5px;
-	@media @media-device{padding: 15px 20px}	
-	@media @media-screen{
-		padding: 20px;		
-		font-size: 1.45vh;//14px
-	}
-	@media @media-size-mdl{
-		font-size: 1.6vh;
-		padding: 15px;
-	}
-}
-.btn-reviews{
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: @b-fs - 2px; //14px
-    border-radius: 30px;
-    letter-spacing: 1px;
-	@media @media-device{padding: 15px 20px}	
-	@media @media-screen{padding: 15px 20px}
-}
 .btn-close{
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	svg{
-		width: 100%;
-		height: 100%;
 		transition: @transition-site;
-		fill: #484848;
-	}
-	&:hover{
-		svg{
-			fill: @color-pint;
-		}
-	}
-}
-.btn-link{
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: @b-fs - 2px;
-	letter-spacing: 2.7px;
-	border-bottom: 5px solid @mustard;	
-	&:hover{
-		border-bottom: 5px solid fadeout(@mustard, 100%);
-	}
-}
-.btn-journal{		
-	margin-right: 50px;
-	position: relative;
-	span{
-		position: absolute;
-		top: 50%;
-		right: -40px;
-		transform: translateY(-50%);
-		//transition: @transition-site;
-		transform-origin: center;
-		width: 20px;
-		height: 20px;
-	}
-	svg{
-		width: 100%;
-		height: 100%;
-	}
-	@media @media-notsmart{
-		&.is-active{
-			span{
-			    transform: translateY(-50%) rotate(-180deg);
-			}
-		}
-	}
-	&::after{
-		display: block;
-		content: '';
-		background-image: url("@{url-path-img}/svg/sprite.svg#bus");
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		fill: red;
-	}
-}
-.btn-adm-add{
-	position: absolute;
-	z-index: 5;
-	@media @media-device{
-		right: 0;
-		top: 0;
-	}
-	@media @media-screen{
-		top: 0;
-		right: 9.5%;
-	}
-	&:hover{
-		border-color: fadeout(@mustard, 100%);
-	}
-}
-.btn-add{	
-	position: absolute;
-	top: -20px;
-	right: 0;
-}
-.btn-adm{	
-	display: inline-block;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-	svg{
-		display: block;
-		width: 100%;
-		height: 100%;
-		fill: #b3b3b3;
-		transition: @transition-site;
-	}
-	&:hover{
-		svg{
-			&.add{fill: @blue}
-			&.btn-edit{fill: @color-vk}
-			&.btn-del{fill: @color-pdf}
-		}
-	}
-}
-.btn-back-link{	
-	font-weight: 700;
-	padding-left: 65px;
-	text-transform: uppercase;
-	font-size: @b-fs - 2px;
-    letter-spacing: 2.5px;    
-	position: relative;    
-	margin-bottom: 20px;
-	display: inline-block;	
-	span{		
-		position: absolute;
-		top: 50%;
-		left: 0px;
-		transform: translateY(-50%);
-		width: 44px;
-		transition: @transition-site;
-	}
-	svg{
-		width: 100%;
-	}
-	&:hover{
-		span{
-			transform: translate(-10px, -50%);
-		}
 	}
 }

@@ -5,8 +5,11 @@
 			<div class="{{prefix_modals}}line left-horiz line-anim horiz "></div>
 			<div class="{{prefix_modals}}line right-vert line-anim vert"></div>
 			<div class="{{prefix_modals}}line right-horiz line-anim horiz "></div>
-			<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true">
-				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" class="icon-cancel"]]
+			<button type="button" class="btn-site btn-close {{prefix_modals}}close modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="{{prefix_modals}}close-rect-block modal-close__rect-block">
+					<rect class="{{prefix_modals}}close-rect modal-close__rect" x="0" y="0"/>
+				</svg>
+				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel"]] 
 			</button>
 			<div class="modal-content {{prefix_modals}}content">
 				<h3 class="modal-title {{prefix_modals}}title">{{heading_modals}}</h3>

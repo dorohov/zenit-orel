@@ -50,12 +50,14 @@
 			</div>
 			<div class="cols navbar__cols-hamburger">
 				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+					<span class="hamburger-base__inner navbar__hamburger-inner">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
 				</button>
 			</div>
 
@@ -67,12 +69,17 @@
 	<div class="navbar__modal-dialog">
 		<div class="btn-site navbar__hamburger-block">
 			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+				<span class="hamburger-base__inner navbar__hamburger-inner">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<svg class="navbar__hamburger-rect-block modal-close__rect-block">
+					<rect class="navbar__hamburger-rect modal-close__rect" x="0" y="0"/>
+				</svg>
 			</button>
 		</div>
 		<div class="navbar__modal-body" >
@@ -132,7 +139,10 @@
 </div>
 		<div class="heading-page__block _oacp__heading-page__block">
 			<h1 class="_oacp__heading heading-page">Жилая недвижимость</h1>	
-			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map">	
+			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-objacts-map">
+				<svg class="rect-block">
+					<rect class="rect" x="0" y="0"/>
+				</svg>
 				<span class="name">Объекты на карте</span>
 				<span class="bg"></span>
 			</button> 	
@@ -1459,9 +1469,10 @@
 			</div>	
 		</div>
 		<div class="footer__ofert">
-			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. </p>
+			<p>Не&nbsp;является публичной офертой.</p>
 			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
-			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией<br/>
+			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
 			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
 			</p>
 			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
@@ -1474,7 +1485,10 @@
 	<div class="modal-dialog modal-map__dialog">
 		<div class="modal-content modal-map__content">
 			<div class="modal-body modal-map__body" >
-				<button type="button" class="btn-site btn-close modal-map__close" data-dismiss="modal" aria-hidden="true">
+				<button type="button" class="btn-site btn-close modal-map__close modal-close" data-dismiss="modal" aria-hidden="true">
+					<svg class="modal-map__close-rect-block modal-close__rect-block">
+						<rect class="modal-map__close-rect modal-close__rect" x="0" y="0"/>
+					</svg>
 					<svg class="icon-svg icon-cancel" role="img">
 	<use xlink:href="/img/svg/sprite.svg#cancel"></use>
 </svg> 

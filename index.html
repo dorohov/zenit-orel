@@ -59,12 +59,14 @@
 			</div>
 			<div class="cols navbar__cols-hamburger">
 				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+					<span class="hamburger-base__inner navbar__hamburger-inner">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
 				</button>
 			</div>
 
@@ -76,12 +78,17 @@
 	<div class="navbar__modal-dialog">
 		<div class="btn-site navbar__hamburger-block">
 			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+				<span class="hamburger-base__inner navbar__hamburger-inner">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<svg class="navbar__hamburger-rect-block modal-close__rect-block">
+					<rect class="navbar__hamburger-rect modal-close__rect" x="0" y="0"/>
+				</svg>
 			</button>
 		</div>
 		<div class="navbar__modal-body" >
@@ -318,6 +325,14 @@
 				</section>
 				<div class="_acb__btn-block">
 					<a href="/about.html" class="btn-site btn-blue btn-more">
+						<svg class="rect-block">
+							<rect class="rect wow draw-btn-rect"
+								data-wow-duration="2s" 
+								data-wow-delay="1s"
+								data-wow-offset=" 0" 
+								x="0" 
+								y="0"/>
+						</svg>
 						<span class="name">Подробнее</span>
 						<span class="bg"></span>
 					</a>
@@ -355,7 +370,15 @@
 				<h4 class="_bcb__heading-small heading-small-index-block">Действующий акции и свежие новости</h4>
 			</div>
 			<div class="cols _bcb__btn-cols">
-				<a href="/blog.html" class="btn-site btn-blue btn-more-news">	
+				<a href="/blog.html" class="btn-site btn-blue btn-more-news">
+					<svg class="rect-block">
+						<rect class="rect wow draw-btn-rect"
+							data-wow-duration="2s" 
+							data-wow-delay="1s"
+							data-wow-offset=" 0" 
+							x="0" 
+							y="0"/>
+					</svg>	
 					<span class="name">Больше новостей</span>
 					<span class="bg"></span>
 				</a>
@@ -478,31 +501,31 @@
 					data-wow-duration="1s" 
 					data-wow-delay="0.9s"
 					data-wow-offset=" ">
-						<div class="cols _bcb__blog-cols">
+						<div class="cols _bcb__blog-cols">			
 							<article class="blog__item">
-								<div class="blog__item-inner">
-									<div class="blog__item-cat">
-										<a href="#">
-											Новости
-											<span><svg class="icon-svg icon-blog-news" role="img">
+	<div class="blog__item-inner">
+		<div class="blog__item-cat">
+			<a href="/blog.html">
+				Опрос
+				<span><svg class="icon-svg icon-blog-news" role="img">
 	<use xlink:href="/img/svg/sprite.svg#blog-news"></use>
 </svg></span>
-										</a>
-									</div>
-									<div class="blog__item-stroke">
-										<h4 class="blog__item-heading">Проектирование объекта</h4>
-										<div class="blog__item-note">ул. Лазурная д. 6</div>
-									</div>
-									<div class="blog__item-date">
-										5 Февраля 2017
-										<a href="/blog-item.html" class="blog__item-next"><svg class="icon-svg icon-arrow-right-bold" role="img">
+			</a>
+		</div>
+		<div class="blog__item-stroke">
+			<h4 class="blog__item-heading"><a href="/blog.html">Проектирование объекта ландшафтной архитектуры</a></h4>
+			<div class="blog__item-note">ул. Лазурная д. 6</div>
+		</div>
+		<div class="blog__item-date">
+			5 Февраля 2017
+			<a href="/blog-item.html" class="blog__item-next"><svg class="icon-svg icon-arrow-right-bold" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-right-bold"></use>
 </svg>
-										</a>
-									</div>
-								</div>
-								<a href="/blog-item.html" class="blog__item-link">Читать</a>
-							</article>
+			</a>
+		</div>
+	</div>
+	<a href="/blog-item.html" class="blog__item-link">Читать</a>
+</article> 
 						</div>
 						<div class="cols _bcb__blog-cols">
 							<article class="blog__item">
@@ -780,7 +803,15 @@
 			<a href="/buyers-ways.html" class="btn-site btn-blue btn-buyers wow fadeToBottom"
 			data-wow-duration="1s" 
 			data-wow-delay="0.5s"
-			data-wow-offset="50">	
+			data-wow-offset="50">
+				<svg class="rect-block">
+					<rect class="rect wow draw-btn-rect"
+						data-wow-duration="2s" 
+						data-wow-delay="1s"
+						data-wow-offset=" 0" 
+						x="0" 
+						y="0"/>
+				</svg>	
 				<span class="name">Подробнее</span>
 				<span class="bg"></span>
 			</a>
@@ -827,6 +858,14 @@
 		<div class="cols form__cols btn">
 			<div class="form__btn-block">
 				<button type="submit" class="btn-site btn-blue btn-submit form__btn">
+					<svg class="rect-block">
+						<rect class="rect wow draw-btn-rect"
+							data-wow-duration="2s" 
+							data-wow-delay="1s"
+							data-wow-offset=" 0" 
+							x="0" 
+							y="0"/>
+					</svg>	
 					<span class="name">Отправить заявку</span>
 					<span class="bg"></span>
 				</button>
@@ -918,9 +957,10 @@
 			</div>	
 		</div>
 		<div class="footer__ofert">
-			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. </p>
+			<p>Не&nbsp;является публичной офертой.</p>
 			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
-			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией<br/>
+			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
 			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
 			</p>
 			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>

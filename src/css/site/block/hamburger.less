@@ -123,13 +123,35 @@
 	}
 }
 //
-.hamburger-base {
+.hamburger-base{
+	position: relative;
+	@media @media-device{
+		width: 60px;
+		height: 60px;
+	}
+	@media @media-screen{
+		width: 80px;
+		height: 80px;
+	}
+}
+.hamburger-base__inner {
+	display: block;
 	position: relative;
 	transform: rotate(0deg);
 	transition: .5s ease-in-out;
 	cursor: pointer;
 	width: 60px;
 	height: 40px;
+
+	//
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	position: absolute;
+	@media @media-device{
+		width: 45px;
+		height: 30px;
+	}
 	span {
 		display: block;
 		position: absolute;
@@ -140,11 +162,14 @@
 		opacity: 1;
 		transform: rotate(0deg);
 		transition: .3s ease-in-out;
+		@media @media-device{
+			height: 4px;
+		}
 		&:nth-child(even) {left: 50%;}
 		&:nth-child(odd) {left:0px;}
 		&:nth-child(1), &:nth-child(2) {top: 0px;}
-		&:nth-child(3), &:nth-child(4) {top: 20px;}
-		&:nth-child(5), &:nth-child(6) {top: 40px;}
+		&:nth-child(3), &:nth-child(4) {top: 50%}
+		&:nth-child(5), &:nth-child(6) {top: 100%;}
 	}
 	&.is--open,
 	.navbar__modal.in &,
@@ -152,22 +177,29 @@
 		span{
 			&:nth-child(1), &:nth-child(6) {transform: rotate(45deg);}
 			&:nth-child(2), &:nth-child(5) {transform: rotate(-45deg);}
-			&:nth-child(1), &:nth-child(2) {top: 8px;}
-			&:nth-child(1), &:nth-child(5) {left: 8px;}
-			&:nth-child(2) {left: calc(50% - 5px);}
+			&:nth-child(1), &:nth-child(2) {
+				top: 8px;
+				@media @media-device{top: 10px;}
+			}
+			&:nth-child(1), &:nth-child(5) {
+				left: 8px;
+				left: 6px;
+			}
+			&:nth-child(2),&:nth-child(6) {left: ~"calc(50% - 5px)";}
 			&:nth-child(3), &:nth-child(4) {opacity: 0;}
 			&:nth-child(3) {left: -50%;}
 			&:nth-child(4) {left: 100%;}
-			&:nth-child(5), &:nth-child(6) {top: 25px;}
-			
-			&:nth-child(6) {left: calc(50% - 5px);}
+			&:nth-child(5), &:nth-child(6) {
+				top: 25px;
+				@media @media-device{top: 22px;}
+			}
 		}
 	}
 	.navbar__modal.in &{		
-		animation-name: zoom;	
-		animation-duration: 1.5s;
-		animation-fill-mode: both;
-		animation-iteration-count: infinite;
+		//animation-name: zoom;	
+		//animation-duration: 1.5s;
+		//animation-fill-mode: both;
+		//animation-iteration-count: infinite;
 
 		transition: .5s ease-in-out 0.5s;
 		span{
@@ -176,6 +208,8 @@
 						opacity .3s ease-in-out 0.3s,
 						top .3s ease-in-out 0.3s;
 			background: @black;
+			animation: draw-close-humb 7s ease-in-out infinite ;
+
 		}
 	}
 	.navbar-site &{
@@ -199,13 +233,13 @@
 		@media @media-screen{
 	   		//top: 4.8vw;
 			//right: 4.5vw;
-	   		top: 2.6vw;
+	   		top: 1vw;
 			right: 3vw;
 		}
 		@media @media-size-mdl{
 		    //top: 3.5vw;
 			//right: 3.5vw;
-		    top: 4vw;
+		    top: 3vw;
 			right: 3vw;
 		}
 		@media @media-size-xxl{

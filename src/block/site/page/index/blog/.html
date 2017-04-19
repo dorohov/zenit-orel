@@ -27,7 +27,15 @@
 				<h4 class="{{prefix_block}}heading-small heading-small-index-block">Действующий акции и свежие новости</h4>
 			</div>
 			<div class="cols {{prefix_block}}btn-cols">
-				<a href="/blog.html" class="btn-site btn-blue btn-more-news">	
+				<a href="/blog.html" class="btn-site btn-blue btn-more-news">
+					<svg class="rect-block">
+						<rect class="rect {{btn_animation}}"
+							data-wow-duration="{{btn_duration}}" 
+							data-wow-delay="{{btn_delay}}"
+							data-wow-offset="{{btn_offset}}" 
+							x="0" 
+							y="0"/>
+					</svg>	
 					<span class="name">Больше новостей</span>
 					<span class="bg"></span>
 				</a>
@@ -142,27 +150,19 @@
 					data-wow-duration="{{item_top_duration}}" 
 					data-wow-delay="{{item_top_delay}}"
 					data-wow-offset="{{item_top_offset}}">
-						<div class="cols {{prefix_block}}blog-cols">
-							<article class="{{blog_block}}item">
-								<div class="{{blog_block}}item-inner">
-									<div class="{{blog_block}}item-cat">
-										<a href="#">
-											Новости
-											<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="blog-news"]]</span>
-										</a>
-									</div>
-									<div class="{{blog_block}}item-stroke">
-										<h4 class="{{blog_block}}item-heading">Проектирование объекта</h4>
-										<div class="{{blog_block}}item-note">ул. Лазурная д. 6</div>
-									</div>
-									<div class="{{blog_block}}item-date">
-										5 Февраля 2017
-										<a href="/blog-item.html" class="{{blog_block}}item-next">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-right-bold"]]
-										</a>
-									</div>
-								</div>
-								<a href="/blog-item.html" class="{{blog_block}}item-link">Читать</a>
-							</article>
+						<div class="cols {{prefix_block}}blog-cols">			
+							[[azbntple 
+								tpl="/src/block/site/default/blog/.html"
+								prefix_block="_bcp__" 
+								blog_block="blog__"  
+								blog_link="blog-item.html"  
+								blog_cat_link="blog.html"   
+								blog_cat="Опрос"  
+								blog_cat_icon="blog-news"  
+								blog_heading="Проектирование объекта ландшафтной архитектуры"  
+								blog_note="ул. Лазурная д. 6"  
+								blog_date="5 Февраля 2017"  
+							]]
 						</div>
 						<div class="cols {{prefix_block}}blog-cols">
 							<article class="{{blog_block}}item">

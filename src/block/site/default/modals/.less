@@ -80,7 +80,7 @@
 	.calcFontSize(18, 21, 320, 1680);
 	.calcLineHeight(20, 23, 320, 1680);
 }
-.modal-btn-close{
+.modal-close{
     position: absolute;
     z-index: 5;
 	@media @media-size-xs{
@@ -97,7 +97,42 @@
 	@media @media-screen{
 		top: 2.5vw;
     	right: 2.5vw;
+	}	
+	.icon-cancel{
+		width: 50%;
+  		height: 50%;
+  		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		transform: translate(-50%, -50%);
+  		fill: @blue;
+  		animation: draw-close-cancel 7s ease-in-out infinite ;
+	} 
+	&:hover{
+		.icon-cancel,
+		.modal-close__rect{animation-play-state: paused; animation: none;}
+		.icon-cancel{
+			fill: @white;
+		}
+		.modal-close__rect{
+			stroke-dashoffset: 0;
+			fill: fadeout(@blue, 0%);
+		}
 	}
+}
+.modal-close__rect-block{	
+	width: 100%;
+	height: 100%;
+}
+.modal-close__rect{		
+	fill: fadeout(@white, 100%);
+	stroke: @blue;
+	stroke-width: 4px;
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	animation: draw-close-round 7s ease-in-out infinite ;
+	width: 100%;
+	height: 100%;
 }
 .modal-note{
 	margin-bottom: 20px;
@@ -208,6 +243,7 @@
 		&.in .modal-map__dialog { .translate(0, 5vh) } 
 	}
 }
+
 .modal-map__{
 	&dialog{
 		margin: 0 auto;
@@ -233,7 +269,7 @@
 		height: 100%;
 		padding: 0;		
 	}
-	&close{
+	/*&close{
 		position: absolute;
 		z-index: 20;
 		padding: 10px;
@@ -245,6 +281,16 @@
 		svg{
 			fill: @blue;
 		}
+	}*/
+	&close{
+		position: absolute;
+		z-index: 20;
+		width: 60px;
+		height: 60px;
+		top: 15px;
+		left: 15px;
+		@media @media-size-xs{top: 6px; left: 6px;}	
+		
 	}
 	&map{
 		width: 100%;

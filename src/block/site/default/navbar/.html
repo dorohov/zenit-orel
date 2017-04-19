@@ -26,12 +26,14 @@
 			</div>
 			<div class="cols {{prefix_block}}cols-hamburger">
 				<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-toggle="modal" data-target="#modal-nav">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+					<span class="hamburger-base__inner {{prefix_block}}hamburger-inner">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
 				</button>
 			</div>
 
@@ -43,12 +45,17 @@
 	<div class="{{prefix_block}}modal-dialog">
 		<div class="btn-site {{prefix_block}}hamburger-block">
 			<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-dismiss="modal" aria-hidden="true">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+				<span class="hamburger-base__inner {{prefix_block}}hamburger-inner">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<svg class="{{prefix_block}}hamburger-rect-block modal-close__rect-block">
+					<rect class="{{prefix_block}}hamburger-rect modal-close__rect" x="0" y="0"/>
+				</svg>
 			</button>
 		</div>
 		<div class="{{prefix_block}}modal-body" >

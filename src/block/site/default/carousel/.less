@@ -94,7 +94,8 @@
 					width: 13px;
 					height: 13px;
 					border-radius: 50%;
-					background: @white;
+					//background: @white;
+					border: 2px solid @white;
 				}
 
 			}
@@ -106,6 +107,9 @@
 	    		}
 				span{
 					background: @blue-dark;
+					@media @media-notsmart{
+						background: @white;
+					}
 					cursor: default;
 				}
 			}
