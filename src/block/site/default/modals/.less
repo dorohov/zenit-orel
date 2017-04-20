@@ -75,10 +75,6 @@
 }
 // Title text within header
 .modal-title {
-	font-weight: 700;
-	margin-bottom: 30px;
-	.calcFontSize(18, 21, 320, 1680);
-	.calcLineHeight(20, 23, 320, 1680);
 }
 .modal-close{
     position: absolute;
@@ -167,11 +163,19 @@
 		max-width: 370px;
 		margin: 0 auto;
 	}
-	&note{
+	&heading-form{
+		text-align: left;		
+		font-weight: 700;
+		margin-bottom: 10px;
+		.calcFontSize(18, 21, 320, 1680);
+		.calcLineHeight(20, 23, 320, 1680);
+	}
+	&note-form{
 		//padding-top: 15px;
 		font-size: @b-fs - 4px;
 		line-height: @b-lh - 8px;
 		font-weight: 300;
+		text-align: left;	
 	}
 	&line{
 		transform-origin: 0 0;

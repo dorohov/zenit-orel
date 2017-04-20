@@ -11,7 +11,7 @@ function initMap() {
 
 	var mapOffice = new google.maps.Map(mapElementOffice, mapOptionsOffice);
 
-	var iconOffice = 'img/default/icon-map-office.png';
+	var iconOffice = '/wp-content/themes/azbnbasetheme/img/default/icon-map-office.png';
 
 	var	zenitOfficeCoord = {lat: 52.971972, lng: 36.090498};
 
