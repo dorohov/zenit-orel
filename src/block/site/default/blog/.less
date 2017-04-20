@@ -77,18 +77,18 @@
 		li{
 			width: 13px;
 			height: 13px;
-			background: @white;
+			//background: @white;
 			border-radius: 50%;
 			cursor: pointer;
 			transition: @transition-site;
 			margin-top: 15px;
+			border: 2px solid @white;
 			&.active{
-				background: @blue-dark;
+				background: @white;
 				cursor: default;
 			}
 		}
 	}
-
 	//
 
 	&item{
@@ -99,7 +99,8 @@
 		&:hover{
 			.blog__item-inner{
 				//transform: translateX(-50px);
-				/*@media @media-size-xs{
+				/*
+				@media @media-size-xs{
 					transform: rotateY(-20deg) translateX(-40px) scale(.93);
 				}
 				@media @media-notsmart{
@@ -107,7 +108,8 @@
 				}
 				@media @media-size-mdl{
 					transform: rotateY(-16deg) translateX(-40px) scale(.93);
-				}*/
+				}
+				*/
 			}
 		}
 	}

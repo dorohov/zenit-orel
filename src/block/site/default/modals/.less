@@ -106,13 +106,13 @@
   		top: 50%;
   		transform: translate(-50%, -50%);
   		fill: @blue;
-  		animation: draw-close-cancel 7s ease-in-out infinite ;
+  		//animation: draw-close-cancel 7s ease-in-out infinite ;
 	} 
 	&:hover{
 		.icon-cancel,
 		.modal-close__rect{animation-play-state: paused; animation: none;}
 		.icon-cancel{
-			fill: @white;
+			@media @media-screen{fill: @white;}
 		}
 		.modal-close__rect{
 			stroke-dashoffset: 0;
@@ -123,6 +123,7 @@
 .modal-close__rect-block{	
 	width: 100%;
 	height: 100%;
+	@media @media-device{display: none;}
 }
 .modal-close__rect{		
 	fill: fadeout(@white, 100%);
@@ -130,7 +131,7 @@
 	stroke-width: 4px;
 	stroke-dasharray: 400;
 	stroke-dashoffset: 400;
-	animation: draw-close-round 7s ease-in-out infinite ;
+	animation: draw-close-round 10s ease-in-out infinite ;
 	width: 100%;
 	height: 100%;
 }

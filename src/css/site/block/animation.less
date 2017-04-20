@@ -74,21 +74,16 @@
 @keyframes draw-close-round {
 	from {
 		stroke-dashoffset: -400;	
-		fill:fadeout(@white, 100%);	
 	}
-	50%{
-		stroke-dashoffset: 0; 
-		fill:fadeout(@white, 100%);
-		stroke: @blue;	
+	30%{
+		stroke-dashoffset: -400;	
 	}
 	70%{
 		stroke-dashoffset: 0; 
-		fill: @blue;	
 		stroke: @blue;			
 	}
 	to{    
 	  stroke-dashoffset: 0;
-	  fill: @blue;	
 	  stroke: @blue;	
 	}
 }

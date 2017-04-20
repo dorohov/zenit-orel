@@ -144,7 +144,7 @@
 			<div class="cols _oicp__cols">
 				<div class="heading-page__hgroup _oicp__heading-page__hgroup">
 					<h1 class="_oicp__heading heading-page">ул. Московская, д.&nbsp;76</h1>	
-					<h3 class="heading-page-small">Жилой дом сданный в эксплуатацию</h3>	
+					<h3 class="heading-page-small">Окончание строительства - 3 кв. 2020 года</h3>	
 				</div>
 				<div class="_oicp__text-block text-block">
 					<p>В&nbsp;самом центре города, в&nbsp;Советстком районе, наша компания продолжает строительство нового жилого комплекса зенит. Жилой дом по&nbsp;улице Московская 76&nbsp;является его продолжением.</p>
@@ -295,7 +295,7 @@
 	<button type="button" class="btn-site btn-blue objacts-map__btn grey" data-toggle="modal" data-target="#modal-objacts-map">		
 		<svg class="rect-block">
 			<rect class="rect wow draw-btn-rect"
-				data-wow-duration="2s" 
+				data-wow-duration="1.7s" 
 				data-wow-delay="1s"
 				data-wow-offset="50" 
 				x="0" 
@@ -553,7 +553,7 @@
 	<div class="row form__row">
 		<div class="cols form__cols">
 			<div class="form__item">
-				<input type="text" class="form__control form-control validate[required]" id="f[name]" name="f[Имя]" placeholder="Имя">
+				<input type="text" class="form__control form-control validate[required, custom[onlyLetterSp]]" id="f[name]" name="f[Имя]" placeholder="Имя">
 			</div>	
 		</div>
 		<div class="cols form__cols">
@@ -571,7 +571,7 @@
 				<button type="submit" class="btn-site btn-blue btn-submit form__btn">					
 					<svg class="rect-block">
 						<rect class="rect wow draw-btn-rect"
-							data-wow-duration="2s" 
+							data-wow-duration="1.7s" 
 							data-wow-delay="1s"
 							data-wow-offset="50" 
 							x="0" 
@@ -760,16 +760,18 @@
 		
 </script>
 		<link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
-<script src="/js/validationEngine.jquery/jquery.validationEngine-ru.min.js" ></script>
 <script src="/js/validationEngine.jquery/jquery.validationEngine.min.js" ></script>
-<script>			
-	$(document).ready(function () {
+<script src="/js/validationEngine.jquery/jquery.validationEngine-ru.min.js" ></script>
+<script src="/js/jquery.maskedinput.js" ></script>
+<script>		
+  	$(document).ready(function () {
+  		$(".form__control[type='tel']").mask("+7 (999) 999-99-99",{placeholder:"+7 (___) ___-__-__"});
 		$("form.form-site").validationEngine(
 			'attach', {
 				promptPosition : "bottomLeft"
 			}
 		);
-	});			
+	});
 </script> 
 		<script src="/js/google-map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5mvq0SP3WCozmHWsYmfdLq_Y3vlaosik&callback=initMap"

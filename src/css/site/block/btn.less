@@ -53,14 +53,17 @@
 .btn-blue{
     position: relative;
 	color: lighten(@b-color-a, 0%); 
-	//border-width: 2px;
-	//border-style: solid;
-	//border-color: lighten(@b-color-a, 0%);
+	
 	text-transform: uppercase;
 	font-weight: 700; 
 	font-size: @b-fs - 2px;
 	//transition: color 0.3s cubic-bezier(0.76,-0.07, 0.89, 0.72);
-	transition: color 0.3s ease;
+	transition: color 0.3s ease;	
+	@media @media-device{
+		border-width: 2px;
+		border-style: solid;
+		border-color: lighten(@b-color-a, 0%);
+	}
     &::before{
     	content: '';
     	position: absolute;
@@ -74,23 +77,29 @@
 		transition: transform 0.3s ease 0.3s;
     }
     .rect-block{
-    	position: absolute;
-    	left: 0;
-    	top: 0;
-    	width: 100%;
-    	height: 100%;
-    	z-index: 1;
+		@media @media-device{display: none;}
+		@media @media-screen{
+	    	position: absolute;
+	    	left: 0;
+	    	top: 0;
+	    	width: 100%;
+	    	height: 100%;
+	    	z-index: 1;
+	    }
     }
     .rect{
-		width: 100%;
-		height: 100%;
-		fill: fadeout(@white, 100%);
-		stroke: @blue;
-		stroke-width: 4px;
-		stroke-dasharray: 1000;
-		stroke-dashoffset: 1000;
-  		animation: draw-btn-rect 2s linear 1s 1 forwards;
+    	@media @media-screen{
+			width: 100%;
+			height: 100%;
+			fill: fadeout(@white, 100%);
+			stroke: @blue;
+			stroke-width: 4px;
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 1000;
+	  		animation: draw-btn-rect 1.7s linear 1s 1 forwards;
+    	}
     }
+	
     .name{
     	position: relative;
     	z-index: 2;
