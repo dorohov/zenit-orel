@@ -71,6 +71,17 @@
 .draw-btn-rect{
 	animation: draw-btn-rect 2s linear 1s 1 forwards;
 }
+@keyframes translate-btn {
+	from {
+		transform: translate(0px, -50%);	
+	}
+	50%{
+		transform: translate(5px, -50%);		
+	}
+	to{    
+		transform: translate(0px, -50%);	
+	}
+}
 @keyframes draw-close-round {
 	from {
 		stroke-dashoffset: -400;	
@@ -80,11 +91,11 @@
 	}
 	70%{
 		stroke-dashoffset: 0; 
-		stroke: @blue;			
+		stroke:  @blue-light;			
 	}
 	to{    
 	  stroke-dashoffset: 0;
-	  stroke: @blue;	
+	  stroke:  @blue-light;	
 	}
 }
 @keyframes draw-close-cancel{
