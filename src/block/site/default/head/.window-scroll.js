@@ -1,15 +1,17 @@
+/*
+(function(){
 	var pos = $(document).scrollTop();
 	var semi_screen = $(window).outerHeight(true);
 	
 	var border = pos + semi_screen;
 	
-	$('.decor-line.v').each(function(index){
+	$('.azbn-decor-line.v').each(function(index){
 		
 		var line = $(this);
 		
 		var _h = line.attr('data-default-height') || 0;
 		
-		var _pos = line.position().top;
+		var _pos = line.offset().top;
 		
 		var ratio = (Math.abs(_pos - border) / semi_screen);
 		
@@ -19,8 +21,10 @@
 		
 		var percent = 1 - ratio;
 		
-		line.height((_h * percent) + 'px');
+		line.height((_h * percent * 1.25) + 'px');
 
 		console.log(percent);
 		
 	});
+})();
+*/
