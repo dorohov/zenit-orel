@@ -7,19 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="yandex-verification" content="7816a020e40f5a4b" />
-
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/favicon/manifest.json">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" content="#5bbad5">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#235aa3">
 <link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="zenit-orel.ru">
+<meta name="application-name" content="zenit-orel.ru">
 <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<link href="/css/site.css" rel="stylesheet">
-<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=zmiCynB6e65ajX1qWWP6ejDkuCtRk1AC/Mey9RmBJhcOvT4UV2fESqRDGma3Jc0MVPtNxFw7Aj3ARiAsx3B15i7Zn*mpvUAK2Misb/GsPdn0IchUXLXuto/R*L*7q38jLZjg18Wik6gYqjmCQW704OEHNrNQTjtv8WiB4CmoB3A-&pixel_id=1000073085';</script> 		
+<link href="/css/site.css" rel="stylesheet"> 		
 	</head>
 	<body class="index-page">
 		<nav class="navbar-site second {{navbar_animation}}"
@@ -160,8 +159,12 @@
 					</a>
 				</div>
 			</div>
-			<div class="cols _oicp__cols">		
-				<div id="objacts-carousel" class="carousel-block carousel _oicp__carousel slide carousel-fade" data-ride="carousel">
+			<div class="cols _oicp__cols">
+				<div class="lightgallery">
+					<a href="/img/objacts/obj-lock-slider.png"><img src="/img/objacts/obj-lock-slider.png" alt=""></a>
+				</div>
+					
+				<!--<div id="objacts-carousel" class="carousel-block carousel _oicp__carousel slide carousel-fade" data-ride="carousel">
 					<div class="carousel__inner _oicp__carousel-inner carousel-inner">
 						<div class="carousel__item _oicp__carousel-item item active">
 							<div class="row _oicp__carousel-row">
@@ -286,7 +289,7 @@
 							</li>
 						</ol>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 		
@@ -776,5 +779,16 @@
 		<script src="/js/google-map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5mvq0SP3WCozmHWsYmfdLq_Y3vlaosik&callback=initMap"
     async defer></script>  
+		<link rel="stylesheet" type="text/css" href="/css/lightgallery.css" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.lightgallery').lightGallery({
+		    thumbnail:false,
+		    download: false
+		}); 
+	})
+</script>
+<!-- light Gallery -->
+<script src="/plugins/lightGallery/js/lightgallery.js"></script>  
 	</body>
 </html>
