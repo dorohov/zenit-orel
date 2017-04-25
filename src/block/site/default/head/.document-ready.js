@@ -8,6 +8,7 @@ $('.navbar-nav a[href="'+url+'"]').parent().addClass('active');
 $('.text-block table').addClass('table table-bordered');
 $('.text-block .table.table-bordered').parent().addClass('table-responsive');
 $('.text-block img').parent().addClass('_tb__img'); 
+$('.text-block iframe[src^="https://www.youtube.com"]').parent().addClass('youtube-frame'); 
 
 $('.btn-journal').on('click', function(){
   	$(this).toggleClass('is-active');

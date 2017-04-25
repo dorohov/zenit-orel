@@ -3,7 +3,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     color: @white;
 	overflow: hidden;
 	@media @media-size-xs{
@@ -22,7 +21,10 @@
 		}
 	}
 	@media @media-size-sm{height: ~"calc(100vh - @{b-nav-top-sm})";}
-	@media @media-screen{height: 100vh;} 
+	@media @media-screen{
+		height: 100vh;
+    	background-attachment: fixed;
+	} 
 }
 ._hcb__{
 	&container{
