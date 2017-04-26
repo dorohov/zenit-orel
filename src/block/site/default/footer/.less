@@ -7,6 +7,7 @@
     font-weight: 300;
     color: @b-footer-color;
 	//@media @media-size-sm{text-align: center;}	
+	@media @media-size-xs-p{text-align: center;}
 	@media @media-size-mdl{
 		font-size: @b-footer-fs - 4; //16
 		line-height: @b-footer-lh - 4; //24
@@ -44,6 +45,7 @@
 		@media @media-device{
 			margin-bottom: 10px;
 		}
+		@media @media-size-xs-p{justify-content: center;}
 		@media @media-size-xs{
 			flex-wrap: wrap;
 			> .cols{
@@ -120,7 +122,8 @@
 		font-size: @b-fs - 1px;
 		line-height: @b-lh - 6px;
 		color: #747474;
-		@media @media-device{padding-top: 25px;}
+		@media @media-device{padding-top: 25px;}	
+		@media @media-size-xs-p{text-align: left;}
 		@media @media-screen{padding-top: 1.8vw;}
 		@media @media-notsmart{
 			column-count: 2;

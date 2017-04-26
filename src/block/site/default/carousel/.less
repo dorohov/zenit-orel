@@ -261,6 +261,26 @@
 		@media @media-size-xs-l{width: 25%;}
 		@media @media-size-md{width: 40%;}
 	}
+
+	&carousel-control{
+		@media @media-device{display: none;}
+		width: 20%;
+		position: absolute;		
+		bottom: 0;
+		z-index: 5;
+		top: 3.8vw;
+		@media @media-size-md{top: 0.8vw;}
+		&[data-slide="prev"]{
+		    right: 0;
+    		transform: translateX(-162%);
+    		@media @media-size-md{transform: translateX(-92%);}
+			cursor: url("@{url-path-img}/default/icon-prev.png"), pointer;
+		}
+		&[data-slide="next"]{
+			right: 0;
+			cursor: url("@{url-path-img}/default/icon-next.png"), pointer;
+		}
+	}
 }
 //
 ._oicp__{
@@ -360,6 +380,22 @@
 			.calcFontSize(40, 100, 320, 1680);
 			.calcLineHeight(40, 100, 320, 1680); 
 		}
+	}	
+	&carousel-control{
+		@media @media-device{display: none;}
+		width: 20%;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 5;
+		&[data-slide="prev"]{
+			left: 0;
+			cursor: url("@{url-path-img}/default/icon-prev.png"), pointer;
+		}
+		&[data-slide="next"]{
+			right: 0;
+			cursor: url("@{url-path-img}/default/icon-next.png"), pointer;
+		}
 	}
 }
 
@@ -374,12 +410,12 @@
 .blog__{
 	&carousel{
 		margin-bottom: 30px;
-		@media @media-size-xs-p{height: 350px;}
-		@media @media-size-xs-l{height: 250px;}
-		@media @media-size-sm-p{height: 450px;}
+		//@media @media-size-xs-p{height: 350px;}
+		//@media @media-size-xs-l{height: 250px;}
+		//@media @media-size-sm-p{height: 450px;}
 		@media @media-size-sm-l{
 			max-width: ~"calc(50% - 15px)";
-			height: 300px;
+			//height: 300px;
 		}
 		@media @media-screen{
 			height: 26vw;
@@ -393,8 +429,14 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;	
-		@media @media-device{padding: 35px 50px 35px 20px;}
-		@media @media-screen{padding: 6.2vw 2.5vw;}
+		@media @media-device{
+			//padding: 35px 50px 35px 20px;
+			background-image: none!important;
+		}
+		@media @media-screen{
+			padding: 6.2vw 2.5vw;
+			img{display: none!important;}
+		}
 		&, &:hover, &:focus{color: @white;}
 		/*&::before{
 			content: '';
@@ -459,6 +501,22 @@
 				background: @white;
 				cursor: default;
 			}
+		}
+	}
+	&control{
+		@media @media-device{display: none;}
+		width: 20%;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 5;
+		&[data-slide="prev"]{
+			left: 0;
+			cursor: url("@{url-path-img}/default/icon-prev.png"), pointer;
+		}
+		&[data-slide="next"]{
+			right: 0;
+			cursor: url("@{url-path-img}/default/icon-next.png"), pointer;
 		}
 	}
 }
