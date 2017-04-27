@@ -442,8 +442,12 @@
 			font-size: @b-fs - 1px;
 			line-height: @b-lh + 4px;
 			color: @b-color;
-			padding-left: 2px;
 			transition: @transition-site;
+			@media @media-size-xs{				
+				letter-spacing: 1px;
+				font-size: @b-fs - 2px;
+				line-height: @b-lh + 2px;
+			}
 			@media @media-size-lg1{
 				letter-spacing: 1px;
 				font-size: @b-fs - 2px;
@@ -468,8 +472,12 @@
 			width: 52px;
 			height: 52px;
 			@media @media-size-xs{
-				width: 36px;
-				height: 36px;
+				width: 32px;
+				height: 32px;
+			}
+			@media @media-size-sm{
+				width: 42px;
+				height: 42px;
 			}
 			@media @media-size-lg1{
 				width: 32px;
@@ -1484,6 +1492,12 @@
 		display: block;
 		cursor: url("@{url-path-img}/default/icon-zoom.png"), pointer;
 		&, &:hover, &:focus{color: @b-color;}
+		img{
+			@media @media-device{
+				width: 100%;
+				max-width: inherit;
+			}
+		}
 	}
 	&carousel-row{
 		display: block;	
@@ -1550,7 +1564,7 @@
 		//@media @media-size-xs-l{height: 250px;}
 		//@media @media-size-sm-p{height: 450px;}
 		@media @media-size-sm-l{
-			max-width: ~"calc(50% - 15px)";
+			//max-width: ~"calc(50% - 15px)";
 			//height: 300px;
 		}
 		@media @media-screen{
@@ -1568,6 +1582,10 @@
 		@media @media-device{
 			//padding: 35px 50px 35px 20px;
 			background-image: none!important;
+			img{
+				width: 100%;
+				max-width: inherit;
+			}
 		}
 		@media @media-screen{
 			padding: 6.2vw 2.5vw;
@@ -3540,12 +3558,14 @@
 		top: 0;
 		left: 48vw;
 		height: 7vw;
+		@media @media-device{display: none}
 	}
 	&line-right-horiz{
 		position: absolute;
 		top: 7vw;
 		left: 45vw;
 		width: 33vw;
+		@media @media-device{display: none}
 	}
 }
 .contacts-content-page{}
@@ -3898,7 +3918,9 @@
 
 		}
 	}
-	@media @media-size-sm{height: ~"calc(100vh - @{b-nav-top-sm})";}
+	@media @media-size-sm{
+		min-height: ~"calc(100vh - @{b-nav-top-sm})";
+	}
 	@media @media-screen{
 		height: 100vh;
     	background-attachment: fixed;

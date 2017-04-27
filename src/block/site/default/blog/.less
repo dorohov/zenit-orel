@@ -163,8 +163,12 @@
 			font-size: @b-fs - 1px;
 			line-height: @b-lh + 4px;
 			color: @b-color;
-			padding-left: 2px;
 			transition: @transition-site;
+			@media @media-size-xs{				
+				letter-spacing: 1px;
+				font-size: @b-fs - 2px;
+				line-height: @b-lh + 2px;
+			}
 			@media @media-size-lg1{
 				letter-spacing: 1px;
 				font-size: @b-fs - 2px;
@@ -189,8 +193,12 @@
 			width: 52px;
 			height: 52px;
 			@media @media-size-xs{
-				width: 36px;
-				height: 36px;
+				width: 32px;
+				height: 32px;
+			}
+			@media @media-size-sm{
+				width: 42px;
+				height: 42px;
 			}
 			@media @media-size-lg1{
 				width: 32px;

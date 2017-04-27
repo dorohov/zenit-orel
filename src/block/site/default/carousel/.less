@@ -352,6 +352,12 @@
 		display: block;
 		cursor: url("@{url-path-img}/default/icon-zoom.png"), pointer;
 		&, &:hover, &:focus{color: @b-color;}
+		img{
+			@media @media-device{
+				width: 100%;
+				max-width: inherit;
+			}
+		}
 	}
 	&carousel-row{
 		display: block;	
@@ -418,7 +424,7 @@
 		//@media @media-size-xs-l{height: 250px;}
 		//@media @media-size-sm-p{height: 450px;}
 		@media @media-size-sm-l{
-			max-width: ~"calc(50% - 15px)";
+			//max-width: ~"calc(50% - 15px)";
 			//height: 300px;
 		}
 		@media @media-screen{
@@ -436,6 +442,10 @@
 		@media @media-device{
 			//padding: 35px 50px 35px 20px;
 			background-image: none!important;
+			img{
+				width: 100%;
+				max-width: inherit;
+			}
 		}
 		@media @media-screen{
 			padding: 6.2vw 2.5vw;
