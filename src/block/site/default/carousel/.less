@@ -348,15 +348,19 @@
 		@media @media-screen{min-height: 32.5vw;}
 		@media @media-size-sml{min-height: 500px;}
 	}
-	&carousel-item{}
+	&carousel-item{
+		display: block;
+		cursor: url("@{url-path-img}/default/icon-zoom.png"), pointer;
+		&, &:hover, &:focus{color: @b-color;}
+	}
 	&carousel-row{
 		display: block;	
 	}
-	&carousel-cols-img{
-		width: 100%;
+	&carousel-img{
 		margin-bottom: 3.8vw;
 	}
 	&carousel-cols-note{
+		color: @b-color;
 		font-size: @b-fs - 1px;
 		line-height: @b-lh - 6px;
 		@media @media-size-sm{max-width: 500px;}
@@ -387,7 +391,7 @@
 		position: absolute;
 		top: 0;
 		height: 100%;
-		z-index: 5;
+		z-index: 4;
 		&[data-slide="prev"]{
 			left: 0;
 			cursor: url("@{url-path-img}/default/icon-prev.png"), pointer;
