@@ -144,7 +144,7 @@
 				<h1 class="_bcp__heading heading-page"><span>Моделирование инженерной подготовки территории</span></h1>	
 			</div>
 			<div class="text-block">
-				<p> <img src="https://habrastorage.org/getpro/habr/post_images/a99/6ad/ec6/a996adec64d4d53a11e25ddf2cfab081.jpg" width="300" height="200"/></p>
+				<p><img src="https://habrastorage.org/getpro/habr/post_images/a99/6ad/ec6/a996adec64d4d53a11e25ddf2cfab081.jpg" width="300" height="200"/></p>
 				<p>Командная строка Unix полна сюрпризов. Например, вы&nbsp;знали, что инструмент <code>ls</code>, который чаще всего используется для получения списка файлов в&nbsp;текущем каталоге, в&nbsp;версии OS&nbsp;X&nbsp;распознаёт не&nbsp;менее <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/ls.1.html">38&nbsp;разных флагов</a>?</p>
 				<p>Я&nbsp;не&nbsp;знал, так что <a href="https://twitter.com/rtraschke/status/585933203183165441">затвитил</a> этот факт. И&nbsp;получил парочку ответов, <a href="https://twitter.com/rtraschke/status/585933203183165441">один из&nbsp;которых</a> заставил меня задуматься: действительно&nbsp;ли саму Unix нужно винить в&nbsp;этом?</p>
 				<p>Насколько я&nbsp;знаю, ни&nbsp;Linux, ни&nbsp;OS&nbsp;X&nbsp;не были спроектированы в&nbsp;строгом соответствии с&nbsp;<a href="http://en.wikipedia.org/wiki/Unix_philosophy">философией Unix</a>. Будет лицемерием основывать критику «Unix» только на&nbsp;этих производных от&nbsp;Unix, которые есть у&nbsp;нас сегодня.</p>
@@ -269,6 +269,20 @@
 				<p>Знание истории информатики и&nbsp;ограничений, в&nbsp;которых формировались текущие ментальные модели, дарует нам своеобразную суперсилу: мы&nbsp;можем определить, когда необходимый прежде компромисс стал нелепым и&nbsp;устарел.</p>
 
 			</div>
+			<div class="lightgallery row _bcp__row-gallery">
+				<a href="/img/objacts/obj-lock-slider.png" class="cols _bcp__cols-gallery">
+					<img src="/img/objacts/obj-lock-slider.png" alt="">
+				</a>
+				<a href="/img/objacts/obj-lock-slider.png" class="cols _bcp__cols-gallery">
+					<img src="/img/objacts/obj-lock-slider.png" alt="">
+				</a>
+				<a href="/img/objacts/obj-lock-slider.png" class="cols _bcp__cols-gallery">
+					<img src="/img/objacts/obj-lock-slider.png" alt="">
+				</a>
+				<a href="/img/objacts/obj-lock-slider.png" class="cols _bcp__cols-gallery">
+					<img src="/img/objacts/obj-lock-slider.png" alt="">
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -370,5 +384,16 @@
 
 <script src="/js/svg4everybody.min.js" ></script>
 <script>svg4everybody();</script>
+		<link rel="stylesheet" type="text/css" href="/css/lightgallery.css" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.lightgallery').lightGallery({
+		    thumbnail:false,
+		    download: false
+		}); 
+	})
+</script>
+<!-- light Gallery -->
+<script src="/plugins/lightGallery/js/lightgallery.js"></script> 
 	</body>
 </html>
