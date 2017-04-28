@@ -30,6 +30,49 @@
 			]]
 		</div>
 
+		[[azbntple 
+			tpl="/src/block/site/default/modals/subscribe.html" 
+			prefix_modals="modal-banks__"
+			heading_modals="Подписка на новости"
+			note_modals="Подпишитесь на новости, чтобы первым получать самую свежую информацию о новых объектах и специальных предложениях компании."
+		]]
+
+
 		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+
+
+		<script>
+			$(function(){
+				
+				$(document.body).on('change', '.ingr-cb-c-label input[type="checkbox"][name="ingr_cb"]', {}, function(event){
+					
+					
+					
+					var cb = $(this);
+					var label = cb.closest('label');
+					var block = $('.sp-button-container');
+					
+					if($(event.target).attr('href') && $(event.target).attr('href') != '') {
+						
+					} else {
+						
+						var is_checked = label.attr('data-checked') || '';
+						
+						
+						if(is_checked == 'checked') {
+							block.fadeOut('fast');
+							label.attr('data-checked', '');//.prop('checked', null);
+						} else {
+							block.fadeIn('fast');
+							label.attr('data-checked', 'checked');//.prop('checked', 'checked');
+						}
+						
+					}
+					
+					
+					
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<div class="modal fade modal-banks" id="modal-review" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade modal-banks" id="modal-banks" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-banks__dialog">
 		<div class="modal-body modal-banks__body" >
 			<div class="modal-banks__line left-vert line-anim vert"></div>

@@ -15,12 +15,13 @@
 		flex-wrap: wrap;
 	}
 	&cols{
-		@media @media-size-xs{
-			width: 100%;
-			margin-bottom: 30px;
+		@media @media-device{
+			width: 100%; 
+			margin-bottom: 10px;
 		}
+		//@media @media-size-xs{margin-bottom: 30px;}
 		//@media @media-size-sm-l{width: 50%;}
-		@media @media-notsmart{width: 50%;}
+		@media @media-screen{width: 50%;}
 	}
 	&text{
    		font-size: @b-fs - 1px; //15px;
@@ -29,10 +30,16 @@
 	}
 	&panel{
 		position: relative;
-		margin-left: auto;
-		max-width: 370px;
-		.calcFontSize(18, 23, 320, 1680);
-		.calcLineHeight(24, 31, 320, 1680);
+		@media @media-device{				
+	   		font-size: @b-fs - 1px; //15px;
+	    	line-height: @b-lh - 3px; // 21px;
+		}
+		@media @media-screen{
+			margin-left: auto;
+			max-width: 370px;
+			.calcFontSize(18, 23, 320, 1680);
+			.calcLineHeight(24, 31, 320, 1680);
+		}
 	}
 	&map-block{
 		position: relative;
@@ -54,28 +61,33 @@
 		top: -11.5vw;
     	left: 4vw;
     	height: 10.5vw;
+    	@media @media-device{display: none;}
 	}
 	&line-top-right-vert{
 		position: absolute;
 		top: -11.5vw;
 		height: 10.5vw;
 		right: 3vw;
+    	@media @media-device{display: none;}
 	}
 	&line-top-right-horiz{
 		position: absolute;
 		top: -1vw;
 		width: 100%;
+    	@media @media-device{display: none;}
 	}
 	&line-bottom-right-vert{
 		position: absolute;
 		bottom: -9vw;
 		height: 8vw;
 		right: 16.5vw;
+    	@media @media-device{display: none;}
 	}
 	&line-bottom-right-horiz{
 		position: absolute;
 		bottom: -1vw;
 		width: 100%;
+    	@media @media-device{display: none;}
 	}
 	/*&line-center-horiz{
 		position: absolute;

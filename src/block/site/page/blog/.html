@@ -6,9 +6,19 @@
 			prefix_bread="breadcrumb__" 
 			level_1="Блог компании" 
 		]]		
-		<div class="heading-page__hgroup {{prefix_block}}heading-page__hgroup">
-			<h1 class="{{prefix_block}}heading heading-page line"><span>{{heading_page}}</span></h1>	
-			<h3 class="heading-page-small">Актуальное и свежее</h3>
+		<div class="heading-page__hgroup {{prefix_block}}heading-page__hgroup flex">
+			<div>
+				<h1 class="{{prefix_block}}heading heading-page"><span>{{heading_page}}</span></h1>	
+				<h3 class="heading-page-small">Актуальное и свежее</h3>
+			</div>
+
+			<button type="button" class="btn-site btn-blue objacts-map__btn" data-toggle="modal" data-target="#modal-subscribe">
+				<svg class="rect-block">
+					<rect class="rect" x="0" y="0"/>
+				</svg>
+				<span class="name">Подписаться на новости</span>
+				<span class="bg"></span>
+			</button> 
 		</div>
 	</div>
 	<div class="{{prefix_block}}block">		

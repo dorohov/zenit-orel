@@ -151,13 +151,14 @@
 		background: @white;
 		color: @b-color;
 		padding: 13.5vw 5vw 50px;
+		padding: 9.5vw 5vw 50px;
 		overflow: hidden;
 		transition: 0.5s transform;
 		@media @media-device{min-height: 100vh;}
 		@media @media-size-sm{width: 50vw;}
 		@media @media-size-sm-l{padding-top: 10vw;}
 		@media @media-screen{width: 35vw; height: 100vh;}
-		@media @media-size-mdl{padding-top: 6.5vw}
+		@media @media-size-mdl{padding-top: 4vw}
 	}
 	&modal-nav{
 		list-style: none;		
@@ -195,6 +196,18 @@
 					transform: translateX(1.3vw);
 					&::before{
 						transform: translate(-1.3vw,0%) scale(1, 1);
+					}
+				}
+				&.callback{
+					color: @b-nav-color-hover;
+					font-weight: 800;
+					transform: translateX(0);
+					border-bottom: 2px solid fadeout(@b-nav-color-hover, 0%);
+					&::before{
+						display: none;
+					}
+					&:hover{
+						border-bottom: 2px solid fadeout(@b-nav-color-hover, 100%);
 					}
 				}
 			}

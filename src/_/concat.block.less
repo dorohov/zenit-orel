@@ -1384,6 +1384,7 @@
 		.calcLineHeight(25, 30, 320, 1680); */
 		.calcFontSize(17, 19, 320, 1680);
 		.calcLineHeight(24, 26, 320, 1680); 
+		*{margin-bottom: 15px}
 		@media @media-size-xs-p{
 			width: 100%;
 			margin-bottom: 20px;
@@ -1812,16 +1813,20 @@
 }
 .form-site{
 	&.inline{
+		@media @media-device{
+			max-width: 410px;
+			margin: 0 auto;
+		}
 		.form__cols{
-			@media @media-size-xs{width: 100%;}
 			/*@media @media-size-xs-l{
 				width: 33.3333%;
 				&:last-child{
 					width: 50%;
 				}
 			}*/
-			@media @media-size-sm-p{width: 33.3333%;}
+			//@media @media-size-sm-p{width: 33.3333%;}
 			@media @media-device{
+				width: 100%;
 				&.btn{
 					order: 1;
 				}
@@ -2435,13 +2440,14 @@
 		background: @white;
 		color: @b-color;
 		padding: 13.5vw 5vw 50px;
+		padding: 9.5vw 5vw 50px;
 		overflow: hidden;
 		transition: 0.5s transform;
 		@media @media-device{min-height: 100vh;}
 		@media @media-size-sm{width: 50vw;}
 		@media @media-size-sm-l{padding-top: 10vw;}
 		@media @media-screen{width: 35vw; height: 100vh;}
-		@media @media-size-mdl{padding-top: 6.5vw}
+		@media @media-size-mdl{padding-top: 4vw}
 	}
 	&modal-nav{
 		list-style: none;		
@@ -2479,6 +2485,18 @@
 					transform: translateX(1.3vw);
 					&::before{
 						transform: translate(-1.3vw,0%) scale(1, 1);
+					}
+				}
+				&.callback{
+					color: @b-nav-color-hover;
+					font-weight: 800;
+					transform: translateX(0);
+					border-bottom: 2px solid fadeout(@b-nav-color-hover, 0%);
+					&::before{
+						display: none;
+					}
+					&:hover{
+						border-bottom: 2px solid fadeout(@b-nav-color-hover, 100%);
 					}
 				}
 			}
@@ -3081,7 +3099,13 @@
 			padding: 20px 35px 20px 70px;
 			br{display: none;}
 		}
-		@media @media-notsmart{
+		@media @media-size-sm{
+			padding: 20px 25px 20px 70px;
+			max-width: 320px;
+			font-size: @b-fs - 2px;
+			line-height: @b-lh - 8px;
+		}
+		@media @media-screen{
 			max-width: 320px;
 			padding: 25px 35px 25px 95px;
 		}
@@ -3108,7 +3132,7 @@
 		left: 35px;
 		width: 45px;
 		height: 45px;
-		@media @media-size-xs{
+		@media @media-device{
 			width: 35px;
 			height: 35px;
 			left: 20px;
@@ -3122,6 +3146,9 @@
 			}
 			&.icon-filter-ready{
 				fill: @blue;
+			}
+			&.icon-filter-buy{
+				fill: #256525;
 			}
 		}
 	}
@@ -3152,6 +3179,7 @@
 	&filter{
 		@media @media-size-xs{
 			margin: 0;
+		    padding-left: 65px;
 			> li{width: auto;}
 		}
 	}
@@ -3162,7 +3190,8 @@
 			width: 75px;
 		}
 		@media @media-size-sm-p{
-			padding: 75px 35px 15px 35px; 
+		    padding: 60px 35px 15px;
+    		text-align: center;
 		}
 	}
 	&filter-icon{
@@ -3921,7 +3950,7 @@
 		}
 	}
 	@media @media-size-sm{
-		min-height: ~"calc(100vh - @{b-nav-top-sm})";
+		//min-height: ~"calc(100vh - @{b-nav-top-sm})";
 	}
 	@media @media-screen{
 		height: 100vh;
@@ -4080,12 +4109,13 @@
 		flex-wrap: wrap;
 	}
 	&cols{
-		@media @media-size-xs{
-			width: 100%;
-			margin-bottom: 30px;
+		@media @media-device{
+			width: 100%; 
+			margin-bottom: 10px;
 		}
+		//@media @media-size-xs{margin-bottom: 30px;}
 		//@media @media-size-sm-l{width: 50%;}
-		@media @media-notsmart{width: 50%;}
+		@media @media-screen{width: 50%;}
 	}
 	&text{
    		font-size: @b-fs - 1px; //15px;
@@ -4094,10 +4124,16 @@
 	}
 	&panel{
 		position: relative;
-		margin-left: auto;
-		max-width: 370px;
-		.calcFontSize(18, 23, 320, 1680);
-		.calcLineHeight(24, 31, 320, 1680);
+		@media @media-device{				
+	   		font-size: @b-fs - 1px; //15px;
+	    	line-height: @b-lh - 3px; // 21px;
+		}
+		@media @media-screen{
+			margin-left: auto;
+			max-width: 370px;
+			.calcFontSize(18, 23, 320, 1680);
+			.calcLineHeight(24, 31, 320, 1680);
+		}
 	}
 	&map-block{
 		position: relative;
@@ -4119,28 +4155,33 @@
 		top: -11.5vw;
     	left: 4vw;
     	height: 10.5vw;
+    	@media @media-device{display: none;}
 	}
 	&line-top-right-vert{
 		position: absolute;
 		top: -11.5vw;
 		height: 10.5vw;
 		right: 3vw;
+    	@media @media-device{display: none;}
 	}
 	&line-top-right-horiz{
 		position: absolute;
 		top: -1vw;
 		width: 100%;
+    	@media @media-device{display: none;}
 	}
 	&line-bottom-right-vert{
 		position: absolute;
 		bottom: -9vw;
 		height: 8vw;
 		right: 16.5vw;
+    	@media @media-device{display: none;}
 	}
 	&line-bottom-right-horiz{
 		position: absolute;
 		bottom: -1vw;
 		width: 100%;
+    	@media @media-device{display: none;}
 	}
 	/*&line-center-horiz{
 		position: absolute;

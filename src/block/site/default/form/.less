@@ -1,15 +1,19 @@
 .form-site{
 	&.inline{
+		@media @media-device{
+			max-width: 410px;
+			margin: 0 auto;
+		}
 		.form__cols{
-			@media @media-size-xs{width: 100%;}
 			/*@media @media-size-xs-l{
 				width: 33.3333%;
 				&:last-child{
 					width: 50%;
 				}
 			}*/
-			@media @media-size-sm-p{width: 33.3333%;}
+			//@media @media-size-sm-p{width: 33.3333%;}
 			@media @media-device{
+				width: 100%;
 				&.btn{
 					order: 1;
 				}

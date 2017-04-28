@@ -1,0 +1,28 @@
+<div class="modal fade modal-banks" id="modal-subscribe" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{prefix_modals}}dialog">
+		<div class="modal-body {{prefix_modals}}body" >
+			<div class="{{prefix_modals}}line left-vert line-anim vert"></div>
+			<div class="{{prefix_modals}}line left-horiz line-anim horiz "></div>
+			<div class="{{prefix_modals}}line right-vert line-anim vert"></div>
+			<div class="{{prefix_modals}}line right-horiz line-anim horiz "></div>
+			<button type="button" class="btn-site btn-close {{prefix_modals}}close modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="{{prefix_modals}}close-rect-block modal-close__rect-block">
+					<rect class="{{prefix_modals}}close-rect modal-close__rect" x="0" y="0"/>
+				</svg>
+				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel"]] 
+			</button>
+			<div class="modal-content {{prefix_modals}}content">
+				<h3 class="modal-title {{prefix_modals}}title">{{heading_modals}}</h3>				
+				<div class="modal-note {{prefix_modals}}note">		
+					{{note_modals}}
+				</div>
+				[[azbntple 
+					tpl="/src/block/site/default/form/fio-email.html" prefix_form="form__"  
+					prefix_block="modal-banks__"
+					class="block"
+					btn_name="Подписаться"
+				]]
+			</div> 
+		</div>
+	</div>
+</div>
