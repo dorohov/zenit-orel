@@ -497,7 +497,7 @@
 		@media @media-size-xs-p{flex-wrap: wrap; margin: 20px 0}
 		> li{
 			position: relative;
-			@media @media-size-xs{width: 100%}
+			@media @media-size-xs-p{width: 100%}
 			@media @media-notsmart{
 				&::before{
 					content: '';
@@ -525,10 +525,16 @@
 		display: flex;
 		align-items: center;
 		transition: @transition-site;
-		@media @media-size-xs{
+
+		@media @media-size-xs-p{
 			padding: 20px 35px 20px 70px;
 			br{display: none;}
 		}
+		@media @media-size-xs-l{
+			height: 75px;
+			padding: 20px;
+			width: 75px;
+		}		
 		@media @media-size-sm{
 			padding: 20px 25px 20px 70px;
 			max-width: 320px;
@@ -582,7 +588,11 @@
 			}
 		}
 	}
-	&filter-name{}
+	&filter-name{
+		@media @media-size-xs-l{
+			display: none;
+		}
+	}
 	&panel{
 		margin-bottom: 10.3vw;
 		background-image: url("@{url-path-img}/bg/bg-map-panel.png");
