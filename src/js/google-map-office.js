@@ -23,8 +23,8 @@ function initMap() {
 		});
 
         $(window).resize(function() {
-			google.maps.event.trigger(map, "resize");
-			map.setCenter(coord);
+			google.maps.event.trigger(mapOffice, "resize");
+			mapOffice.setCenter(zenitOfficeCoord);
         });
 };
 $(function () {
