@@ -486,7 +486,12 @@
 }
 
 ._bcp__{
-	&blog-row{flex-wrap: wrap;}
+	&blog-row{
+		flex-wrap: wrap;
+		&.center{
+			justify-content: center;
+		}
+	}
 	&blog-cols{
 		width: 33.3333%;
 		margin-bottom: 30px;
