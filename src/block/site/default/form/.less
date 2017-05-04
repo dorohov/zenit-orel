@@ -153,11 +153,11 @@
 	font-size: @b-fs - 3px;
 
 }
-.material-switch__input[type="checkbox"]:checked + .material-switch__label::before, #sp-form-41833 .material-switch__input[type="checkbox"][data-checked="1"] + .material-switch__label::before {
+.material-switch__input[type="checkbox"]:checked + .material-switch__label::before, #sp-form-41833 .material-switch__input[type="checkbox"] + .material-switch__label[data-checked="checked"]:before {
 	background: @blue;
 	opacity: 0.5;
 } 
-.material-switch__input[type="checkbox"]:checked + .material-switch__label::after, #sp-form-41833 .material-switch__input[type="checkbox"][data-checked="1"] + .material-switch__label::after {
+.material-switch__input[type="checkbox"]:checked + .material-switch__label::after, #sp-form-41833 .material-switch__input[type="checkbox"] + .material-switch__label[data-checked="checked"]:after {
 	background: @blue;
 	left: 20px;
 }
