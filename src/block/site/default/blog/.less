@@ -3,6 +3,10 @@
 	&item{
 		height: 100%;
 		position: relative;
+		img{
+			position: relative;
+			z-index: 2;
+		}
 		&::before,
 		&::after{
 			position: absolute;
@@ -67,7 +71,7 @@
 			.blog__item-next{
 				animation-play-state: running;
 			}
-		}
+		} 
 	}
 	&item-inner{
 		background: @white;
@@ -533,6 +537,10 @@
 	&blog-cols{
 		width: 33.3333%;
 		margin-bottom: 30px;
+		img{
+			position: relative;
+			z-index: 2;
+		}
 		.safari &{
 			position: relative;
 
