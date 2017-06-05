@@ -431,6 +431,7 @@
 	}
 	&item-cat{
 		position: relative;
+		z-index: 2;
 		margin-bottom: 2vw;
 		width: 100%; 
 		@media @media-device {margin-bottom: 25px;}
@@ -492,7 +493,9 @@
 		}
 	}
 	&item-stroke{
-		width: 100%;		
+		width: 100%;
+		position: relative;
+		z-index: 2;		
 	}
 	&item-heading{
 		letter-spacing: 0.8px;
@@ -514,6 +517,7 @@
 		width: 100%;		
 		font-size: @b-fs - 2px;
 		position: relative;
+		z-index: 2;
 		padding-right: 30px;
 		@media @media-device {margin-top: 25px;}
 		@media @media-screen {margin-top: 1.7vw;}
@@ -762,8 +766,42 @@
 			}
 		}
 	}
+	/*&blog-cols{
+		.safari &{
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				background-color: @white;
+				top: 0;
+				bottom: 0;
+				left: 15px;
+				right: 15px;
+				z-index: -1;
+			}
+			.blog__item{
+				position: static;
+				&::before,
+				&::after{
+					left: 15px;
+					width: ~"calc(100% - 30px)";
+				}
+			}
+			.blog__item-inner{
+				position: static;	
+				&::before{
+					left: 15px;
+				}
+				&::after{
+					right: 15px;
+				}
+			}
+		}
+	} */
 }
-
+ ._bcp__{
+	&blog-cols{}
+}
 ._bcp__{
 	&blog-row{
 		flex-wrap: wrap;
@@ -774,6 +812,69 @@
 	&blog-cols{
 		width: 33.3333%;
 		margin-bottom: 30px;
+		.safari &{
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				background-color: @white;
+				top: 0;
+				bottom: 0;
+				left: 15px;
+				right: 15px;
+				z-index: 1;
+			}
+			.blog__item{
+				position: static;
+				&::before,
+				&::after{
+					left: 15px;
+					width: ~"calc(100% - 30px)";
+				}
+			}
+			.blog__item-inner{
+				position: static;	
+				&::before{
+					left: 15px;
+				}
+				&::after{
+					right: 15px;
+				}
+			}
+			&:hover{
+				.blog__item{
+					&::before,
+					&::after{
+						transform: scale(1, 1);
+					}
+					&::before{
+						transition: all 0.4s linear 0s;
+					}
+					&::after{
+						transition: all 0.4s linear 0.8s;
+					}
+				}
+				.blog__item-inner{
+					&::before,
+					&::after{
+						transform: scale(1, 1);
+					}
+					&::before{
+						transition: all 0.4s linear 1.2s;
+					}
+					&::after{
+						transition: all 0.4s linear 0.4s;
+					}
+				}
+				.blog__item-heading{
+					a{color: @b-color-a}				
+				}
+				.blog__item-next{
+					animation-play-state: running;
+				}			
+			}
+		}
 		&.cols6{
 			width: 50%;
 			@media @media-size-xs{width: 100%}
