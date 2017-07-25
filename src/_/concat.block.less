@@ -1217,14 +1217,14 @@
 		}
 		@media @media-screen{
 			height: 11.5vw;
-			padding: 2vw 3.5vw;
+			padding: 2vw 3vw;
 		}
 		@media @media-size-mdl{
 			height: 14vw;
 			padding: 3.5vw 4vw;
 		}
 	}
-	&inner{}
+	&inner{width: 100%;}
 	&heading{		
 		.calcFontSize(16, 20, 320, 1680);
 		.calcLineHeight(24, 28, 320, 1680);
@@ -1232,6 +1232,7 @@
 	&preview{
 		display: block;
 		margin-bottom: 15px;
+		img{margin: 0 auto}
 	}
 	&note{
 		display: flex;
