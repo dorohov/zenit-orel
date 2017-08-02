@@ -141,10 +141,10 @@
 }
 
 //
-._acb__{
+._acb__{ 
 	&carousel{
-		@media @media-screen{padding-top: 3vw;}
-		@media @media-size-md{padding-top: 0;}
+		//@media @media-screen{padding-top: 3vw;}
+		//@media @media-size-md{padding-top: 0;}
 	    z-index: 2;
 	}
 	&carousel-indicators{
@@ -163,7 +163,10 @@
 		}
 		@media @media-size-md{
 			right: 0;
-			top: 14vw;
+			//top: 14vw;
+			top: inherit;
+			bottom: -2vw;
+    		right: -2vw;
 		}
 		@media @media-size-sml{
 			width: 250px;

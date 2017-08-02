@@ -20,6 +20,43 @@
 			@media @media-screen{margin-bottom: 3.2vw;} 
 			&:last-child{margin-bottom: 0}
 		}
+		&.is--left-carousel{			
+			@media @media-device{
+				width: 100%;
+			}
+			@media @media-screen{
+				width: 51%;
+			}
+			@media @media-size-md{
+				width: 100%;
+			}
+		}
+		&.is--right-carousel{
+			@media @media-device{
+				width: 100%;
+				order: -1;
+				padding-top: 3vw;
+				margin-bottom: 9vw;
+			}
+			@media @media-screen{
+				width: 49%;
+				padding-left: ~"calc(15px + 16vw)";
+			}
+			@media @media-size-lg{
+				padding-left: ~"calc(15px + 13vw)";
+			}
+			@media @media-size-xl{
+				padding-left: ~"calc(15px + 15vw)";
+			}
+			@media @media-size-md{
+				width: 100%;
+				padding-left: 15px;
+				order: -1;
+				margin-bottom: 6vw;
+				padding-top: 3vw;
+			}
+	
+		}
 	}
 	&steps-row{
 		@media @media-screen{

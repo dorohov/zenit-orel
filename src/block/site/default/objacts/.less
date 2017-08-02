@@ -34,6 +34,10 @@
     		transform: translateX(~"calc(100% + 20px)");
     		transition: 0.3s all;
     	}
+    	.objacts__panel-name{
+    		transform: translateY(~"calc(100%)");
+    		transition: 0.3s all;
+    	}
     	.objacts__note{
 		    &::before,
 		    &::after{
@@ -84,7 +88,6 @@
 		.objacts__finish-date.building{display: none;}
 	}*/
 }
-
 .objacts__{	
 	&label{
 		position: absolute;
@@ -122,6 +125,22 @@
 		z-index: 2;
 		overflow: hidden;
 		justify-content: center;
+	}
+	&panel-name{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		.calcFontSize(18, 28, 320, 1680);
+		.calcLineHeight(18, 28, 320, 1680);	
+		font-weight: 700;
+		text-align: center;
+    	background-color: fadeout(@blue-black, 40%);
+    	padding: 22px;
+		transition: all 0.8s;
+		@media @media-device {
+			display: none;
+		}
 	}
 	&inner{
 		position: relative;
@@ -286,6 +305,75 @@
 			line-height: @b-lh;
 			text-transform: none;
 			color: @white;
+		}
+	}
+}
+.objacts-panel__{ 
+	&panel{
+		position: relative;
+		@media @media-device {
+			padding: 35px 0;
+		}
+		@media @media-screen {
+			padding: 7.6vw 0 6.6vw;
+		}
+	}
+	&line-left-horiz{
+		@media @media-device {display: none}
+		@media @media-screen {				
+			position: absolute;
+			top: 4vw;
+			width: 16vw;
+			left: 6vw;
+		}
+	}
+	&line-left-vert{		
+		@media @media-device {display: none}
+		@media @media-screen {				
+			position: absolute;
+			top: 0px;
+			height: 4vw;
+			left: 9vw;
+		}
+	}
+	&heading-block{
+		align-items: center;
+		@media @media-device {
+			margin-bottom: 35px;
+		}
+		@media @media-screen {
+			margin-bottom: 2.2vw;
+		}
+	}
+	&heading{
+		@media @media-screen {
+			margin: 0;
+		}
+	}
+	&btn-cols{
+		@media @media-size-sm {
+			text-align: right;
+			.makeCols(6, 12);
+		}
+	}
+	&row{
+		margin-top: -30px;
+		@media @media-size-xs-l {justify-content: center;}
+		@media @media-device {
+			flex-wrap: wrap;
+		}
+	}
+	&cols{
+		padding-top: 30px;
+		@media @media-device {
+			.makeCols(6, 12);
+		}
+		@media @media-size-xs-p {
+			.makeCols(12, 12);
+		}
+		@media @media-screen {
+			.makeCols(4, 12);
+			&.is--visible-device{display: none;}
 		}
 	}
 }

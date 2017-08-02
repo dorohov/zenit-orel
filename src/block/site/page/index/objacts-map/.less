@@ -1,5 +1,11 @@
 .objacts-map-content-block{
 	//min-height: 1200px;
+	@media @media-device {
+		padding-top: 35px;
+	}
+	@media @media-screen {
+		padding-top: 4.5vw;
+	}
 }
 ._omcb__{
 	&container{
@@ -58,15 +64,22 @@
 	
 	&line-left-vert{
 		position: absolute;
-		top: -11.5vw;
-    	left: 4vw;
-    	height: 10.5vw;
+		top: -6vw;
+		left: 4vw;
+		height: 5vw;
+    	@media @media-device{display: none;}
+	}
+	&line-left-horiz{
+		position: absolute;
+		top: -6vw;
+		left: 3vw;
+		width: 16vw;
     	@media @media-device{display: none;}
 	}
 	&line-top-right-vert{
 		position: absolute;
-		top: -11.5vw;
-		height: 10.5vw;
+		top: -10vw;
+		height: 9vw;
 		right: 3vw;
     	@media @media-device{display: none;}
 	}
