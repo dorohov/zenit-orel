@@ -93,19 +93,21 @@
 		align-items: center;
 		flex-wrap: wrap;
 		margin-top: -5px;
+		padding-top: 35px;
 		.owl-dot{
-			width: 24px;
-			height: 24px;
+			width: 18px;
+			height: 18px;
 			border-radius: 50%;
-			background-color: @white;
+			background-color: @blue-obj;
+			background-color: @blue-light;
 			transform-origin: center;
 			transition: @transition-site;
 			margin: 5px 5px 0;
-			transform: scale(0.5);
+			//transform: scale(0.5);
 			.price-list-block__inner &{background-color: @white;}
 			&.active{
-				background-color: @white;
-				transform: scale(1);
+				background-color: @blue-dark;
+				//transform: scale(1);
 				.price-list-block__inner &{background-color: @white;} 
 			}
 		}
