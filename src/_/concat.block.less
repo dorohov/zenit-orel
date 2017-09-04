@@ -2766,10 +2766,22 @@
 		align-items: center;
 	}
 	&cols-logotip{
-		width: 35%;
+		
+		@media @media-notsmart {width: 35%;}
 	}
 	&row-logotip{
 		align-items: center;
+	}
+	&cols-icon-tel{
+		@media @media-notsmart {
+			display: none;
+		}
+	}
+	&tel-icon{
+		width: 32px;
+		height: 32px;
+		display: block;
+		color: @blue!important;
 	}
 	&cols-brand{}
 	&brand{
@@ -2808,8 +2820,8 @@
 		}
 	}
 	&cols-hamburger{
-		width: 35%;
 		text-align: right;
+		@media @media-notsmart {width: 35%;}
 	}
 	&modal{
 		//display: block;
