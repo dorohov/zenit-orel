@@ -51,16 +51,16 @@
 	}
 	&link-cols{		
 		@media @media-device{margin-bottom: 25px;}
-		@media @media-screen{margin-bottom: 2.5vw;}
+		@media @media-screen{margin-bottom: 1.5vw;}
 	}
 	&link-item{
 		font-weight: 800;
 		display: block;
 		letter-spacing: 1.5px;
-		.calcFontSize(19, 23, 320, 1680);
-		.calcLineHeight(32, 36, 320, 1680); 
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(24, 36, 320, 1680); 
 		position: relative;
-		@media @media-size-xs{letter-spacing: 1px;}
+		@media @media-size-xs{letter-spacing: 0px; text-align: center}
 		&::after{
 			content: '';
 			position: absolute;

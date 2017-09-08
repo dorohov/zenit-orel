@@ -40,7 +40,12 @@
 	}
 	&item{
 		@media @media-size-xs{width: 100%; margin-bottom: 10px}
-		@media @media-screen{width: 25%;}
+		@media @media-screen{
+			//width: 25%;
+			html.msie &{
+				max-width: ~"calc(100% / 7)";
+			}
+		}
 		&.divider{
 			width: 1px;
 			background: @white;
@@ -67,10 +72,15 @@
 		position: relative;
 		font-weight: 700;
 		height: 100%;
-		.calcFontSize(16, 18, 320, 1680);
-		.calcLineHeight(20, 22, 320, 1680);	
-		padding: 1.85vw 2vw;
-    	letter-spacing: 1.8px;
+		//.calcFontSize(16, 18, 320, 1680);
+		//.calcLineHeight(20, 22, 320, 1680);	
+		//padding: 1.85vw 2vw;
+    	//letter-spacing: 1.8px;
+
+		padding: 1.85vw 15px;
+    	letter-spacing: .5px;
+    	font-size: @b-fs - 0;
+    	line-height: @b-lh - 6;
     	color: @black;
 		transition: transform 0.3s cubic-bezier(0.76,-0.07, 0.89, 0.72);
 		@media @media-notsmart{text-align: center;}
