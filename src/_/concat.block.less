@@ -1158,6 +1158,7 @@
 	&item{
 		@media @media-size-xs{width: 100%; margin-bottom: 10px}
 		@media @media-screen{
+			flex-grow: 1;
 			//width: 25%;
 			html.msie &{
 				max-width: ~"calc(100% / 7)";
@@ -4153,7 +4154,8 @@
 	&gray-block{
 		background: #f3f3f3;
 		padding: 1px 0;
-		margin-bottom: 6.7vw;
+		margin-bottom: 35px;
+		@media @media-screen{margin-bottom: 3vw;}
 	}
 	&text-row{
 		.calcFontSize(16, 18, 320, 1680);
@@ -4891,6 +4893,10 @@
 		@media @media-size-md{width: 50%;}
 		padding-bottom: 30px;
 	}
+	&text-block{
+		max-width: 100%;
+		margin-top: 30px;
+	}
 }
 .objects-com-content-page{}
 ._occp__{	
@@ -4898,6 +4904,10 @@
 	&cols{
 		width: 100%;
 		padding-bottom: 30px;
+	}
+	&text-block{
+		max-width: 100%;
+		margin-top: 30px;
 	}
 }
 .objacts-item-content-page{}
