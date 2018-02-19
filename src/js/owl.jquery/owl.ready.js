@@ -58,4 +58,41 @@ $(function() {
 			}
 		}
 	});	
+
+	$('.owl-index-header').owlCarousel({
+		navText: ['<svg class="icon-svg icon-arrow-left-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#arrow-left-400"></use></svg>', '<svg class="icon-svg icon-arrow-right-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#arrow-right-400"></use></svg>'],
+		loop: true,
+		center: true,
+		//autoplay: true,
+		autoplayTimeout: 3500,
+		smartSpeed: 500,
+		dots: true,
+		nav: false,
+		responsive:{
+			0:{
+				nav: false,
+				items: 1,
+				autoWidth:false,
+				margin: 10
+			},
+			560:{
+				//nav: false,
+				nav: true,
+				items: 2,
+				autoWidth:false,
+				margin: 30,
+			},
+			768:{
+				nav: true,
+				items: 2,
+				autoWidth:false,
+				margin: 30,
+			},
+			1025:{
+				autoWidth:true,
+				margin: 20,
+				nav: true,
+			}
+		}
+	});
 });

@@ -22,249 +22,121 @@
 	</head>
 	<body class="index-page">
 		
-		<nav class="navbar-site index wow fadeToBottom"
-	data-wow-duration="1s" 
-	data-wow-delay="0.5s"
-	data-wow-offset=" ">
-	<div class="container navbar__container">
-		<div class="row navbar__row">
-			<div class="cols navbar__cols-icon-tel">
-				<a href="tel:+74862900714" class="roistat-phone  navbar__tel-icon"><svg class="icon-svg icon-navbar-tel" role="img">
+		<nav class="navbar-site  scroll navbar   ">
+	<div class="navbar__inner">
+		<div class="container navbar__container">
+			<div class="navbar__header">
+				<div class="row navbar__row-header ">
+					<div class="cols navbar__cols-header  is--hamburger">
+						<div class="navbar__hamburger">
+							<button class="navbar__hamburger-btn hamburger-base__inner" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="hamburger__line  is--left"></span>
+								<span class="hamburger__line  is--center"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+							</button>
+						</div>
+					</div>
+					<div class="cols navbar__cols-header  is--brand">
+						<a class="navbar__brand" href="/"><img src="/img/svg/logotip.svg" alt=""></a> 
+					</div>
+					<div class="cols navbar__cols-header  is--tel">
+						<a href="tel:+74862445060" class="navbar__tel  is--icon"><svg class="icon-svg icon-navbar-tel" role="img">
 	<use xlink:href="/img/svg/sprite.svg#navbar-tel"></use>
 </svg></a>
-			</div>
-			<div class="cols navbar__cols-logotip">
-				<div class="row navbar__row-logotip">
-					<div class="cols navbar__cols-brand">
-						<a class="navbar__brand" href="/">
-							<img src="/img/default/logotip.png" alt="" > 
-						</a>
-					</div>
-					<div class="cols navbar__cols-tagline">
-						Мы строим для вас<br> и ваших детей
 					</div>
 				</div>
 			</div>
-			<div class="cols navbar__cols-contacts">
-				<div class="navbar__phone">
-					<a href="tel:+74862445060">+7 (4862) <span>44-50-60</span></a>
-				</div>
-				<div class="navbar__email">
-					<a href="mailto:sales@zenit-orel.ru">sales@zenit-orel.ru</a>
+				
+			<div class="navbar__collapse" >
+				<div class="navbar__collapse-inner">	
+					<div class="row navbar__collapse-row">
+						<div class="cols navbar__collapse-cols cols  is--left">
+							<a class="navbar__brand" href="/">
+								<img src="/img/svg/logotip.svg" alt="">
+							</a> 
+						</div>
+						<div class="cols navbar__collapse-cols cols  is--center">
+							<ul class="navbar__nav">
+								<li class="navbar__nav-item  is--index">
+	<a href="/" class="navbar__nav-link"><span>Главная</span></a>  
+</li>       
+								<li class="navbar__nav-item    ">
+	<a href="/objacts-apart.html" class="navbar__nav-link"><span>Квартиры</span></a>  
+</li>
+								<li class="navbar__nav-item    ">
+	<a href="/objacts-com.html" class="navbar__nav-link"><span>Коммерческая недвижимость</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/buyers-ways.html" class="navbar__nav-link"><span>Покупателям</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/action.html" class="navbar__nav-link"><span>Акции</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/blog.html" class="navbar__nav-link"><span>Блог</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/about.html" class="navbar__nav-link"><span>О нас</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/contacts.html" class="navbar__nav-link"><span>Контакты</span></a>  
+</li>	
+							</ul>
+						</div>
+						<div class="cols navbar__collapse-cols cols  is--right">
+							<div class="navbar__tel-block">
+								<a href="tel:+74862445060" class="navbar__tel">
+									+7 (4862) <span>44-50-60</span>
+								</a>	
+							</div>	
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
-					<span class="hamburger-base__inner navbar__hamburger-inner">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</button>
-			</div>
-
-			
 		</div>
 	</div>
 </nav>
-<div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="navbar__modal-dialog">
-		<div class="btn-site navbar__hamburger-block">
-			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
-				<span class="hamburger-base__inner navbar__hamburger-inner">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
-				<svg class="navbar__hamburger-rect-block modal-close__rect-block">
-					<rect class="navbar__hamburger-rect modal-close__rect" x="0" y="0"/>
-				</svg>
-			</button>
-		</div>
-		<div class="navbar__modal-body" >
-			<ul class="navbar__modal-nav">
-				<li><a href="/">Главная</a></li>
-				<li><a href="/objacts-apart.html">Квартиры</a></li>
-				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
-				<li><a href="/buyers-ways.html">Покупателям</a></li> 
-				<li><a href="/action.html">Акции</a></li>
-				<li><a href="/blog.html">Блог компании</a></li>
-				<li><a href="/about.html">О нас</a></li>
-				<li><a href="/contacts.html">Контакты</a></li>
-				<li><a href="#" class="callback">Заказать звонок</a></li>
-			</ul>
-			<div class="social-block navbar__social-block">
-	<div class="row social__row">
-		<div class="cols">
-			<a href="https://vk.com/zao_zenit" target="_blank" class="social__item _vk">
-				<svg class="icon-svg icon-vk" role="img">
-	<use xlink:href="/img/svg/sprite.svg#vk"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.instagram.com/zao_zenit/" target="_blank" class="social__item _inst">
-				<svg class="icon-svg icon-inst" role="img">
-	<use xlink:href="/img/svg/sprite.svg#inst"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.facebook.com/zaozenit/" target="_blank" class="social__item">
-				<svg class="icon-svg icon-fb" role="img">
-	<use xlink:href="/img/svg/sprite.svg#fb"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://ok.ru/group/53047194615940" target="_blank" class="social__item">
-				<svg class="icon-svg icon-ok" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ok"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.youtube.com/channel/UCSO9zystvspvfLn39odeF-Q" target="_blank" class="social__item">
-				<svg class="icon-svg icon-yb" role="img">
-	<use xlink:href="/img/svg/sprite.svg#yb"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-viber" role="img">
-	<use xlink:href="/img/svg/sprite.svg#viber"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-twitter" role="img">
-	<use xlink:href="/img/svg/sprite.svg#twitter"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-telegram" role="img">
-	<use xlink:href="/img/svg/sprite.svg#telegram"></use>
-</svg> 
-			</a>
-		</div>
-	</div>
-</div> 
-		</div>
-	</div>
-</div>
 		<div class="site-wrap is--hidden">
-			<div class="header-content-block">
-	<div class="container _hcb__container">
-		<div class="_hcb__flex">
-			<div class="_hcb__inner">
-				<h2 class="_hcb__heading"
-				>
-					<span class="wow fadeToRightXl"
-					data-wow-duration="1s" 
-					data-wow-delay="0.6s"
-					data-wow-offset=" ">На шаг</span> 
-					<span class="wow fadeToLeftXl"
-					data-wow-duration="1s" 
-					data-wow-delay="0.6s"
-					data-wow-offset=" ">впереди спроса</span>
-				</h2>
-				<h1 class="_hcb__heading-small wow fadeToBottom"
-					data-wow-duration="1s" 
-					data-wow-delay="1s"
-					data-wow-offset=" "
-				>
-					Квартиры от застройщика
-				</h1>
-				<div class="row _hcb__row">
-					<div class="cols _hcb__cols">
-						<div class="_hcb__item wow fadeToRightSm"
-							data-wow-duration="1.5s" 
+			<div class="index-header__block">
+	<div class="container index-header__container">
+		<div class="index-header__grid">
+			<h1 class="index-header__heading">Квартиры от застройщика</h1>
+			<h2 class="index-header__heading-small">На шаг впереди спроса</h2>
+			<div class="index-header__btn-block">			
+				<a href="/objacts-apart.html" class="btn-site btn-blue index-header__btn  is--white">
+					<svg class="rect-block">
+						<rect class="rect wow draw-btn-rect  is--white"
+							data-wow-duration="1s" 
 							data-wow-delay="0.5s"
-							data-wow-offset=" "
-						>
-							<div class="_hcb__item-num">20</div>
-							<div class="_hcb__item-note">Лет на российском<br>рынке строительства</div>
-						</div>
-					</div>
-					<div class="cols _hcb__cols">
-						<div class="_hcb__item wow fadeToRightSm"
-							data-wow-duration="1.5s" 
-							data-wow-delay="0.8s"
-							data-wow-offset=" "
-						>
-							<div class="_hcb__item-num">3 600</div>
-							<div class="_hcb__item-note">Квартир<br>реализованно</div>
-						</div>
-					</div>
-					<div class="cols _hcb__cols">
-						<div class="_hcb__item wow fadeToRightSm"
-							data-wow-duration="1.5s" 
-							data-wow-delay="1s"
-							data-wow-offset=" "
-						>
-							<div class="_hcb__item-num">24</div>
-							<div class="_hcb__item-note">Готовых<br>объектов</div>
-						</div>
-					</div>
-					<div class="cols _hcb__cols">
-						<div class="_hcb__item wow fadeToRightSm"
-							data-wow-duration="1.5s" 
-							data-wow-delay="1.2s"
-							data-wow-offset=" "
-						>
-							<div class="_hcb__item-num">228 962</div>
-							<div class="_hcb__item-note">Квадратных метров<br>жилой недвижимости</div>
-						</div>
-					</div>
-					<div class="cols _hcb__cols">
-						<div class="_hcb__item wow fadeToRightSm"
-							data-wow-duration="1.5s" 
-							data-wow-delay="1.4s"
-							data-wow-offset=" "
-						>
-							<div class="_hcb__item-num">4 260</div>
-							<div class="_hcb__item-note">Счастливых<br>семей</div>
-						</div>
-					</div>
-				</div>
+							data-wow-offset=" 0" 
+							x="0" 
+							y="0"/>
+					</svg>	
+					<span class="name  is--white">Выбрать квартиру</span>
+					<span class="bg  is--white"></span>
+				</a>
 			</div>
-			<a href="#objacts-block" class="scrollto _hcb__scrollto " data-scrollto-diff="-110">
-				<svg class="icon-svg icon-arrow-down" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
-</svg>
-			</a>
+		</div>
+	</div>
+	<div class="index-header__owl owl-index-header">
+		<div class="index-header__owl-item">
+			<img src="/img/temp/header-banner-item-1620x540.jpg" alt="">
+		</div>
+		<div class="index-header__owl-item">
+			<img src="/img/temp/header-banner-item-1620x540.jpg" alt="">
+		</div>
+		<div class="index-header__owl-item">
+			<img src="/img/temp/header-banner-item-1620x540.jpg" alt="">
 		</div>
 	</div>
 </div>	
 			<div class="objacts-panel__panel" id="objacts-block">
-	<div 
-		class="objacts-panel__line-left-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="1s" 
-			data-wow-delay="0.7s"
-			data-wow-offset="100"
-		></div>	
-	<div 
-		class="objacts-panel__line-left-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="1s" 
-			data-wow-delay="1.7s"
-			data-wow-offset="100"
-		></div>
 	<div class="container objacts-panel__container">			
 		<div class="row heading-block objacts-panel__heading-block">
-			<div class="cols objacts-panel__heading-cols 				wow fadeToRight"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.6s"
-					data-wow-offset=" ">
+			<div class="cols objacts-panel__heading-cols">
 				<h2 class="objacts-panel__heading heading-index-block">Квартиры в продаже</h2>
 			</div>
 			<div class="cols objacts-panel__btn-cols">
@@ -283,212 +155,285 @@
 			</div>
 		</div>
 
-		<div class="objacts-panel__owl wow fadeToTop"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.6s"
-			data-wow-offset=" ">
-				<a href="/objacts-item.html" 
-	class="_oacp__objacts objacts-block" 
-	style="background-image: url(/img/objacts/item1.jpg)"
-	data-status-buy="sale"
-	data-status-building="{{objacts_status_building}}"
+		<div class="objacts-panel__owl">
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
 >
-	<div class="_oacp__objacts-label objacts__label is--visible">
-		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #4e9e0d">
-		</div>
-		<div class="_oacp__objacts-label-name objacts__label-name">Скоро в продаже</div> 
-	</div>
-	<div class="objacts__panel-name">
-		ЖК «Овсянниковская поляна» Московское шоссе, д. 54 б
-	</div>
-	<div class="_oacp__objacts-inner objacts__inner">
-		<div class="_oacp__objacts-note objacts__note">
-			<div class="_oacp__objacts-line objacts__line top"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-name objacts__name">
-				ЖК «Овсянниковская поляна» Московское шоссе, д. 54 б
-			</div>
-			<div class="_oacp__objacts-floor objacts__floor" data-buy-floor="315">
-				квартир<br> в продаже
-			</div>
-			<div 
-				class="_oacp__objacts-finish-date objacts__finish-date" 
-				data-finish-date="3 кв. 2020 года">
-				Окончание строительства
-			</div>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #9ec063"></div>
+			ЖК «Овсянниковская поляна»
 		</div>
 	</div>
-</a>	
-				<a href="/objacts-item.html" 
-	class="_oacp__objacts objacts-block" 
-	style="background-image: url(/img/objacts/obj-lock.png)"
-	data-status-buy="sale"
-	data-status-building="{{objacts_status_building}}"
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #9ec063"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #9ec063"></div>
+</a>
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
 >
-	<div class="_oacp__objacts-label objacts__label is--visible">
-		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #deb126">
-		</div>
-		<div class="_oacp__objacts-label-name objacts__label-name">Старт продаж</div> 
-	</div>
-	<div class="objacts__panel-name">
-		ул. Московская, д.&nbsp;76
-	</div>
-	<div class="_oacp__objacts-inner objacts__inner">
-		<div class="_oacp__objacts-note objacts__note">
-			<div class="_oacp__objacts-line objacts__line top"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-name objacts__name">
-				ул. Московская, д.&nbsp;76
-			</div>
-			<div class="_oacp__objacts-floor objacts__floor" data-buy-floor="84">
-				квартир<br> в продаже
-			</div>
-			<div 
-				class="_oacp__objacts-finish-date objacts__finish-date" 
-				data-finish-date="3 кв. 2018 года">
-				Окончание строительства
-			</div>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #c0bb63"></div>
+			ЖК «Овсянниковская поляна»
 		</div>
 	</div>
-</a>	
-				<a href="/objacts-item.html" 
-	class="_oacp__objacts objacts-block" 
-	style="background-image: url(/img/objacts/obj-lock.png)"
-	data-status-buy="sale"
-	data-status-building="{{objacts_status_building}}"
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #c0bb63"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #c0bb63"></div>
+</a>
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
 >
-	<div class="_oacp__objacts-label objacts__label is--visible">
-		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #8a0f1b">
-		</div>
-		<div class="_oacp__objacts-label-name objacts__label-name">Осталось 2 квартиры</div> 
-	</div>
-	<div class="objacts__panel-name">
-		ул. Розы Люксембург, д.&nbsp;33
-	</div>
-	<div class="_oacp__objacts-inner objacts__inner">
-		<div class="_oacp__objacts-note objacts__note">
-			<div class="_oacp__objacts-line objacts__line top"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-name objacts__name">
-				ул. Розы Люксембург, д.&nbsp;33
-			</div>
-			<div class="_oacp__objacts-floor objacts__floor" data-buy-floor="&nbsp;2">
-				квартир<br> в продаже
-			</div>
-			<div 
-				class="_oacp__objacts-finish-date objacts__finish-date" 
-				data-finish-date="1 кв. 2017 года">
-				Дом сдан в эксплуатацию
-			</div>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #c0637b"></div>
+			ЖК «Овсянниковская поляна»
 		</div>
 	</div>
-</a>	
-				<a href="/objacts-item.html" 
-	class="_oacp__objacts objacts-block" 
-	style="background-image: url(/img/objacts/obj-lock.png)"
-	data-status-buy="sale"
-	data-status-building="{{objacts_status_building}}"
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #c0637b"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #c0637b"></div>
+</a>
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
 >
-	<div class="_oacp__objacts-label objacts__label is--visible">
-		<div class="_oacp__objacts-label-inner objacts__label-inner" style="background-color: #8a0f1b">
-		</div>
-		<div class="_oacp__objacts-label-name objacts__label-name">Осталось 2 квартиры</div> 
-	</div>
-	<div class="objacts__panel-name">
-		ул. Розы Люксембург, д.&nbsp;33
-	</div>
-	<div class="_oacp__objacts-inner objacts__inner">
-		<div class="_oacp__objacts-note objacts__note">
-			<div class="_oacp__objacts-line objacts__line top"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-line objacts__line bottom"></div>
-			<div class="_oacp__objacts-name objacts__name">
-				ул. Розы Люксембург, д.&nbsp;33
-			</div>
-			<div class="_oacp__objacts-floor objacts__floor" data-buy-floor="&nbsp;2">
-				квартир<br> в продаже
-			</div>
-			<div 
-				class="_oacp__objacts-finish-date objacts__finish-date" 
-				data-finish-date="1 кв. 2017 года">
-				Дом сдан в эксплуатацию
-			</div>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #9ec063"></div>
+			ЖК «Овсянниковская поляна»
 		</div>
 	</div>
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #9ec063"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #9ec063"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #9ec063"></div>
+</a>
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
+>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #c0bb63"></div>
+			ЖК «Овсянниковская поляна»
+		</div>
+	</div>
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #c0bb63"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #c0bb63"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #c0bb63"></div>
+</a>
+			<a href="{{page.obj_item}}" class="objact-card__card    " 
+>
+	<div class="objact-card__preview    ">
+		<img src="/img/objacts/item1.jpg" alt="ЖК «Овсянниковская поляна»">
+		<div class="objact-card__heading    ">
+			<div class="objact-card__heading-bg    " style="background-color: #c0637b"></div>
+			ЖК «Овсянниковская поляна»
+		</div>
+	</div>
+	<div class="objact-card__desc    ">
+		<div class="objact-card__row  row      is--top">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__text      is--heading">
+					<span>Московское шоссе, д. 54 б</span>
+				</div>
+				<div class="objact-card__text    ">
+					<span>Сдача объекта:</span> 3 кв. 2020 года
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>300</span>кв.</div>
+				<div class="objact-card__text    ">в продаже</div>
+			</div>
+		</div>
+		<div class="objact-card__row  row      is--bottom">
+			<div class="objact-card__cols  cols      is--left">
+				<div class="objact-card__cost    ">
+					<span>Стоимость квартиры:</span> от <span class="is--cost">1.5</span> млн
+					<span class="is--ruble"><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+				</div>
+			</div>
+			<div class="objact-card__cols  cols      is--right">
+				<div class="objact-card__floor    "><span>10</span> мин</div>
+				<div class="objact-card__text    ">до центра</div>
+			</div>
+		</div>
+		<div class="objact-card__desc-bg    " style="background-color: #c0637b"></div>
+	</div>
+	<div class="objact-card__card-border-top    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-left    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-right    " style="background-color: #c0637b"></div>
+	<div class="objact-card__card-border-bottom    " style="background-color: #c0637b"></div>
 </a>	
-			</div>
 		</div>
 	</div>
 </div>		
-			<div class="buyers-panel__panel"> 
-	<div 
-		class="buyers-panel__line-right-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="1s" 
-			data-wow-delay="0.5s"
-			data-wow-offset="200"
-		></div>	
-	<div class="container buyers-panel__container">
-		<div class="row heading-block buyers-panel__heading-block">
-			<div class="cols buyers-panel__heading-cols 				wow fadeToRight"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.6s"
-					data-wow-offset=" ">
-				<h2 class="buyers-panel__heading heading-index-block">Акции</h2>
-				<h4 class="buyers-panel__heading-small heading-small-index-block">Актуальные предложения и скидки</h4>
-			</div>
-			<div class="cols buyers-panel__btn-cols">
-				<a href="/blog.html" class="btn-site btn-blue btn-more-news">
-					<svg class="rect-block">
-						<rect class="rect wow draw-btn-rect"
-							data-wow-duration="1.7s" 
-							data-wow-delay="1s"
-							data-wow-offset=" 0" 
-							x="0" 
-							y="0"/>
-					</svg>	
-					<span class="name">Другие акции</span>
-					<span class="bg"></span>
-				</a>
-			</div>
-		</div>
-		<div class="buyers-panel__owl wow fadeToTop"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.6s"
-			data-wow-offset=" ">		
-			<a class="fancybox-preview    is--img" href="http://zenit-orel.ru/wp-content/uploads/2017/06/gazprombank.png" data-fancybox=gallery>
-	<img src="http://zenit-orel.ru/wp-content/uploads/2017/06/gazprombank.png" alt="">
-</a>
-			<a class="fancybox-preview    is--img" href="http://zenit-orel.ru/wp-content/uploads/2017/06/Zenit_50.jpg" data-fancybox=gallery>
-	<img src="http://zenit-orel.ru/wp-content/uploads/2017/06/Zenit_50.jpg" alt="">
-</a>
-			<a class="fancybox-preview    is--img" href="http://zenit-orel.ru/wp-content/uploads/2017/06/Zenit_3kv_2.jpg" data-fancybox=gallery>
-	<img src="http://zenit-orel.ru/wp-content/uploads/2017/06/Zenit_3kv_2.jpg" alt="">
-</a>
-		</div>
-	</div>
-</div>
+			
 			<div class="blog-panel__panel"> 	
-	<div 
-		class="blog-panel__line-left-vert line-anim vert wow scaleToBottom"
-			data-wow-duration="1s" 
-			data-wow-delay="0.7s"
-			data-wow-offset="100"
-		></div>	
-	<div 
-		class="blog-panel__line-left-horiz line-anim horiz wow scaleToRight"
-			data-wow-duration="1s" 
-			data-wow-delay="1.7s"
-			data-wow-offset="100"
-		></div>
 	<div class="container blog-panel__container">
 		<div class="row heading-block blog-panel__heading-block">
-			<div class="cols blog-panel__heading-cols 				wow fadeToRight"
-					data-wow-duration="0.8s" 
-					data-wow-delay="0.6s"
-					data-wow-offset=" ">
+			<div class="cols blog-panel__heading-cols">
 				<h2 class="blog-panel__heading heading-index-block">Новости</h2>
 				<h4 class="blog-panel__heading-small heading-small-index-block">Только свежие новости</h4>
 			</div>
@@ -507,10 +452,7 @@
 				</a>
 			</div>
 		</div>		
-		<div class="row blog-panel__row wow fadeToTop"
-		data-wow-duration="0.8s" 
-		data-wow-delay="0.6s"
-		data-wow-offset=" ">
+		<div class="row blog-panel__row">
 			<div class="cols blog-panel__cols">		
 				<article class="blog-item__item">
 	<a href="/blog.html" class="blog-item__preview">
@@ -522,9 +464,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -538,9 +482,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -554,9 +500,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -570,9 +518,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -586,9 +536,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -602,9 +554,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -618,9 +572,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols">		
@@ -634,9 +590,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 			<div class="cols blog-panel__cols is--visible-sm-l">		
@@ -650,9 +608,11 @@
 			<span  class="blog-item__date-val">27.07</span>
 		</div>
 	</a>
-	<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
-	<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
-	<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	<div class="blog-item__desc">
+		<h4 class="blog-item__heading"><a href="/blog.html">Визуализация ЖК «Овсянниковская Поляна»</a></h4>
+		<div class="blog-item__note">Представляем вам дневные и ночные ракурсы нового жилого комплекса комфорт-класса комфорт-класса</div>
+		<div><a href="/blog-item.html" class="blog-item__link">Подробнее</a></div>
+	</div>
 </article> 
 			</div>
 		</div>
@@ -661,24 +621,8 @@
 
 			<div class="objacts-map-content-block">
 	<div class="container _omcb__container">
-		<div 
-			class="_omcb__line-left-vert line-anim vert wow scaleToBottom"
-				data-wow-duration="1s" 
-				data-wow-delay="1s"
-				data-wow-offset="200"
-			></div>
-		<div 
-			class="_omcb__line-left-horiz line-anim horiz wow scaleToRight"
-				data-wow-duration="1s" 
-				data-wow-delay="0.5s"
-				data-wow-offset="200"
-			></div>	
-		
 		<div class="row _omcb__row">
-			<div class="cols _omcb__cols wow fadeToRight"
-				data-wow-duration="0.8s" 
-				data-wow-delay="0.6s"
-				data-wow-offset=" ">				
+			<div class="cols _omcb__cols">				
 				<h2 class="_omcb__heading heading-index-block">Карта объектов</h2>
 				<h4 class="_omcb__heading-small heading-small-index-block">Интерактивная карта объектов</h4>
 				<div class="_omcb__text">
@@ -686,33 +630,19 @@
 				</div>
 			</div>
 			<div class="cols _omcb__cols">
-				<div class="_omcb__panel">					
+				<div class="_omcb__panel">		
 				<div 
-					class="_omcb__line-top-right-vert line-anim vert 
-					wow scaleToBottom"
-						data-wow-duration="1s" 
-						data-wow-delay="0s"
-						data-wow-offset="200"
-					></div>	
-				<div 
-					class="_omcb__line-top-right-horiz line-anim horiz 
-					wow scaleToLeft"
-						data-wow-duration="1s" 
-						data-wow-delay="1s"
-						data-wow-offset="-200"
-					></div>	
-				<div 
-					class="_omcb__line-bottom-right-horiz line-anim horiz wow scaleToLeft"
-						data-wow-duration="1s" 
-						data-wow-delay="1s"
-						data-wow-offset="-200"
+					class="_omcb__line-bottom-right-horiz line-anim horiz {{line_top_right_horiz_animation}}"
+						data-wow-duration="{{line_top_right_horiz_duration}}" 
+						data-wow-delay="{{line_top_right_horiz_delay}}"
+						data-wow-offset="{{line_top_right_horiz_offset}}"
 					></div>				
 				<div 
 					class="_omcb__line-bottom-right-vert line-anim vert
-					 wow scaleToBottom"
-						data-wow-duration="1s" 
-						data-wow-delay="2s"
-						data-wow-offset="-200"
+					 {{line_bottom_right_vert_animation}}"
+						data-wow-duration="{{line_bottom_right_vert_duration}}" 
+						data-wow-delay="{{line_bottom_right_vert_delay}}"
+						data-wow-offset="{{line_bottom_right_vert_offset}}"
 					></div>	
 					Все новостройки на&nbsp;карте&nbsp;— как строящиеся объекты, так и&nbsp;готовые жилые комплексы, которые уже сданы в&nbsp;эксплуатацию.
 				</div>
@@ -763,179 +693,166 @@
 	</div>
 </div>	
 
-			<div class="buyers-content-block">
-	<div class="container _bucb__container">
-		<div class="row _bucb__row-banks">
-			<div class="cols _bucb__cols-banks wow fadeToRight"
-				data-wow-duration="1s" 
-				data-wow-delay="0.5s"
-				data-wow-offset="100">
-				<img src="/img/bank/item-rshb.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeToRight"
-				data-wow-duration="1s" 
-				data-wow-delay="1s"
-				data-wow-offset="100">
-				<img src="/img/bank/item-ural.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeIn"
-				data-wow-duration="1s" 
-				data-wow-delay="1.5s"
-				data-wow-offset="100">
-				<img src="/img/bank/item-gazb.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeToLeft"
-				data-wow-duration="1s" 
-				data-wow-delay="1s"
-				data-wow-offset="100">
-				<img src="/img/bank/item-svjaz.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeToLeft"
-				data-wow-duration="1s" 
-				data-wow-delay="0.5s"
-				data-wow-offset="100">
-				<img src="/img/bank/item-sber.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeToRight"
-				data-wow-duration="1s" 
-				data-wow-delay="0.5s"
-				data-wow-offset=" ">
-				<img src="/img/bank/item-mib.png" alt="">
-			</div>
-			<div class="cols _bucb__cols-banks wow fadeToLeft"
-				data-wow-duration="1s" 
-				data-wow-delay="0.5s"
-				data-wow-offset=" ">
-				<img src="/img/bank/item-vtb.png" alt="">
-			</div>
-		</div>
-		<div class="_bucb__btn-block">
-			<div 
-				class="_bucb__line-center-vert line-anim vert 				wow scaleToBottom"
-					data-wow-duration="1.3s" 
-					data-wow-delay="1s"
-					data-wow-offset="50"
-				></div>
-			<a href="/buyers-ways.html" class="btn-site btn-blue btn-buyers wow fadeToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.5s"
-			data-wow-offset="50">
-				<svg class="rect-block">
-					<rect class="rect wow draw-btn-rect"
-						data-wow-duration="1.7s" 
-						data-wow-delay="1s"
-						data-wow-offset=" 0" 
-						x="0" 
-						y="0"/>
-				</svg>	
-				<span class="name">Подробнее</span>
-				<span class="bg"></span>
-			</a>
-		</div>
-		<div class="wow fadeToBottom"
-			data-wow-duration="0.8s" 
-			data-wow-delay="0.5s"
-			data-wow-offset="50">
-			<h2 class="_bucb__heading heading-index-block">Покупателям</h2>	
-			<div class="row _bucb__link-row">
-				<div class="cols _bucb__link-cols">
-					<a href="/buyers-ways.html" class="_bucb__link-item">Способы приобретения жилья</a>
-				</div>
-				<div class="cols _bucb__link-cols">
-					<a href="/buyers-mortgage.html" class="_bucb__link-item">Ипотечное кредитование</a>
-				</div>
-				<div class="cols _bucb__link-cols">
-					<a href="/buyers-military.html" class="_bucb__link-item">Военная ипотека</a>
-				</div>
-				<div class="cols _bucb__link-cols">
-					<a href="/buyers-maternal.html" class="_bucb__link-item">Материнский капитал</a>
-				</div>
-			</div>
-		</div>
-		<div class="_bucb__form-block">			
-			<form action="" class="form-site inline"  > 
-	<h4 class="form__heading">Мы готовы ответить на все ваши вопросы</h4>	
-	<div class="row form__row">
-		<div class="cols form__cols">
-			<div class="form__item">
-				<input type="text" class="form__control form-control validate[required, custom[onlyLetterSp]]" id="f[name]" name="f[Имя]" placeholder="Имя">
-			</div>	
-		</div>
-		<div class="cols form__cols">
-			<div class="form__item">
-				<input type="tel" class="form__control form-control validate[required,custom[phone]]" id="f[tel]" name="f[Телефон]" placeholder="Телефон"> 
-			</div>	
-		</div>
-		<div class="cols form__cols">
-			<div class="form__item">
-				<input type="tel" class="form__control form-control validate[required,custom[email]]" id="f[email]" name="f[Email]" placeholder="E-mail"> 
-			</div>	
-		</div>
-		<div class="cols form__cols btn">
-			<div class="form__btn-block">
-				<button type="submit" class="btn-site btn-blue btn-submit form__btn">
-					<svg class="rect-block">
-						<rect class="rect wow draw-btn-rect"
-							data-wow-duration="1.7s" 
-							data-wow-delay="1s"
-							data-wow-offset=" 0" 
-							x="0" 
-							y="0"/>
-					</svg>	
-					<span class="name">Отправить заявку</span>
-					<span class="bg"></span>
-				</button>
-			</div>	 
-		</div>		
-		<div class="cols form__cols full">
-			<div class="material-switch form__item">
-                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox" checked/>
-                <label for="f[processing]" class="material-switch__label"></label>
-				<label for="f[processing]" class="material-switch__text"> 
-					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
-				</label>
-            </div>	
-		</div>
-	</div>
-</form> 
-		</div>
-		
-	</div>
-</div>	
-			<div class="text-content-block">
-	<div class="container index-text__container">
-		<div class="index-text__text">
-			<h2>Строим комфортные дома и&nbsp;безупречную репутацию</h2>
-			<p>С&nbsp;момента рождения компании «Зенит» прошло уже 20&nbsp;лет. Каждый год мы&nbsp;строили что-то новое. Каждый новый объект закреплял новые тренды в&nbsp;строительстве и&nbsp;повышал планку качества. Мы&nbsp;ввели совершенно иные стандарты работы, которые позволили компании стать одним из&nbsp;региональных лидеров.</p>
-			<p>Только современное жилье с&nbsp;высоким уровнем комфортности. Яркие и&nbsp;эффективные решения для успешных людей. «Зенит» добился особого статуса: название компании стало синонимом высокого качества на&nbsp;уровне лучших стандартов строительства. Мы&nbsp;гордимся этим достижением и&nbsp;продолжаем быть на&nbsp;пике формы.</p>
-			<p>Сегодня на&nbsp;счету компании «Зенит»&nbsp;— 28&nbsp;крупных проектов. Для каждого нового проекта мы&nbsp;привлекали лучшие инженерные кадры, которые&nbsp;бы могли усилить наши возможности и&nbsp;привнести в&nbsp;работу собственный опыт. Все подрядные организации проходили строгий отбор, благодаря чему удалось полностью исключить простои, срывы сроков и&nbsp;прочие «неприятности» строительства.</p>
-			<p>Никаких шаблонных решений: каждый новый объект&nbsp;— это новые подходы и&nbsp;новые возможности. Каждый новый объект&nbsp;— это больше комфорта и&nbsp;особые условия жизни. Строительство жилых домов&nbsp;— это не&nbsp;просто бизнес. Это сотни ежедневных ответственных решений, за&nbsp;каждым из&nbsp;которых стоят судьбы людей. Мы&nbsp;знаем, что для многих обретение собственного дома&nbsp;— главная мечта жизни. А&nbsp;потому очень стараемся сделать так, чтобы встреча с&nbsp;мечтой стала радостным и&nbsp;запоминающимся событием.</p>
-			<p>Владельцы жилья, построенного компанией «Зенит», уже знают: в&nbsp;не&nbsp;очень спокойном море рынка недвижимости наша компания остается островком стабильности.</p>
+			<div class="index-content__panel">
+	<div class="container index-content__container">
+		<div class="index-content__text">
+			<h2>Квартиры от застройщика комфорт и бизнес-класса по выгодным ценам</h2>
+			<p>Покупка жилья&nbsp;— серьезный шаг. Для того чтобы совершить его, необходимо взвесить все «за» и&nbsp;«против». Приобретение квартиры от&nbsp;застройщика имеет ряд неоспоримых преимуществ, о&nbsp;которых и&nbsp;пойдет речь дальше.</p>
+			<ul>
+			<li>В&nbsp;первую очередь, приобретая жилье в&nbsp;строительной компании «Зенит», вы&nbsp;получаете комфортную среду проживания с&nbsp;возможностью реализовать самые смелые решения, касающиеся его планировки и&nbsp;оформления.</li>
+			<li>Наши дома проектируются с&nbsp;использованием современных технологий, поэтому Вам не&nbsp;придется беспокоиться о&nbsp;состоянии коммуникаций, работоспособности лифтов и&nbsp;утеплении жилища. Квартиры соответствуют современным стандартам качества и&nbsp;комфорта.</li>
+			<li>Наличие систем видеонаблюдения, закрытой территории, современных лифтов и&nbsp;продуманных мест общего пользования обеспечивает высокие стандарты комфорта и&nbsp;безопасности наших новостроек.</li>
+			<li>Помимо этого, тот, кто решил купить квартиру от&nbsp;застройщика, может быть спокоен в&nbsp;юридической чистоте сделки.</li>
+			</ul>
+			<p>&nbsp;</p>
+			<p>Отдельным пунктом стоит выделить цены на&nbsp;квартиры от&nbsp;застройщика&nbsp;— они ниже стоимости недвижимости, приобретаемой через риелтора. На&nbsp;данный фактор положительно влияет отсутствие посредников, поэтому, покупая квартиру в&nbsp;строительной компании «Зенит», Вы&nbsp;избегаете переплат.</p>
 		</div>		
 	</div>
 </div>	
-			<footer class="footer-site">	
-	<div class="container footer__container">
-		<div class="row footer__row">
-			<div class="cols footer__copyright-cols">
-				ЗАО «Зенит»
-			</div>
+
 			
-			<div class="cols footer__contacts-cols">
-				<div class="row footer__contacts__row">
-					<div class="cols">
-						<div class="footer__address"><span>г. Орёл,</span> ул. Старо-Московская, 10</div>
+			<footer class="footer__block">	
+	<div class="footer__nav-block">
+		<div class="container footer__container">
+			<div class="row footer__row  is--nav">				
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-ruble"></use>
+</svg>							
+						</div>
+						Объекты в продаже
 					</div>
-					<div class="cols">
-						<a href="tel:+74862445060" class="footer__phone">+7 (4862) <span>44-50-60</span></a>
+					<ul class="footer__nav-list  is--obj">
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #9ec063;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #c0bb63;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #c0637b;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-family" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-family"></use>
+</svg>
+						</div>
+						Покупателям
 					</div>
-					<div class="cols">
-						<a href="mailto:sales@zenit-orel.ru" class="footer__mailto">sales@zenit-orel.ru</a>
+					<ul class="footer__nav-list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры в ипотеку</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры - военная ипотека</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры - материнский капитал</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры в рассрочку</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры по договору участия в долевом строительстве</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-bank" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-bank"></use>
+</svg>							
+						</div>
+						Банки — партнеры
+					</div>
+					<div class="footer__nav-row  row">
+						<div class="footer__nav-cols  cols">
+							<ul class="footer__nav-list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Сбербанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">СвязьБанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Газпромбанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">ВТБ 24</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">РоссельхозБанк</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav-cols  cols">
+							<ul class="footer__nav-list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Банк Уралсиб</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Купрскпромбанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">МИБ</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-question" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-question"></use>
+</svg>								
+						</div>
+						Остались вопросы?
+					</div>
+					<div class="footer__nav-text">
+						<p>Свяжитесь с нами и мы ответим на все интересующие&nbsp;вас вопросы</p>
+					</div>
+					<button type="button" class="btn-site btn-blue  is--white  btn-footer" data-target="#modal-review" data-toggle="modal">
+						<svg class="rect-block  is--white">
+							<rect class="rect  is--white" x="0" y="0"/>
+						</svg>
+						<span class="name  is--white">Задать вопросы</span>
+						<span class="bg  is--white"></span>
+					</button>
+				</div> 
 			</div>
-			<div class="cols footer__soc-cols">				
-				<div class="social-block">
+		</div>
+	</div>
+	<div class="footer__footer-block">	
+		<div class="container footer__container">
+			<div class="row footer__row  is--footer">
+				<div class="cols footer__soc-cols">				
+					<div class="social-block">
 	<div class="row social__row">
 		<div class="cols">
 			<a href="https://vk.com/zao_zenit" target="_blank" class="social__item _vk">
@@ -995,35 +912,63 @@
 		</div>
 	</div>
 </div>  
-			</div>
-			<div class="cols footer__dorohovdesign-cols">
-				<div class="row footer__dorohovdesign__row"> 
-					<div class="cols">
-						<div>Создание сайта</div>
+				</div>				
+				<div class="cols footer__contacts-cols">
+					<div class="row footer__contacts__row">
+						<div class="cols">
+							<a href="tel:+74862445060" class="footer__phone">+7 (4862) <span>44-50-60</span></a>
+						</div>
+						<div class="cols">
+							<a href="#callbackwidget" class="footer__link callback">Заказать звонок</a>
+						</div>
+						<div class="cols">
+							<div class="footer__address"><span>г. Орёл,</span> ул. Старо-Московская, 10</div>
+						</div>
+						<div class="cols">
+							<a href="mailto:sales@zenit-orel.ru" class="footer__mailto">sales@zenit-orel.ru</a>
+						</div>
 					</div>
-					<div class="cols">
-						<div class="footer__dorohovdesign__logo">
-							<a href="http://www.dorohovdesign.ru/" target="_blank">
-								<svg class="icon-svg icon-dorohovdesign" role="img">
+				</div>				
+			</div>
+			<div class="footer__ofert-block">
+				<div class="row footer__row  is--footer">
+					<div class="cols footer__cols  is--ofert">
+						<div class="footer__ofert">
+							<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+							<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
+							 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
+							 (включая все внесенные изменения) на&nbsp;строительство объекта. 
+							</p>
+							<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+						</div>
+					</div>
+					<div class="cols footer__cols  is--dorohovdesign">
+						<div class="row footer__dorohovdesign__row"> 
+							<div class="cols">
+								<div>Создание сайта</div>
+							</div>
+							<div class="cols">
+								<div class="footer__dorohovdesign__logo">
+									<a href="http://www.dorohovdesign.ru/" target="_blank">
+										<svg class="icon-svg icon-dorohovdesign" role="img">
 	<use xlink:href="/img/svg/sprite.svg#dorohovdesign"></use>
 </svg>
-							</a>
-						</div>	
-					</div>
-				</div>				 
-			</div>	
-		</div>
-		<div class="footer__ofert">
-			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. </p>
-			<p>Не&nbsp;является публичной офертой.</p>
-			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
-			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
-			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
-			</p>
-			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+
+						<div class="footer__dorohovdesign-link-block">		 
+							<div class="footer__dorohovdesign-link"><a href="#">Юридическая информация</a></div>			 
+							<div class="footer__dorohovdesign-link"><a href="#">Настройка push сообщений</a></div>	
+						</div>		 
+					</div>	
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
+
 		</div>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

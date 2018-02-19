@@ -16,12 +16,11 @@ body {
 	color: @b-color;
 	background: @b-body-bg;
 	@media @media-size-xs{
-		padding-top: @b-nav-top-xs;
+		
 		overflow-x: hidden; 
 		width: 100%;
 	}
 	@media @media-size-sm{
-		padding-top: @b-nav-top-sm;
 	}
 	@media @media-device{
 		&::before{
@@ -48,6 +47,18 @@ body {
 		.navbar-site{
 			top: 0!important;
 		}
+	}
+	@media @media-point-device-lg {
+		padding-top: @navbar-xs;
+	}
+	@media @media-point-sm {		
+		padding-top: @navbar-sm;
+	}
+	@media @media-point-md {		
+		padding-top: @navbar-sm;
+	}
+	@media @media-point-screen-lg {
+		padding-top: @navbar-screen;
 	}
 }
 .site-wrap{	
@@ -89,7 +100,8 @@ a{
 }
 .container-content{	
 	@media @media-screen{
-		padding-top: 156px;
+		//padding-top: 156px;
+		padding-top: 1.5vw;
 		padding-bottom: 1.5vw;
 	}
 }

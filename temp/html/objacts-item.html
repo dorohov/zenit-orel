@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title="Купить квартиру от застройщика - Михалицына, 1"
+			description="Новый 17-этажный жилой дом по ул. Михалицына, 1."
+		]] 		
+	</head>
+	<body class="index-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html" 
+			class="navbar-site second"
+			prefix_block="navbar__" 
+		]]
+		<div class="site-wrap">
+			[[azbntple 
+				tpl="/src/block/site/page/objacts/item/.html" 
+				class="objects-item-content-page"
+				prefix_block="_oicp__" 
+				heading_page="ул. Московская, д.&nbsp;76"  
+				carousel_block="carousel__"
+				prefix_objacts="_oacp__"
+
+				btn_animation="wow draw-btn-rect"
+				btn_duration="1.7s"
+				btn_delay="1s"
+				btn_offset="50"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/footer/.html" 
+				class="footer-site"
+				prefix_block="footer__" 
+				class_social="social-block"
+				prefix_social="social__"
+			]]
+		</div>
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/map.html" 
+			modal_prefix="modal-map__"
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/video.html" 
+			modal_prefix="modal-video__"
+		]]
+
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="8/src/block/site/default/script/wow.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/validationEngine.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]]  
+		[[azbntple tpl="/src/block/site/default/script/light-gallery.html" ]]  
+	</body>
+</html>

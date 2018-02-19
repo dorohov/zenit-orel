@@ -21,146 +21,83 @@
 <link href="/css/site.css" rel="stylesheet"> 		
 	</head>
 	<body class="index-page">
-		<nav class="navbar-site second {{navbar_animation}}"
-	data-wow-duration="{{navbar_duration}}" 
-	data-wow-delay="{{navbar_delay}}"
-	data-wow-offset="{{navbar_offset}}">
-	<div class="container navbar__container">
-		<div class="row navbar__row">
-			<div class="cols navbar__cols-icon-tel">
-				<a href="tel:+74862900714" class="roistat-phone  navbar__tel-icon"><svg class="icon-svg icon-navbar-tel" role="img">
+		<nav class="navbar-site second navbar {{navbar_mod}}">
+	<div class="{{navbar_prefix}}inner">
+		<div class="container {{navbar_prefix}}container">
+			<div class="{{navbar_prefix}}header">
+				<div class="row {{navbar_prefix}}row-header ">
+					<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+						<div class="{{navbar_prefix}}hamburger">
+							<button class="{{navbar_prefix}}hamburger-btn hamburger-base__inner" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="hamburger__line  is--left"></span>
+								<span class="hamburger__line  is--center"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+								<span class="hamburger__line  is--right"></span>
+							</button>
+						</div>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--brand">
+						<a class="{{navbar_prefix}}brand" href="/"><img src="/img/svg/logotip.svg" alt=""></a> 
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--tel">
+						<a href="tel:+74862445060" class="{{navbar_prefix}}tel  is--icon"><svg class="icon-svg icon-navbar-tel" role="img">
 	<use xlink:href="/img/svg/sprite.svg#navbar-tel"></use>
 </svg></a>
-			</div>
-			<div class="cols navbar__cols-logotip">
-				<div class="row navbar__row-logotip">
-					<div class="cols navbar__cols-brand">
-						<a class="navbar__brand" href="/">
-							<img src="/img/default/logotip.png" alt="" > 
-						</a>
-					</div>
-					<div class="cols navbar__cols-tagline">
-						Мы строим для вас<br> и ваших детей
 					</div>
 				</div>
 			</div>
-			<div class="cols navbar__cols-contacts">
-				<div class="navbar__phone">
-					<a href="tel:+74862445060">+7 (4862) <span>44-50-60</span></a>
-				</div>
-				<div class="navbar__email">
-					<a href="mailto:sales@zenit-orel.ru">sales@zenit-orel.ru</a>
+				
+			<div class="{{navbar_prefix}}collapse" >
+				<div class="{{navbar_prefix}}collapse-inner">	
+					<div class="row {{navbar_prefix}}collapse-row">
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--left">
+							<a class="{{navbar_prefix}}brand" href="/">
+								<img src="/img/svg/logotip.svg" alt="">
+							</a> 
+						</div>
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--center">
+							<ul class="{{navbar_prefix}}nav">
+								<li class="navbar__nav-item  is--index">
+	<a href="/" class="navbar__nav-link"><span>Главная</span></a>  
+</li>       
+								<li class="navbar__nav-item    ">
+	<a href="/objacts-apart.html" class="navbar__nav-link"><span>Квартиры</span></a>  
+</li>
+								<li class="navbar__nav-item    ">
+	<a href="/objacts-com.html" class="navbar__nav-link"><span>Коммерческая недвижимость</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/buyers-ways.html" class="navbar__nav-link"><span>Покупателям</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/action.html" class="navbar__nav-link"><span>Акции</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/blog.html" class="navbar__nav-link"><span>Блог</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/about.html" class="navbar__nav-link"><span>О нас</span></a>  
+</li>	
+								<li class="navbar__nav-item    ">
+	<a href="/contacts.html" class="navbar__nav-link"><span>Контакты</span></a>  
+</li>	
+							</ul>
+						</div>
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--right">
+							<div class="{{navbar_prefix}}tel-block">
+								<a href="tel:+74862445060" class="{{navbar_prefix}}tel">
+									+7 (4862) <span>44-50-60</span>
+								</a>	
+							</div>	
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols navbar__cols-hamburger">
-				<button type="button" class="btn-site hamburger-base navbar__hamburger" data-toggle="modal" data-target="#modal-nav">
-					<span class="hamburger-base__inner navbar__hamburger-inner">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</button>
-			</div>
-
-			
 		</div>
 	</div>
 </nav>
-<div class="modal fade navbar__modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="navbar__modal-dialog">
-		<div class="btn-site navbar__hamburger-block">
-			<button type="button" class="btn-site hamburger-base navbar__hamburger" data-dismiss="modal" aria-hidden="true">
-				<span class="hamburger-base__inner navbar__hamburger-inner">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
-				<svg class="navbar__hamburger-rect-block modal-close__rect-block">
-					<rect class="navbar__hamburger-rect modal-close__rect" x="0" y="0"/>
-				</svg>
-			</button>
-		</div>
-		<div class="navbar__modal-body" >
-			<ul class="navbar__modal-nav">
-				<li><a href="/">Главная</a></li>
-				<li><a href="/objacts-apart.html">Квартиры</a></li>
-				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
-				<li><a href="/buyers-ways.html">Покупателям</a></li> 
-				<li><a href="/action.html">Акции</a></li>
-				<li><a href="/blog.html">Блог компании</a></li>
-				<li><a href="/about.html">О нас</a></li>
-				<li><a href="/contacts.html">Контакты</a></li>
-				<li><a href="#" class="callback">Заказать звонок</a></li>
-			</ul>
-			<div class="social-block navbar__social-block">
-	<div class="row social__row">
-		<div class="cols">
-			<a href="https://vk.com/zao_zenit" target="_blank" class="social__item _vk">
-				<svg class="icon-svg icon-vk" role="img">
-	<use xlink:href="/img/svg/sprite.svg#vk"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.instagram.com/zao_zenit/" target="_blank" class="social__item _inst">
-				<svg class="icon-svg icon-inst" role="img">
-	<use xlink:href="/img/svg/sprite.svg#inst"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.facebook.com/zaozenit/" target="_blank" class="social__item">
-				<svg class="icon-svg icon-fb" role="img">
-	<use xlink:href="/img/svg/sprite.svg#fb"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://ok.ru/group/53047194615940" target="_blank" class="social__item">
-				<svg class="icon-svg icon-ok" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ok"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="https://www.youtube.com/channel/UCSO9zystvspvfLn39odeF-Q" target="_blank" class="social__item">
-				<svg class="icon-svg icon-yb" role="img">
-	<use xlink:href="/img/svg/sprite.svg#yb"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-viber" role="img">
-	<use xlink:href="/img/svg/sprite.svg#viber"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-twitter" role="img">
-	<use xlink:href="/img/svg/sprite.svg#twitter"></use>
-</svg> 
-			</a>
-		</div>
-		<div class="cols">
-			<a href="#" target="_blank" class="social__item">
-				<svg class="icon-svg icon-telegram" role="img">
-	<use xlink:href="/img/svg/sprite.svg#telegram"></use>
-</svg> 
-			</a>
-		</div>
-	</div>
-</div> 
-		</div>
-	</div>
-</div>
 		<div class="site-wrap">
 			<div class="about-content-page content-block">
 	<div class="container _abcp__container container-content">	
@@ -335,28 +272,148 @@
 		</div>
 	</div>
 </div>
-			<footer class="footer-site second">	
-	<div class="container footer__container">
-		<div class="row footer__row">
-			<div class="cols footer__copyright-cols">
-				ЗАО «Зенит»
-			</div>
-			
-			<div class="cols footer__contacts-cols">
-				<div class="row footer__contacts__row">
-					<div class="cols">
-						<div class="footer__address"><span>г. Орёл,</span> ул. Старо-Московская, 10</div>
+			<footer class="footer__block">	
+	<div class="footer__nav-block">
+		<div class="container footer__container">
+			<div class="row footer__row  is--nav">				
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-ruble"></use>
+</svg>							
+						</div>
+						Объекты в продаже
 					</div>
-					<div class="cols">
-						<a href="tel:+74862445060" class="footer__phone">+7 (4862) <span>44-50-60</span></a>
+					<ul class="footer__nav-list  is--obj">
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #9ec063;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #c0bb63;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="footer__list-item  is--obj">
+							<a href="#" class="footer__list-link  is--obj">
+								<div class="footer__list-bg" style="background-color: #c0637b;"></div>
+								<div class="footer__list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="footer__list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-family" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-family"></use>
+</svg>
+						</div>
+						Покупателям
 					</div>
-					<div class="cols">
-						<a href="mailto:sales@zenit-orel.ru" class="footer__mailto">sales@zenit-orel.ru</a>
+					<ul class="footer__nav-list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры в ипотеку</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры - военная ипотека</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры - материнский капитал</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры в рассрочку</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">Квартиры по договору участия в долевом строительстве</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-bank" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-bank"></use>
+</svg>							
+						</div>
+						Банки — партнеры
+					</div>
+					<div class="footer__nav-row  row">
+						<div class="footer__nav-cols  cols">
+							<ul class="footer__nav-list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Сбербанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">СвязьБанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Газпромбанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">ВТБ 24</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">РоссельхозБанк</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav-cols  cols">
+							<ul class="footer__nav-list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Банк Уралсиб</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">Купрскпромбанк</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__list-link">МИБ</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
+				<div class="cols footer__cols  is--nav">
+					<div class="footer__nav-heading">
+						<div class="footer__heading-icon">
+							<svg class="icon-svg icon-icon-question" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-question"></use>
+</svg>								
+						</div>
+						Остались вопросы?
+					</div>
+					<div class="footer__nav-text">
+						<p>Свяжитесь с нами и мы ответим на все интересующие&nbsp;вас вопросы</p>
+					</div>
+					<button type="button" class="btn-site btn-blue  is--white  btn-footer" data-target="#modal-review" data-toggle="modal">
+						<svg class="rect-block  is--white">
+							<rect class="rect  is--white" x="0" y="0"/>
+						</svg>
+						<span class="name  is--white">Задать вопросы</span>
+						<span class="bg  is--white"></span>
+					</button>
+				</div> 
 			</div>
-			<div class="cols footer__soc-cols">				
-				<div class="social-block">
+		</div>
+	</div>
+	<div class="footer__footer-block">	
+		<div class="container footer__container">
+			<div class="row footer__row  is--footer">
+				<div class="cols footer__soc-cols">				
+					<div class="social-block">
 	<div class="row social__row">
 		<div class="cols">
 			<a href="https://vk.com/zao_zenit" target="_blank" class="social__item _vk">
@@ -416,35 +473,63 @@
 		</div>
 	</div>
 </div>  
-			</div>
-			<div class="cols footer__dorohovdesign-cols">
-				<div class="row footer__dorohovdesign__row"> 
-					<div class="cols">
-						<div>Создание сайта</div>
+				</div>				
+				<div class="cols footer__contacts-cols">
+					<div class="row footer__contacts__row">
+						<div class="cols">
+							<a href="tel:+74862445060" class="footer__phone">+7 (4862) <span>44-50-60</span></a>
+						</div>
+						<div class="cols">
+							<a href="#callbackwidget" class="footer__link callback">Заказать звонок</a>
+						</div>
+						<div class="cols">
+							<div class="footer__address"><span>г. Орёл,</span> ул. Старо-Московская, 10</div>
+						</div>
+						<div class="cols">
+							<a href="mailto:sales@zenit-orel.ru" class="footer__mailto">sales@zenit-orel.ru</a>
+						</div>
 					</div>
-					<div class="cols">
-						<div class="footer__dorohovdesign__logo">
-							<a href="http://www.dorohovdesign.ru/" target="_blank">
-								<svg class="icon-svg icon-dorohovdesign" role="img">
+				</div>				
+			</div>
+			<div class="footer__ofert-block">
+				<div class="row footer__row  is--footer">
+					<div class="cols footer__cols  is--ofert">
+						<div class="footer__ofert">
+							<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+							<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
+							 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
+							 (включая все внесенные изменения) на&nbsp;строительство объекта. 
+							</p>
+							<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+						</div>
+					</div>
+					<div class="cols footer__cols  is--dorohovdesign">
+						<div class="row footer__dorohovdesign__row"> 
+							<div class="cols">
+								<div>Создание сайта</div>
+							</div>
+							<div class="cols">
+								<div class="footer__dorohovdesign__logo">
+									<a href="http://www.dorohovdesign.ru/" target="_blank">
+										<svg class="icon-svg icon-dorohovdesign" role="img">
 	<use xlink:href="/img/svg/sprite.svg#dorohovdesign"></use>
 </svg>
-							</a>
-						</div>	
-					</div>
-				</div>				 
-			</div>	
-		</div>
-		<div class="footer__ofert">
-			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. </p>
-			<p>Не&nbsp;является публичной офертой.</p>
-			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
-			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
-			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
-			</p>
-			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+									</a>
+								</div>	
+							</div>
+						</div>
+
+						<div class="footer__dorohovdesign-link-block">		 
+							<div class="footer__dorohovdesign-link"><a href="#">Юридическая информация</a></div>			 
+							<div class="footer__dorohovdesign-link"><a href="#">Настройка push сообщений</a></div>	
+						</div>		 
+					</div>	
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
+
 		</div>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

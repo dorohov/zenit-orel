@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title="Купить квартиру от застройщика - Михалицына, 1"
+			description="Новый 17-этажный жилой дом по ул. Михалицына, 1."
+		]] 		
+	</head>
+	<body class="index-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html" 
+			class="navbar-site second"
+			prefix_block="navbar__" 
+		]]
+		<div class="site-wrap">
+			[[azbntple 
+				tpl="/src/block/site/page/blog/.html" 
+				class="blog-content-page"
+				prefix_block="_bcp__" 
+				heading_page="Блог компании" 
+				blog_block="blog__"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/footer/.html" 
+				class="footer-site second include-navbar-blog"
+				prefix_block="footer__" 
+				class_social="social-block"
+				prefix_social="social__"
+			]]
+		</div>
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/subscribe.html" 
+			prefix_modals="modal-banks__"
+			heading_modals="Подписка на новости"
+			note_modals="Подпишитесь на новости, чтобы первым получать самую свежую информацию о новых объектах и специальных предложениях компании."
+		]]
+
+
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+
+
+		<script>
+			$(function(){
+				
+				$(document.body).on('change', '.ingr-cb-c-label input[type="checkbox"][name="ingr_cb"]', {}, function(event){
+					
+					
+					
+					var cb = $(this);
+					var label = cb.closest('label');
+					var block = $('.sp-button-container');
+					
+					if($(event.target).attr('href') && $(event.target).attr('href') != '') {
+						
+					} else {
+						
+						var is_checked = label.attr('data-checked') || '';
+						
+						
+						if(is_checked == 'checked') {
+							block.fadeOut('fast');
+							label.attr('data-checked', '');//.prop('checked', null);
+						} else {
+							block.fadeIn('fast');
+							label.attr('data-checked', 'checked');//.prop('checked', 'checked');
+						}
+						
+					}
+					
+					
+					
+				});
+			});
+		</script>
+	</body>
+</html>

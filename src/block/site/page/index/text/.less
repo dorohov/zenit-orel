@@ -1,12 +1,28 @@
-.index-text__{
+.index-content__{
+	&panel{
+		padding: 35px 0;
+		@media @media-point-screen {
+			padding-top: 4.8vw;
+			padding-bottom: 3.5vw;
+		}
+
+	}
 	&text{
 		font-size: @b-fs - 2;
 		line-height: @b-lh - 8;
 		h1, h2, h3{
-			.calcFontSize(18, 28, 320, 1680);
-			.calcLineHeight(18, 28, 320, 1680);
-			margin-bottom: 15px;
+			font-family: @b-ff;
+			font-weight: 700;
+			.calcFontSize(18, 27, 320, 1680);
+			.calcLineHeight(18, 27, 320, 1680);
+			margin-bottom: 20px;
 		}
 		p, div{margin-bottom: 7px;}
+		ul, ol{
+			margin-bottom: 7px;
+			li{
+				margin-bottom: 7px;
+			}
+		}
 	}
 }

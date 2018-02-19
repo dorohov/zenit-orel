@@ -1,7 +1,7 @@
 //===== url =====//
 @url-site:'';
 @url-path:'/wp-content/themes/azbnbasetheme'; 
-//@url-path:'';
+@url-path:'';
 @url-path-css:'@{url-path}/css';
 @url-path-fonts:'@{url-path}/fonts';
 @url-path-img:'@{url-path}/img';
@@ -65,6 +65,7 @@
 @circe-ebold:			circe-extrabold;
 
 @geometria:				geometria;
+@geometria-500:			geometria-500;
 @geometria-bold:		geometria-bold;
 @geometria-light:		geometria-light;
 @geometria-ebold:		geometria-extrabold;
@@ -76,6 +77,8 @@
 @open-ebold:			open-sans-extra-bold;
 
 @proxima:				proxima-nova-regular;
+@proxima-700:			proxima_nova_bold;
+@proxima-800:			proxima_nova_extrabold;
 
 @neusa:					neusa-regular;
 @neusa-bold:			neusa-bold;
@@ -89,13 +92,16 @@
 @b-body-bg:			@white; 
 @b-line:			@white; 
 @b-ff:				@circe;
+@b-ff-2:			@geometria;
+@b-ff-3:			@proxima;
 @b-italic:			@circe;
 @b-bold:			@circe; 		
 @b-fs: 				16px;
 @b-lh: 				24px;
 @b-gradient:		linear-gradient(to top, rgba(46,193,181,0.9) 0%,rgba(169,22,212,0.9) 100%);
 @b-h-ff: 			@open-bold;
-@transition-site: all 0.35s; 
+@transition-site: 	all 0.35s; 
+@trs-site: 			@transition-site; 
 //===== header =====//
 @b-header-bg:		@white; 
 @b-header-color:	@white; 
@@ -112,14 +118,62 @@
 @b-nav-collapse-bg:			@blue;  
 @b-nav-top-sm:				99px;
 @b-nav-top-xs:				84px;
+//===== wp admin bar =====//
+@wp_bar_device: 				46px;
+@wp_bar_screen: 				32px;
+//===== nav =====//
+@navbar-bg-screen:				@white; 
+@navbar-bg-screen-hover:		@white; 
+@navbar-bg-device:				@white;
+@navbar-ff:						@b-ff-2;
+@navbar-fs:						@b-fs; 
+@navbar-lh:						@b-lh;  
+@navbar-color-link:				@blue;
+@navbar-color:					@blue;
+@navbar-color-hover:			@blue;
+@navbar-color-tel:				@blue;
+@navbar-active-bg:				@white;
+@navbar-active-color:			@b-color;
+@navbar-btn:					@blue-light;
+@navbar-btn-hover:				@blue-light;
+
+@navbar-color-device:			@b-color;
+@navbar-color-device-hover:		@b-color;
+
+@navbar-collapse-bg:			@white;
+@navbar-collapse-color-h:		@b-color-a;
+@navbar-collapse-color:			@b-color;
+@navbar-collapse-color-hover:	@b-color;
+
+
+@navbar_cat_bg:					@white;
+
+
+@navbar-device:					84px;   
+@navbar-xs:						@navbar-device;
+@navbar-sm:						99px;
+@navbar-md:						@navbar-device;
+@navbar-screen:					111px;
+@navbar-lg:						@navbar-screen;
+@navbar-xl:						@navbar-screen;
+@navbar-xxl:					@navbar-screen; 
+
+@navbar-index-screen:			92px;
+@navbar-index-lg:				@navbar-index-screen;
+@navbar-index-xl:				@navbar-index-screen;
+@navbar-index-xxl:				@navbar-index-screen;
+
+@navbar-bottom:					44px;
+@navbar-bottom-tabs:			64px;
 //===== footer =====//
-@b-footer-color:	@black; 
-@b-footer-bg:		@blue; 
+@b-footer-color:	@white; 
+@b-footer-bg:		#0082c9; 
 @b-footer-ff:		@circe; 
 @b-footer-fs:		@b-fs; 
 @b-footer-lh:		@b-lh; 
 //===== social =====//
 @b-social-bc: 		@blue-light;
+@b-social-bc: 		#80c1e4;
 
 //===== production =====//
 @b-prod-nav:		@white; 
@@ -193,6 +247,31 @@
 @media-size-xs-6: ~"(min-width: 375px) and (max-width: 767px)";
 @media-size-xs-6-l: ~"(min-width: 490px) and (max-width: 767px) and (orientation:landscape)";
 /* end's smart */
+
+
+
+@media-point-xxs: ~"(max-width: 565px)";
+@media-point-xxs-l: ~"(max-width: 565px) and (orientation:landscape)";
+@media-point-xs: ~"(min-width: 567px) and (max-width: 767px)";
+@media-point-sm: ~"(min-width: 768px) and (max-width: 991px)";
+@media-point-md: ~"(min-width: 992px) and (max-width: 1199px)";
+@media-point-md1: ~"(min-width: 992px) and (max-width: 1024px)";
+@media-point-md2: ~"(min-width: 1025px) and (max-width: 1199px)";
+@media-point-lg: ~"(min-width: 1200px) and (max-width: 1399px)";
+@media-point-lg1: ~"(min-width: 1200px) and (max-width: 1299px)";
+@media-point-lg2: ~"(min-width: 1300px) and (max-width: 1399px)";
+@media-point-mdl: ~"(min-width: 992px) and (max-width: 1399px)";
+@media-point-xl: ~"(min-width: 1400px) and (max-width: 1699px)";
+@media-point-xxl: ~"(min-width: 1700px)";
+@media-point-screen: ~"(min-width: 1025px)";
+@media-point-screen-lg: ~"(min-width: 1200px)";
+@media-point-device: ~"(max-width: 1024px)";
+@media-point-device-lg: ~"(max-width: 1199px)";
+@media-point-tablet: ~"(min-width: 768px) and (max-width: 1024px)";
+@media-point-smart: ~"(max-width: 767px)";
+@media-point-notsmart: ~"(min-width: 768px)";
+
+
 .calcFontSize(@f-min, @f-max, @v-min, @v-max){
 	font-size: ~"calc( (100vw - @{v-min}px) / (@{v-max} - @{v-min}) * (@{f-max} - @{f-min}) + @{f-min}px)";
 }

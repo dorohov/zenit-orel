@@ -1,49 +1,188 @@
-<footer class="{{class}}">	
-	<div class="container {{prefix_block}}container">
-		<div class="row {{prefix_block}}row">
-			<div class="cols {{prefix_block}}copyright-cols">
-				{{contacts.copyright}}
-			</div>
-			
-			<div class="cols {{prefix_block}}contacts-cols">
-				<div class="row {{prefix_block}}contacts__row">
-					<div class="cols">
-						<div class="{{prefix_block}}address">{{contacts.address}}</div>
+<footer class="{{prefix_block}}block">	
+	<div class="{{prefix_block}}nav-block">
+		<div class="container {{prefix_block}}container">
+			<div class="row {{prefix_block}}row  is--nav">				
+				<div class="cols {{prefix_block}}cols  is--nav">
+					<div class="{{prefix_block}}nav-heading">
+						<div class="{{prefix_block}}heading-icon">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-ruble" ]]							
+						</div>
+						Объекты в продаже
 					</div>
-					<div class="cols">
-						<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
+					<ul class="{{prefix_block}}nav-list  is--obj">
+						<li class="{{prefix_block}}list-item  is--obj">
+							<a href="#" class="{{prefix_block}}list-link  is--obj">
+								<div class="{{prefix_block}}list-bg" style="background-color: #9ec063;"></div>
+								<div class="{{prefix_block}}list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="{{prefix_block}}list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="{{prefix_block}}list-item  is--obj">
+							<a href="#" class="{{prefix_block}}list-link  is--obj">
+								<div class="{{prefix_block}}list-bg" style="background-color: #c0bb63;"></div>
+								<div class="{{prefix_block}}list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="{{prefix_block}}list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+						<li class="{{prefix_block}}list-item  is--obj">
+							<a href="#" class="{{prefix_block}}list-link  is--obj">
+								<div class="{{prefix_block}}list-bg" style="background-color: #c0637b;"></div>
+								<div class="{{prefix_block}}list-name">
+									ЖК «Овсянниковская поляна»
+								</div>
+								<div class="{{prefix_block}}list-note">Московское шоссе, д. 54 б</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols {{prefix_block}}cols  is--nav">
+					<div class="{{prefix_block}}nav-heading">
+						<div class="{{prefix_block}}heading-icon">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-family" ]]
+						</div>
+						Покупателям
 					</div>
-					<div class="cols">
-						<a href="mailto:{{contacts.email}}" class="{{prefix_block}}mailto">{{contacts.email}}</a>
+					<ul class="{{prefix_block}}nav-list">
+						<li class="{{prefix_block}}list-item">
+							<a href="#" class="{{prefix_block}}list-link">Квартиры в ипотеку</a>
+						</li>
+						<li class="{{prefix_block}}list-item">
+							<a href="#" class="{{prefix_block}}list-link">Квартиры - военная ипотека</a>
+						</li>
+						<li class="{{prefix_block}}list-item">
+							<a href="#" class="{{prefix_block}}list-link">Квартиры - материнский капитал</a>
+						</li>
+						<li class="{{prefix_block}}list-item">
+							<a href="#" class="{{prefix_block}}list-link">Квартиры в рассрочку</a>
+						</li>
+						<li class="{{prefix_block}}list-item">
+							<a href="#" class="{{prefix_block}}list-link">Квартиры по договору участия в долевом строительстве</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cols {{prefix_block}}cols  is--nav">
+					<div class="{{prefix_block}}nav-heading">
+						<div class="{{prefix_block}}heading-icon">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-bank" ]]							
+						</div>
+						Банки — партнеры
+					</div>
+					<div class="{{prefix_block}}nav-row  row">
+						<div class="{{prefix_block}}nav-cols  cols">
+							<ul class="{{prefix_block}}nav-list">
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">Сбербанк</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">СвязьБанк</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">Газпромбанк</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">ВТБ 24</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">РоссельхозБанк</a>
+								</li>
+							</ul>
+						</div>
+						<div class="{{prefix_block}}nav-cols  cols">
+							<ul class="{{prefix_block}}nav-list">
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">Банк Уралсиб</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">Купрскпромбанк</a>
+								</li>
+								<li class="{{prefix_block}}list-item">
+									<a href="#" class="{{prefix_block}}list-link">МИБ</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="cols {{prefix_block}}soc-cols">				
-				[[azbntple tpl="/src/block/site/default/social/.html" class="social-block" social-prefix="social__"]] 
-			</div>
-			<div class="cols {{prefix_block}}dorohovdesign-cols">
-				<div class="row {{prefix_block}}dorohovdesign__row"> 
-					<div class="cols">
-						<div>Создание сайта</div>
+				<div class="cols {{prefix_block}}cols  is--nav">
+					<div class="{{prefix_block}}nav-heading">
+						<div class="{{prefix_block}}heading-icon">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-question" ]]								
+						</div>
+						Остались вопросы?
 					</div>
-					<div class="cols">
-						<div class="{{prefix_block}}dorohovdesign__logo">
-							<a href="http://www.dorohovdesign.ru/" target="_blank">
-								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="dorohovdesign" class="{{prefix}}dd" ]]
-							</a>
-						</div>	
+					<div class="{{prefix_block}}nav-text">
+						<p>Свяжитесь с нами и мы ответим на все интересующие&nbsp;вас вопросы</p>
 					</div>
-				</div>				 
-			</div>	
+					<button type="button" class="btn-site btn-blue  is--white  btn-footer" data-target="#modal-review" data-toggle="modal">
+						<svg class="rect-block  is--white">
+							<rect class="rect  is--white" x="0" y="0"/>
+						</svg>
+						<span class="name  is--white">Задать вопросы</span>
+						<span class="bg  is--white"></span>
+					</button>
+				</div> 
+			</div>
 		</div>
-		<div class="{{prefix_block}}ofert">
-			<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. </p>
-			<p>Не&nbsp;является публичной офертой.</p>
-			<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
-			 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
-			 (включая все внесенные изменения) на&nbsp;строительство объекта. 
-			</p>
-			<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+	</div>
+	<div class="{{prefix_block}}footer-block">	
+		<div class="container {{prefix_block}}container">
+			<div class="row {{prefix_block}}row  is--footer">
+				<div class="cols {{prefix_block}}soc-cols">				
+					[[azbntple tpl="/src/block/site/default/social/.html" class="social-block" social-prefix="social__"]] 
+				</div>				
+				<div class="cols {{prefix_block}}contacts-cols">
+					<div class="row {{prefix_block}}contacts__row">
+						<div class="cols">
+							<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
+						</div>
+						<div class="cols">
+							<a href="#callbackwidget" class="{{prefix_block}}link callback">Заказать звонок</a>
+						</div>
+						<div class="cols">
+							<div class="{{prefix_block}}address">{{contacts.address}}</div>
+						</div>
+						<div class="cols">
+							<a href="mailto:{{contacts.email}}" class="{{prefix_block}}mailto">{{contacts.email}}</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="{{prefix_block}}ofert-block">
+				<div class="row {{prefix_block}}row  is--footer">
+					<div class="cols {{prefix_block}}cols  is--ofert">
+						<div class="{{prefix_block}}ofert">
+							<p>Вся информация, представленная на&nbsp;данном ресурсе, носит ознакомительный характер. Не&nbsp;является публичной офертой.</p>
+							<p>В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;30.12.2014&nbsp;г. №&nbsp;214-ФЗ «Об&nbsp;участии в&nbsp;долевом строительстве многоквартирных домов и&nbsp;иных объектов недвижимости и&nbsp;о&nbsp;внесении изменений <br/>
+							 в&nbsp;некоторые законодательные акты Российской Федерации» (с&nbsp;изменениями и&nbsp;дополнениями) участники долевого строительства имеют право знакомиться с&nbsp;проектной документацией
+							 (включая все внесенные изменения) на&nbsp;строительство объекта. 
+							</p>
+							<p>Указанная документация находится в&nbsp;службе технического заказчика по&nbsp;адресу: г. Орел, ул. Старо-Московская, 10.</p>
+						</div>
+					</div>
+					<div class="cols {{prefix_block}}cols  is--dorohovdesign">
+						<div class="row {{prefix_block}}dorohovdesign__row"> 
+							<div class="cols">
+								<div>Создание сайта</div>
+							</div>
+							<div class="cols">
+								<div class="{{prefix_block}}dorohovdesign__logo">
+									<a href="http://www.dorohovdesign.ru/" target="_blank">
+										[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="dorohovdesign" class="{{prefix}}dd" ]]
+									</a>
+								</div>	
+							</div>
+						</div>
+
+						<div class="{{prefix_block}}dorohovdesign-link-block">		 
+							<div class="{{prefix_block}}dorohovdesign-link"><a href="#">Юридическая информация</a></div>			 
+							<div class="{{prefix_block}}dorohovdesign-link"><a href="#">Настройка push сообщений</a></div>	
+						</div>		 
+					</div>	
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

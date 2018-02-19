@@ -1,0 +1,83 @@
+<nav class="{{class}} {{navbar_animation}}"
+	data-wow-duration="{{navbar_duration}}" 
+	data-wow-delay="{{navbar_delay}}"
+	data-wow-offset="{{navbar_offset}}">
+	<div class="container {{prefix_block}}container">
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}cols-icon-tel">
+				<a href="tel:+74862900714" class="roistat-phone  {{prefix_block}}tel-icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-tel" ]]</a>
+			</div>
+			<div class="cols {{prefix_block}}cols-logotip">
+				<div class="row {{prefix_block}}row-logotip">
+					<div class="cols {{prefix_block}}cols-brand">
+						<a class="{{prefix_block}}brand" href="/">
+							<img src="{{url-path-img}}/default/logotip.png" alt="" > 
+						</a>
+					</div>
+					<div class="cols {{prefix_block}}cols-tagline">
+						Мы строим для вас<br> и ваших детей
+					</div>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}cols-contacts">
+				<div class="{{prefix_block}}phone">
+					<a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a>
+				</div>
+				<div class="{{prefix_block}}email">
+					<a href="mailto:{{contacts.email}}">{{contacts.email}}</a>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}cols-hamburger">
+				<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-toggle="modal" data-target="#modal-nav">
+					<span class="hamburger-base__inner {{prefix_block}}hamburger-inner">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+			</div>
+
+			
+		</div>
+	</div>
+</nav>
+<div class="modal fade {{prefix_block}}modal" id="modal-nav" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="{{prefix_block}}modal-dialog">
+		<div class="btn-site {{prefix_block}}hamburger-block">
+			<button type="button" class="btn-site hamburger-base {{prefix_block}}hamburger" data-dismiss="modal" aria-hidden="true">
+				<span class="hamburger-base__inner {{prefix_block}}hamburger-inner">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<svg class="{{prefix_block}}hamburger-rect-block modal-close__rect-block">
+					<rect class="{{prefix_block}}hamburger-rect modal-close__rect" x="0" y="0"/>
+				</svg>
+			</button>
+		</div>
+		<div class="{{prefix_block}}modal-body" >
+			<ul class="{{prefix_block}}modal-nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/objacts-apart.html">Квартиры</a></li>
+				<li><a href="/objacts-com.html">Коммерческая недвижимость</a></li>
+				<li><a href="/buyers-ways.html">Покупателям</a></li> 
+				<li><a href="/action.html">Акции</a></li>
+				<li><a href="/blog.html">Блог компании</a></li>
+				<li><a href="/about.html">О нас</a></li>
+				<li><a href="/contacts.html">Контакты</a></li>
+				<li><a href="#" class="callback">Заказать звонок</a></li>
+			</ul>
+			[[azbntple
+				tpl="/src/block/site/default/social/.html" 
+				class_social="social-block navbar__social-block"
+				prefix_social="social__"
+			]]
+		</div>
+	</div>
+</div>

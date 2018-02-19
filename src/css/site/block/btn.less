@@ -64,6 +64,10 @@
 		border-style: solid;
 		border-color: lighten(@b-color-a, 0%);
 	}
+	html.msie &{
+		border-width: 2px;
+		border-style: solid;
+	}
     &::before{
     	content: '';
     	position: absolute;
@@ -97,6 +101,9 @@
 			stroke-dasharray: 1000;
 			stroke-dashoffset: 1000;
 	  		animation: draw-btn-rect 1.7s linear 1s 1 forwards;
+	  		&.is--white{
+				stroke: @white;
+	  		}
     	}
     }
 	
@@ -133,6 +140,12 @@
     		top: 50%;
 			transform-origin: 0 top;
     	}
+		&.is--white{
+	    	&::before,
+	    	&::after{
+				background: @white;
+	  		}
+  		}
     }
 	&:hover{
 		color: @white;
@@ -150,6 +163,19 @@
 	    	}
     	}
 	}
+    &.is--white{
+    	color: @white;
+    	&::before{
+			background: @white;
+    	}
+    	@media @media-device{
+    		border-color: @white;
+    	}
+    	&:hover{
+    		color: @blue;
+    		border-color: @white;
+    	}
+    }
 }
 .btn-more{
     letter-spacing: 2.5px;
@@ -160,6 +186,11 @@
     letter-spacing: 1px;
     @media @media-device{padding: 5px 15px;}
     @media @media-screen{padding: .75vw 2.6vw;}
+}
+.btn-footer{
+    letter-spacing: 1px;
+    @media @media-device{padding: 5px 15px;}
+    @media @media-screen{padding: 11px 2.6vw;}
 }
 .btn-buyers{
 	letter-spacing: 3px;

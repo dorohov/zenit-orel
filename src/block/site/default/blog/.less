@@ -279,11 +279,10 @@
 .blog-panel__{
 	&panel{
 		position: relative;
-		@media @media-device {
-			padding: 35px 0;
-		}
+		z-index: 2;
+		padding: 35px 0;		
 		@media @media-screen {
-			padding: 5.7vw 0;
+			padding: 6vw 0 3.2vw;
 		}
 	}
 	&heading-block{		
@@ -291,7 +290,17 @@
 			margin-bottom: 35px;
 		}
 	}
-	&line-left-horiz{
+	&heading{
+		@media @media-point-screen {			
+			margin-bottom: 0;
+		}
+	}	
+	&heading-small{
+		@media @media-point-screen {			
+			margin-bottom: 2.6vw;
+		}
+	}	
+	/*&line-left-horiz{
 		@media @media-device {display: none}				
 		@media @media-screen {				
 			position: absolute;
@@ -308,7 +317,7 @@
 			height: 8.5vw;
 			left: 11vw;
 		}
-	}
+	}*/
 	&row{
 		flex-wrap: wrap;
 		margin-top: -30px;
@@ -339,7 +348,7 @@
 	&item{max-width: 410px;}
 	&preview{
 		display: block;
-		margin-bottom: 25px;
+		//margin-bottom: 25px;
 		position: relative;
 		overflow: hidden;
 		img{
@@ -349,6 +358,10 @@
 				transform: scale(1.1);
 			}
 		}
+	}
+	&desc{
+		background-color: #eee;
+		padding: 20px 10px;
 	}
 	&date{
 		width: 55px;
@@ -369,6 +382,7 @@
 	&heading{
 		.calcFontSize(18, 23, 320, 1680);
 		.calcLineHeight(20, 25, 320, 1680);
+		margin-bottom: 12px;
 		a{
 			.blog-item__item:hover &{
 				color: @b-color-a;
@@ -381,7 +395,7 @@
 	&note{
 		.calcFontSize(16, 17, 320, 1680);
 		.calcLineHeight(18, 19, 320, 1680);
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	&link{
 		text-transform: uppercase;

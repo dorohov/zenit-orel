@@ -1,22 +1,7 @@
 <div class="{{objacts_block}}panel" id="objacts-block">
-	<div 
-		class="{{objacts_block}}line-left-vert line-anim vert {{line_left_vert_animation}}"
-			data-wow-duration="{{line_left_vert_duration}}" 
-			data-wow-delay="{{line_left_vert_delay}}"
-			data-wow-offset="{{line_left_vert_offset}}"
-		></div>	
-	<div 
-		class="{{objacts_block}}line-left-horiz line-anim horiz {{line_left_horiz_animation}}"
-			data-wow-duration="{{line_left_horiz_duration}}" 
-			data-wow-delay="{{line_left_horiz_delay}}"
-			data-wow-offset="{{line_left_horiz_offset}}"
-		></div>
 	<div class="container {{objacts_block}}container">			
 		<div class="row heading-block {{objacts_block}}heading-block">
-			<div class="cols {{objacts_block}}heading-cols 				{{heading_animation}}"
-					data-wow-duration="{{heading_duration}}" 
-					data-wow-delay="{{heading_delay}}"
-					data-wow-offset="{{heading_offset}}">
+			<div class="cols {{objacts_block}}heading-cols">
 				<h2 class="{{objacts_block}}heading heading-index-block">{{objacts_heading}}</h2>
 			</div>
 			<div class="cols {{objacts_block}}btn-cols">
@@ -35,71 +20,79 @@
 			</div>
 		</div>
 
-		<div class="{{objacts_block}}owl {{block_animation}}"
-			data-wow-duration="{{block_duration}}" 
-			data-wow-delay="{{block_delay}}"
-			data-wow-offset="{{block_offset}}">
-				[[azbntple 
-					tpl="/src/block/site/default/objacts/objacts.html"
-					objacts_block="objacts__" 
-					prefix_block="_oacp__"
-					objacts_name="ЖК «Овсянниковская поляна» Московское шоссе, д. 54 б" 
-					objacts_image="item1.jpg"
-					objacts_status_name="квартир<br> в продаже"
-					objacts_status_val="315"
-					objacts_date_val="3 кв. 2020 года"
-					objacts_status_buy="sale"
-					objacts_date_name="Окончание строительства"
-					objacts_label_visible="is--visible"
-					objacts_label_name="Скоро в продаже"
-					objacts_label_color="#4e9e0d"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/objacts/objacts.html"
-					objacts_block="objacts__" 
-					prefix_block="_oacp__"
-					objacts_name="ул. Московская, д.&nbsp;76"
-					objacts_image="obj-lock.png"
-					objacts_status_name="квартир<br> в продаже"
-					objacts_status_val="84"
-					objacts_date_val="3 кв. 2018 года"
-					objacts_status_buy="sale"
-					objacts_date_name="Окончание строительства"
-					objacts_label_visible="is--visible"
-					objacts_label_name="Старт продаж"
-					objacts_label_color="#deb126"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/objacts/objacts.html"
-					objacts_block="objacts__" 
-					prefix_block="_oacp__"
-					objacts_name="ул. Розы Люксембург, д.&nbsp;33"
-					objacts_image="obj-lock.png"
-					objacts_status_name="квартир<br> в продаже"
-					objacts_status_val="&nbsp;2"
-					objacts_date_val="1 кв. 2017 года"
-					objacts_status_buy="sale"
-					objacts_date_name="Дом сдан в эксплуатацию"
-					objacts_label_visible="is--visible"
-					objacts_label_name="Осталось 2 квартиры"
-					objacts_label_color="#8a0f1b"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/objacts/objacts.html"
-					objacts_block="objacts__" 
-					prefix_block="_oacp__"
-					objacts_name="ул. Розы Люксембург, д.&nbsp;33"
-					objacts_image="obj-lock.png"
-					objacts_status_name="квартир<br> в продаже"
-					objacts_status_val="&nbsp;2"
-					objacts_date_val="1 кв. 2017 года"
-					objacts_status_buy="sale"
-					objacts_date_name="Дом сдан в эксплуатацию"
-					objacts_label_visible="is--visible"
-					objacts_label_name="Осталось 2 квартиры"
-					objacts_label_color="#8a0f1b"
-				]]	
-			</div>
+		<div class="{{objacts_block}}owl">
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#9ec063"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#c0bb63"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#c0637b"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#9ec063"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#c0bb63"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/objacts/card.html"
+				block_prefix="objact-card__"
+				block_mod="  "
+				block_link="{{page.obj_item}}"
+				block_preview="{{url-path-img}}/objacts/item1.jpg"
+				block_heading="ЖК «Овсянниковская поляна»"
+				block_color="#c0637b"
+				block_address="Московское шоссе, д. 54 б"
+				block_date="3 кв. 2020 года"
+				block_floor="300"
+			]]	
 		</div>
 	</div>
 </div>

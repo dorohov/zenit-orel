@@ -171,3 +171,68 @@
 /* No Js */
 .no-js .owl-carousel {display: block;}
 /*custom controls*/
+
+.index-header__owl {
+	.owl-item{
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 2;
+			top: 10px;
+			bottom: 10px;
+			left: 0;
+			width: 100%;
+			background-color: fadeout(#0aa8ff, 20%);
+			transition: @trs-site;
+		}
+		&.center{
+			&::before{
+				opacity: 0;
+			}
+		}
+	}
+	.owl-dots{
+		justify-content: flex-start;
+		//width: 89vw;
+    	//max-width: 1650px;
+    	//margin-left: auto;
+    	//margin-right: auto;
+    	//padding-left: 15px;
+    	//padding-right: 15px;
+    	//padding-top: 22px;
+    	padding-left: 15px;
+    	padding-right: 15px;
+    	@media @media-point-screen {
+    		padding-left: 7.45vw;
+    		padding-right: 7.45vw;
+    	}
+    	.owl-dot{
+    		margin: 0 15px 0 0;
+    		background-color: #8fc0d9;
+    		&.active{
+    			background-color: @white;
+    		}
+    	}
+	}
+	.owl-nav{
+		.owl-prev{
+			left: 1%;
+			transform: translate(0,-50%);
+
+		}
+		.owl-next{
+			right: 1%;
+			transform: translate(0,-50%);
+		}
+		.owl-prev,
+		.owl-next{
+			color: @white!important;
+			background: none!important;
+			&:hover{
+				color: @white!important;
+			}
+			top: 47%;
+		}
+	}
+}

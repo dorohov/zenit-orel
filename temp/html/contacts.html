@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title="Купить квартиру от застройщика - Михалицына, 1"
+			description="Новый 17-этажный жилой дом по ул. Михалицына, 1."
+		]] 		
+	</head>
+	<body class="index-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html" 
+			class="navbar-site second"
+			prefix_block="navbar__" 
+		]]
+		<div class="site-wrap">
+			[[azbntple 
+				tpl="/src/block/site/page/contacts/.html" 
+				class="contacts-content-page"
+				prefix_block="_ccp__" 
+				heading_page="Всегда на связи" 
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/footer/.html" 
+				class="footer-site second"
+				prefix_block="footer__" 
+				class_social="social-block"
+				prefix_social="social__"
+			]]
+		</div>
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/map.html" 
+			modal_prefix="modal-map__"
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/review.html" 
+			prefix_modals="modal-banks__" 
+			heading_modals="Напишите нам!"
+			note_modals="Задайте нам вопрос. Мы с удовольствием ответим на него в ближайшее время."
+		]]
+
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/googleMapOffice.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/validationEngine.html" ]]  
+	</body>
+</html>

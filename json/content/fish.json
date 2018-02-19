@@ -20,6 +20,17 @@
 		"inst":"https://www.instagram.com/zao_zenit/",
 		"yb":"https://www.youtube.com/channel/UCSO9zystvspvfLn39odeF-Q"
 	},
+	"page":{
+		"index":"/",
+		"objap":"/objacts-apart.html",
+		"obj_item":"/objacts-item.html",
+		"objcom":"/objacts-com.html",
+		"buyers":"/buyers-ways.html",
+		"action":"/action.html",
+		"blog":"/blog.html",
+		"about":"/about.html",
+		"contacts":"/contacts.html"
+	},
 	"url-path-css": "/wp-content/themes/azbnbasetheme/css",
 	"url-path-css":"/css",
 	"url-path-img": "/wp-content/themes/azbnbasetheme/img",
