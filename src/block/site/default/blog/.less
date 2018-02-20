@@ -345,7 +345,13 @@
 	}
 }
 .blog-item__{
-	&item{max-width: 410px;}
+	&item{
+		max-width: 410px;		
+		background-color: #eee;
+		position: relative;
+		height: 100%;
+		padding-bottom: 45px;
+	}
 	&preview{
 		display: block;
 		//margin-bottom: 25px;
@@ -360,8 +366,7 @@
 		}
 	}
 	&desc{
-		background-color: #eee;
-		padding: 20px 10px;
+		padding: 20px 10px 0;
 	}
 	&date{
 		width: 55px;
@@ -398,6 +403,9 @@
 		margin-bottom: 15px;
 	}
 	&link{
+		position: absolute;
+		left: 10px;
+		bottom: 20px;
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: @b-fs - 2;

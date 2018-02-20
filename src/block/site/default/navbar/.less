@@ -10,7 +10,7 @@
 		//padding-top: 10px;
 		//padding-bottom: 10px; 	
 	} 
-	@media @media-point-device {		
+	@media @media-point-tablet {		
 		body.admin-bar &{
 			top: @wp_bar_device;				
 		}	
@@ -127,7 +127,7 @@
 		@media @media-point-device-lg{
 			position: fixed;
 			top: @navbar-device;
-			left: -270px;
+			right: -270px;
 			width: 270px;
 			height: ~"calc(100vh - @{navbar-device})";
 			opacity: 0;
@@ -137,24 +137,25 @@
 		    .navbar-site.opacity &{
 		    	background: @navbar-bg-device;
 		    }
+		    &.open,
 		    &.is--open{
 		    	visibility: visible;
 		    	opacity: 1;
-		    	left: 0;
+		    	right: 0;
 		    }
 		    body.admin-bar &{
 				top: ~"calc(@{navbar-device} + @{wp_bar_device})";
-				height: ~"calc(100vh - @{navbar-device} @{wp_bar_device})";				
+				height: ~"calc(100vh - @{navbar-device} - @{wp_bar_device})";				
 			}
 		}
 		@media @media-point-md2{
 		    body.admin-bar &{
 				top: ~"calc(@{navbar-device} + @{wp_bar_screen})";
-				height: ~"calc(100vh - @{navbar-device} @{wp_bar_screen})";				
+				height: ~"calc(100vh - @{navbar-device} - @{wp_bar_screen})";				
 			}
 		}
 		@media @media-size-xs-p {
-			left: -100%;
+			right: -100%;
 			width: 100%;
 		}
 		@media @media-point-md2{
@@ -325,6 +326,7 @@
 			}	
 		}		
 		.navbar__nav-item.open &,
+		.navbar__nav-item.active &,
 		.navbar__nav-item.is--active &{
 			font-weight: 700;
 			cursor: default;
