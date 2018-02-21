@@ -11,6 +11,9 @@
 			padding-left: 15px;
 			padding-right: 15px;
 			.makeCols(12, 12);
+			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
 			@media @media-point-tablet {
 				.makeCols(6, 12);
 			}
@@ -122,9 +125,10 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		&.is--top{
-			margin-bottom: 15px;
+			//margin-bottom: 15px;
 		}
 		&.is--bottom{
+			margin-top: 15px;
 			align-items: center;
 		}
 	}

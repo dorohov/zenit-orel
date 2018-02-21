@@ -108,10 +108,13 @@
 			<div class="index-header__btn-block">			
 				<a href="/objacts-apart.html" class="btn-site btn-blue index-header__btn  is--white">
 					<svg class="rect-block">
-						<rect class="rect wow draw-btn-rect  is--white"
+						<!--<rect class="rect wow draw-btn-rect  is--white"
 							data-wow-duration="1s" 
 							data-wow-delay="0.5s"
 							data-wow-offset=" 0" 
+							x="0" 
+							y="0"/>-->
+						<rect class="rect  is--white"
 							x="0" 
 							y="0"/>
 					</svg>	
@@ -131,7 +134,10 @@
 				<img src="/img/temp/header-banner-item-1620x540.jpg" alt="">
 			</div>
 		</div>
-	</div>	
+	</div>
+	<a href="#objacts-block" class="scrollto index-header__scrollto " data-scrollto-diff="-110">
+		вниз
+	</a>	
 </div>	
 			<div class="objacts-panel__panel" id="objacts-block">
 	<div class="container objacts-panel__container">			
@@ -985,8 +991,7 @@
 
 <script src="/js/svg4everybody.min.js" ></script>
 <script>svg4everybody();</script>
-		<script src="/js/bodymovin/bodymovin.min.js"></script>
-<script src="/js/bodymovin/animation.js"></script>
+		
 		<script src="/js/wow.min.js" ></script>
 <script>			
 	if($(document.body).find('.page-loader').length > 0) {

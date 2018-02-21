@@ -4065,6 +4065,9 @@
 			padding-left: 15px;
 			padding-right: 15px;
 			.makeCols(12, 12);
+			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
 			@media @media-point-tablet {
 				.makeCols(6, 12);
 			}
@@ -4176,9 +4179,10 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		&.is--top{
-			margin-bottom: 15px;
+			//margin-bottom: 15px;
 		}
 		&.is--bottom{
+			margin-top: 15px;
 			align-items: center;
 		}
 	}
@@ -5912,8 +5916,8 @@
 		font-family: @proxima;
 		font-weight: 800;
 		text-transform: uppercase;
-		.calcFontSize(22, 32, 320, 1024);
-		.calcLineHeight(24, 42, 320, 1024);  
+		.calcFontSize(34, 46, 320, 1024);
+		.calcLineHeight(36, 48, 320, 1024);  
 		letter-spacing: 2px;
 		margin-bottom: 5px;  
 		@media @media-point-xs {
@@ -5941,8 +5945,8 @@
 	&heading-small{
 		font-family: @proxima;
 		font-weight: 400;
-		.calcFontSize(20, 28, 320, 1680);
-		.calcLineHeight(30, 28, 320, 1680);
+		.calcFontSize(24, 32, 320, 1680);
+		.calcLineHeight(28, 34, 320, 1680);
 		@media @media-point-xs {
 			grid-row: 2;
 			grid-column: 1; 
@@ -5982,7 +5986,17 @@
 		@media @media-point-screen {
 			padding: .85vw 2.3vw;
 			letter-spacing: 0.8px;
-		}
+			//animation: btn-tx 2s linear;
+			//animation: scale 1.5s linear;
+			//animation-iteration-count: infinite; 
+			.rect{
+				//animation: none;
+				//stroke-dasharray: 0;
+				//stroke-dashoffset: 0;
+				animation: draw-btn-rect1 5s linear 1.5s;
+				animation-iteration-count: infinite; 
+			}
+		}		
 	}
 	&owl-item{
 		margin: 10px 0;
@@ -6014,6 +6028,41 @@
 			left: 0px;
 		}
 	}
+	&scrollto{
+		display: none;
+		@media @media-point-screen {
+			display: block;
+			position: absolute;
+			z-index: 5;
+			font-size: @b-fs;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			color: @white;
+			padding-bottom: 25px;
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: ~"calc(50% - 1px)";
+				width: 1px;
+				height: 23px;
+				background-color: @white;
+			}
+			&:hover{
+				color: @white;
+			}
+		}
+	}
+}
+
+@keyframes draw-btn-rect1 {
+	0 {
+		stroke-dashoffset: 0;	
+	}
+	100%{    
+		stroke-dashoffset: -1000;
+	}	
 }
 /*
 .header-content-block{

@@ -78,13 +78,13 @@ $(function() {
 			560:{
 				//nav: false,
 				nav: true,
-				items: 2,
+				items: 1,
 				//autoWidth:false,
 				margin: 30,
 			},
 			768:{
 				nav: true,
-				items: 2,
+				items: 1,
 				//autoWidth:false,
 				margin: 30,
 			},
