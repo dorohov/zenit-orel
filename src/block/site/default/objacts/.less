@@ -17,7 +17,10 @@
 			@media @media-point-tablet {
 				.makeCols(6, 12);
 			}
-			@media @media-point-screen {
+			@media @media-point-md2 {
+				.makeCols(6, 12);
+			}
+			@media @media-point-screen-lg {
 				.makeCols(4, 12);
 			}
 		}
@@ -82,6 +85,7 @@
 		padding: 15px 25px;
 		@media @media-point-screen {
 			padding: 1.1vw 1.5vw;
+			.calcFontSize(18, 28, 1025, 1680);
 		}
 	}
 	&heading-bg{
@@ -161,6 +165,8 @@
 			@media @media-point-screen {
 				font-size: @b-fs + 2;
 				line-height: @b-lh + 2;
+				.calcFontSize(16, 18, 320, 1680);
+				.calcLineHeight(20, 24, 320, 1680);
 			}
 		}
 
@@ -184,6 +190,10 @@
 		transition: @objacts-cubic;
 		.objact-card__card:hover &{
 			color: @white;
+		}
+		@media @media-point-screen {
+			.calcFontSize(14, 18, 1025, 1680);
+			.calcLineHeight(18, 24, 1025, 1680);
 		}
 		span{
 			font-weight: 400;
