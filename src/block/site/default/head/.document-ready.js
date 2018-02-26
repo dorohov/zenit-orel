@@ -14,6 +14,9 @@ $('.btn-journal').on('click', function(){
   	$(this).toggleClass('is-active');
   	$("._dicb__journal-list").toggleClass('is-visible');  
 });
+$('.azbn__envybox-btn').on('click', function(){
+	$('.ws-chat-btn-container').trigger('click')
+});
 
 $('._acb__item ul').addClass('ul-site');
 
