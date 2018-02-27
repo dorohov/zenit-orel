@@ -3068,6 +3068,18 @@
 		&.is--tel{}
 		&.is--brand{}
 	}
+	&phone-icon{
+		width: 32px;
+		height: 32px;
+		display: block;
+		color: @blue!important;
+		text-indent: -9999999px;
+    	overflow: hidden;
+    	background-image: url("@{url-path-img}/svg/navbar-tel.svg");
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: contain;
+	}
 	&brand{
 		position: relative;
 		display: block;
@@ -3092,7 +3104,7 @@
 		@media @media-point-device-lg{
 			position: fixed;
 			top: @navbar-device;
-			right: -270px;
+			left: -270px;
 			width: 270px;
 			height: ~"calc(100vh - @{navbar-device})";
 			opacity: 0;
@@ -3106,7 +3118,7 @@
 		    &.is--open{
 		    	visibility: visible;
 		    	opacity: 1;
-		    	right: 0;
+		    	left: 0;
 		    }
 		    body.admin-bar &{
 				top: ~"calc(@{navbar-device} + @{wp_bar_device})";
@@ -3120,7 +3132,7 @@
 			}
 		}
 		@media @media-size-xs-p {
-			right: -100%;
+			left: -100%;
 			width: 100%;
 		}
 		@media @media-point-md2{
